@@ -1,0 +1,121 @@
+.carouselContainer {
+    width: 1280px;
+    height: 626px;
+    position: relative;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text {
+    position: absolute;
+    width: 921px;
+    height: 65px;
+    top: 176px;
+    left: 189px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Redshift-Bold', sans-serif;
+    /* font-weight: bold; */
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 65.28px;
+    text-align: center;
+    color: white;
+
+  }.text_atas{
+    width: 94px;
+    height: 76px;
+    top: 100px;
+    left: 592px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Oruguitas';
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 76.16px;
+    text-align: center;
+    color: white;
+    position: absolute;
+  }
+
+  /* styles/customCarousel.module.css */
+
+.arrowPrev, .arrowNext {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.arrowPrev {
+  left: 125px;
+}
+
+.arrowNext {
+  right: 125px;
+}
+
+.bulat1{
+  width: 74px;
+height: 74px;
+top: 354px;
+left: -230px;
+gap: 0px;
+opacity: 0px;
+position: absolute;
+}
+.bulat2{
+  width: 120px;
+height: 118px;
+top: 257px;
+left: 157px;
+gap: 0px;
+opacity: 0px;
+position: absolute;
+}
+.qris{
+  width: 65px;
+height: 84px;
+top: 122px;
+left: 600px;
+gap: 0px;
+opacity: 0px;
+position: absolute;
+}
+.no1{
+  width: 65px;
+height: 89px;
+top: 224px;
+left: 600px;
+gap: 0px;
+border-radius: 8px;
+opacity: 0px;
+position: absolute;
+}
+.awan{
+  width: 847px;
+  height: 389px;
+  top: 389px;
+  left: -360px;
+  gap: 0px;
+  opacity: 0px;
+  position: absolute;
+}

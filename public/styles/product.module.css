@@ -1,0 +1,341 @@
+.youtube{
+    padding: 90px;
+}
+.youtube2{
+    padding: 90px;
+    padding-bottom: 250px;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.video_youtube2{
+    width: 65%;
+    /* border: 1px solid black; */
+}
+.detail_youtube2{
+    width: 35%;
+    padding: 60px;
+}
+.testimonial{
+    font-family: 'Redshift-Bold',sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 39.6px;
+    text-align: left;
+    color: #E83166;
+}
+.testimonial_detail{
+    color: #363636;
+    font-family: 'Redshift-Book',sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.64px;
+    text-align: left;
+}
+
+.youtube p{
+    font-family: 'Redshift-Bold',sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 39.6px;
+    text-align: left;
+    color: #E74058;
+}
+.youtube p span{
+    color: #575757;
+
+}
+.ingredientsContainer{
+    width: 100%;
+    height: 508px;
+    background-color: #FFF9F9;
+}
+.garisContainer{
+    width: 100%;
+    height: 302px;
+    top: 1417px;
+    position: absolute;
+    background: radial-gradient(27.11% 50% at 26.33% 50%, #FEF3F4 0%, #F7BABA 48%, #FE9A9A 100%);
+}
+.botol{
+    width: 354px;
+    height: 356px;
+    top: 1231px;
+    left: 138px;
+    gap: 0px;
+    position: absolute;
+    opacity: 0px;
+
+}
+.kotak_informasi {
+    position: absolute;
+    width: 600.79px;
+    height: 279px;
+    top: 1307px;
+    left: 546.21px;
+    background: #FFEFEF;
+    border-radius: 16px;
+    overflow: hidden; 
+    z-index: 1; 
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.imagereviews{
+    width: Hug (646.44px)px;
+    height: Hug (138.61px)px;
+    top: 1537.81px;
+    left: 534px;
+    gap: 19px;
+    opacity: 0px;
+    position: absolute;
+    z-index: 999;
+}
+.kotak_informasi ul{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.76px;
+    text-align: left;
+    color: #5E0E0E;
+}
+.kotak_informasi p{
+    font-family: Redshift-Bold;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.2px;
+    text-align: left;
+    color: #D65063;
+
+}
+.kotak_informasi::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 16px; 
+    padding: 2px;
+    background: linear-gradient(180deg, rgba(248, 149, 176, 0.58) 0%, rgba(247, 186, 204, 0.37) 48%, rgba(233, 59, 80, 0.3) 100%);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+.image{
+    width: 100%;
+}
+.containerWorks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerWorks p{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.76px;
+    text-align: left;
+}
+.containerWorks .text{
+    width: 394px;
+    height: 175px;
+    gap: 0px;
+    opacity: 0px;
+}
+.howtoworks{
+    width: 222px;
+    height: 80px;
+    top: 2032.6px;
+    left: 416px;
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;    
+}
+.howtoworks p{
+    font-family: 'Redshift-Bold',sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 39.6px;
+    text-align: left;
+    color: #E74058;
+}
+.howtoworks p span{
+    color: #575757;
+}
+.container_featured{
+    background-color: #FFF9F9;
+   /* padding: 100px; */
+}
+.featured{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: #FFF9F9;
+    padding: 230px;
+    /* padding-bottom: 200px; */
+}
+.imageFeatured{
+    width: 394px;
+    height: 421px;
+    border-radius: 15px;
+    border: 2px solid #D29AA2;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.imageFeatured img{
+    width: 277.23px;
+    height: 279.91px;
+}
+.detailFeatured {
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 50px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+.title{
+    font-family: 'Redshift-Bold',sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 38.08px;
+    text-align: left;
+    color: #F56F83;
+}
+.text{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    width: 565px;
+    height: 216px;
+}
+.title_featured{
+    font-family: 'Redshift-Bold',sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 39.6px;
+    text-align: left;
+    color: #E74058;
+}
+.title_featured span{
+color: black;
+}
+.tombol {
+    display: flex;
+    gap: 20px;
+    /* border: 1px solid black; */
+    margin-top: auto; /* Mendorong tombol ke bawah */
+  }
+.buynow{
+    width: 112.14px;
+    height: 42.14px;
+    border-radius: 43px;
+    background-color: #E74058;
+    border: 1px solid #E74058;
+    color: #FFFFFF;
+}
+.consult{
+    width: 166.43px;
+    height: 42.14px;
+    border-radius: 43px;
+    border: 1px solid #E74058;
+    color: #E74058;
+    background-color: #DD7B8126;
+
+}
+.reviews{
+    padding-left: 130px;
+}
+.reviews .textnya {
+    font-family: 'Redshift-Book',sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.64px;
+    text-align: left;
+    color: #363636;
+  }
+  .reviews .textnya span {
+    font-family: 'Redshift-Bold',sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 39.6px;
+    text-align: left;
+    color: #E74058;
+  }
+  .text_header{
+    width: 196px;
+    height: 53px;
+    top: 177px;
+    left: 135px;
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;
+    font-family: 'Redshift-Bold',sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 52.8px;
+    text-align: left;
+    color: #FFFFFF;
+  }
+  .image_product{
+    width: 480.94px;
+    height: 300px;
+    top: 201px;
+    left: 620.03px;
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;
+  }
+  .peptide{
+    width: 144px;
+    height: 144px;
+    top: 1225px;
+    z-index: 999;
+    left: 978px;
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;
+  }
+  .mainIngredients{
+    width: 308px;
+    height: 40px;
+    top: 1187px;
+    left: 545px;
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;
+
+    font-family: 'Redshift-Bold',sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 39.6px;
+    text-align: left;
+
+  }
+  .mainIngredients span{
+    color: #E74058;
+  }
+  .mainDetail{
+    width: 257px;
+    height: 26px;
+    top: 1253px;
+    left: 545px;
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;
+
+    font-family: 'Redshift-Bold',sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38.08px;
+    text-align: left;
+    color: #F56F83;
+  }

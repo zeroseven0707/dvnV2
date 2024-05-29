@@ -5,13 +5,17 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "export": "next export",
+    "start": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "next": "14.2.3",
     "react": "^18",
+    "react-bootstrap": "^2.10.2",
     "react-dom": "^18",
-    "next": "14.2.3"
+    "react-responsive-carousel": "^3.2.23"
   },
   "devDependencies": {
     "eslint": "^8",

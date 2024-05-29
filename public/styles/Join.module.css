@@ -1,0 +1,67 @@
+
+.container{
+  width: 100%;
+  height: 840px;
+  gap: 0px;
+  background-image: url('/image/join-dealers.png');
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover;
+}
+.form{
+  width: 497px;
+  height: 277px;
+  top: 270px;
+  left: 648px;
+  gap: 0px;
+  opacity: 80%;
+  padding: 30px;
+  position: absolute;  
+  border-radius: 21px 21px 21px 21px ;
+  background-color: #f0d9d9;
+  text-align: center;
+}
+.form p{
+  font-family: 'Redshift-Bold',sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 48.96px;
+  text-align: left;
+  color: #C83244;  
+}
+
+.email{
+  width: 429px;
+  height: 43px;
+  top: 356px;
+  left: 682px;
+  gap: 0px;
+  border-radius: 6px 6px 6px 6px;
+  opacity: 0px;  
+  border: none;
+}
+.noHP{
+  width: 429px;
+  height: 43px;
+  top: 469px;
+  left: 682px;
+  gap: 0px;
+  border-radius: 6px 6px 6px 6px;
+  opacity: 0px;
+  border: none;
+  margin-top: 20px;
+}
+.button{
+  margin-top: 20px;
+  border: none;
+  width: 429px;
+  height: 43px;
+  top: 469px;
+  left: 682px;
+  gap: 0px;
+  border-radius: 6px 6px 6px 6px;
+  opacity: 0px;
+  background-color: #E95760;
+  color: #FFFFFF;
+  border: none;
+}

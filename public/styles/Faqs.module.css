@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.container{
+  padding-bottom: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container section{
+  width: 1008px;
+  height: 193px;
+  margin: 100px auto;
+}
+.container section details summary{
+  padding: 15px;
+  border-bottom: 1px solid #A17070;
+  background:#FFFfff;
+  border-radius: 11px;
+  position: relative;
+  list-style: none;
+  outline: none;
+  cursor: pointer;
+
+font-family: 'Redshift-Bold',sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 26.4px;
+  text-align: left;
+
+}
+.container section details{
+  margin: 15px;
+  border-radius: 11px 11px 11px 11px;
+  border: 1px solid #A17070
+}
+.container section details p{
+  font-family: 'Redshift-Book',sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  
+  padding: 10px;
+  color: #333;
+
+  background:#FFF9F9;
+}
+.container section details summary span{
+  font-size: 22px;
+  /* color: ; */
+  float: right;
+}
+.carret{
+  color: #E74058;
+}
+.faq{
+font-family: 'Redshift-Bold',sans-serif;
+font-size: 36px;
+font-weight: bold;
+line-height: 39.6px;
+text-align: left;
+color:#E83166;
+}
+.question{
+  font-family: 'Redshift-Book',sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32.64px;
+  text-align: left;
+  color: #363636;
+}
+.header_text{
+  width: 254px;
+  height: 73px;
+  top: 201px;
+  left: 513px;
+  position: absolute;
+}
+.faq_header{
+font-family: 'Redshift-Bold',sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 52.8px;
+  text-align: center;
+  color:#E83166;
+}
+.question_header{
+  font-family: 'Redshift-Book',sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 19.8px;
+  text-align: center;
+  color:#E83166;
+}
+.title{
+  margin-left: 15px;
+}
+.image{
+  width: 100%;
+}
+.image_product{
+  width: 359px;
+height: 224px;
+top: 218px;
+left: 155px;
+gap: 0px;
+opacity: 0px;
+position: absolute;
+}

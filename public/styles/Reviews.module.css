@@ -1,0 +1,57 @@
+.reviewsContainer {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 20px;
+    -ms-overflow-style: none;  /* Hides scrollbar in Internet Explorer */
+    scrollbar-width: none;  /* Hides scrollbar in Firefox */
+}
+
+.reviewsContainer::-webkit-scrollbar {
+    display: none;  /* Hides scrollbar in Chrome, Safari, Opera */
+}
+
+.review {
+    box-shadow: 0 0 10px 0 #EB9AB0;
+    background-color: #FFFFFF; 
+    border: 1px solid #E8C7CD; 
+    width: 292px;
+    height: 335px;
+    left: 648px;
+    gap: 0px;
+    padding: 24px;
+    border-radius: 30px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: column; /* Menggunakan flexbox untuk mengatur tata letak */
+  }
+  
+  .review .images {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .review b {
+    font-family: Redshift-Bold;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.48px;
+    text-align: left;   
+  }
+  
+  .review p {
+    font-family: Redshift-Book;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.76px;
+    text-align: left;
+  }
+  
+  .review .tgl {
+    margin-top: auto;
+    color: #969696;
+  }
+  
+.review:active {
+    cursor: grabbing; /* Cursor berubah saat ulasan sedang digeser */
+}

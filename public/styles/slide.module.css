@@ -1,0 +1,13 @@
+.slidesContainer{
+  top: 643px;
+  left: 214px;
+  gap: 48px;
+  opacity: 0px; 
+  display: flex;
+  position: absolute;
+  /* border: 1px solid black; */
+  z-index: 1;
+  }
+  .slide{
+    width: 100%;    
+  }
