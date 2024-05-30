@@ -15,6 +15,8 @@ export default function Faqs() {
     <section>
     <div>
           <img src="/image/faqs.png" className={styles.image}/>
+          <img src="/image/awankirifooter.png" className={styles.awan} />
+          <img src="/image/awankirifooter.png" className={styles.awan2} />
           <img src="/image/Botol_DVN.svg" className={styles.image_product}/>
           <div className={styles.header_text}>
             <p className={styles.faq_header}>FAQ</p>

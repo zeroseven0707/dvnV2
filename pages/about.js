@@ -26,7 +26,10 @@ export default function About() {
           </div>
         </div>
         <div>
-          <Image src="/image/garis.png" width={1280} height={56}/>
+          <img src="/image/garis.png"className={about.garisimage}/>
+          <img src="/image/awankirifooter.png" className={about.awan1}/>
+          <img src="/image/awankirifooter.png" className={about.awan2}/>
+          <img src="/image/awankirifooter.png" className={about.awan3}/>
         </div>
         <div className={about.tombol}>
         <button className={about.brand}>Brand</button>

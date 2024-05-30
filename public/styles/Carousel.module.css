@@ -110,12 +110,14 @@ border-radius: 8px;
 opacity: 0px;
 position: absolute;
 }
-.awan{
+.awannya_caraousel{
   width: 847px;
   height: 389px;
-  top: 389px;
-  left: -360px;
+  /* top: 389px; */
+  left: 237px;
   gap: 0px;
   opacity: 0px;
+  /* angle: -180 deg;   */
+  border: 1px solid black;
   position: absolute;
 }

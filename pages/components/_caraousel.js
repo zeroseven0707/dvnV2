@@ -49,8 +49,7 @@ const CarouselComponent = () => {
         <img src="/image/bulat2.svg" alt="" className={Slides.bulat2}/>
         <img src="/image/qris.svg" alt="" className={Slides.qris}/>
         <img src="/image/no1.svg" alt="" className={Slides.no1}/>
-        {/* <img src="/image/awan caraousel.svg" alt="" className={Slides.awan}/> */}
-      </div>
+        </div>
       <div>
         <img src="/image/caraousel.png" alt="caraousel 2" />
         <p className={Slides.text_atas}>D.V.N</p> 

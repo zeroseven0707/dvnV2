@@ -6,6 +6,32 @@
   padding: 6rem;
   min-height: 100vh;
 }
+.awan{
+  display: flex;
+  /* gap: 70px; */
+  /* display: inline; */
+  height: 540px;
+  /* top: 804px; */
+  margin-top: -490px;
+  position: absolute;
+  border: 1px solid black;
+}
+.awankiri{
+  /* border: 1px solid black; */
+  /* background-color: black; */
+  margin-top: 110px;
+  /* opacity: 1000%; */
+  width: 942px;
+  height: 433px;
+
+}.awankanan{
+  /* border: 1px solid black; */
+  /* background-color: black; */
+  margin-top: 100px;
+  width: 942px;
+  height: 433px;
+
+}
 .picture {
   top: 844px;
   left: 615px;
@@ -150,10 +176,19 @@ color: #E74058;
   display: block;
   width: 100%;
   height: auto;
+  z-index: 9999;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 80%);
 }
-
+.ImageBotolPudar{
+  width: 277.23px;
+  height: 279.91px;
+  top: 256px;
+  left: 497.59px;
+  gap: 0px;
+  opacity: 19%;
+position: absolute;  
+}
 .footer{
   width: 100%;
   height: 540px;
@@ -168,15 +203,23 @@ color: #E74058;
   background-size: cover;
 }
 .dflex{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  /* border: 1px solid black; */
+  align-items: center;
+  margin-left: 120px;
+}
+.contentFooter{
+  /* border:1px solid black; */
+  display: flex;
   width: 100%;
   height: 90%;
-  display: flex;
-  align-items: center;
 }
 .containerForm{
   width: 394px;
   /* height: 328px; */
-  margin-left: 751px;
+  margin-left: 100%;
   gap: 0px;
   padding: 30px;
   opacity: 87%;  
@@ -232,14 +275,15 @@ color: #E74058;
   line-height: 21.76px;
   text-align: center;
   color: #C83244;
-  z-index: 999;
+  z-index: 9999;
 
 }
 .fadeOver {
   position: absolute;
-  margin-top: -540px;
+  margin-top: -520px;
   width: 100%;
-  height: 100%; 
+  height: 540px; 
+  z-index: 9999;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #e87c88 100%);
   pointer-events: none;
 }
@@ -252,14 +296,78 @@ z-index: 1;
 gap: 0px;
 position: absolute;
 opacity: 0px;
-/* background-color: black; */
-/* border: 1px solid black; */
 }
-/* .section{
-  display: grid;
-  grid-auto-columns: 2;
+.containerText2{
+  /* width: 110.44px; */
+  margin-top: 10%;
+  margin-left: 10%;
+  /* border: 1px solid black; */
+}
+.footer_ul{
+  list-style-type: none;
+  padding: 0; 
+  margin: 0;
+  
+}
+.footer_li{
+  list-style: none;
+}
+.footer_li a{
+  font-family: 'Redshift-Bold', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21.76px;
+  text-align: left;
+  text-decoration: none;
+  color: #C83244;
+}
+.social_media{
+  width: 110.44px;
+  margin-top: 120px;
+  height: 28.87px;
+  display: flex;
+  padding: 0px;
+  gap: 20px;
+  opacity: 0px;
+  
+}
+.garisFooter{
+  width: 188px;
+  height: 0px;
+  border:1px solid #C83244;
+}
+.learnMore{
+  width: 169px;
+  z-index: 999;
+height: 41px;
+top: 132px;
+background:none;
+left: 555px;
+gap: 0px;
+position: absolute;
+border-radius: 7px;
+border: 1px solid #FF6986;
+color:#E83166;
+opacity: 0px;
+
+}
+/* .awankanan{
+  position: absolute;
+}
+.awankiri{
+  position: absolute;
 } */
-/* Tablet and Smaller Desktop */
+.awannya_caraousel{
+  width: 847px;
+  height: 389px;
+  top: 389px;
+  left: -537px;
+  gap: 0px;
+  opacity: 0px;
+  /* angle: -180 deg;   */
+  /* border: 1px solid black; */
+  position: absolute;
+}
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);

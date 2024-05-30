@@ -21,6 +21,7 @@ export default function Home() {
       </Head>
       {/* <main className={`${styles.main} ${inter.className}`}> */}
       <CarouselComponent />
+      <img src="/image/awankirifooter.png" alt="" className={styles.awannya_caraousel}/>
       <img className={styles.cloud} src="/image/Cloud1.png" alt="caraousel 1" /> 
       <img src="/image/garis.png" alt="caraousel 1" width="100%" />
       <Slides />

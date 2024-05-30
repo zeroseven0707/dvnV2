@@ -21,6 +21,8 @@ export default function Product() {
           <div className={product.text_header}>Product</div>
           <img src="/image/Botol_DVN.svg" className={product.image_product} />
           <img src="/image/product.png" className={product.image} />
+          <img src="/image/awankirifooter.png" className={product.awan1} />
+          <img src="/image/awankirifooter.png" className={product.awan2} />
         </div>
       </section>
       <section>

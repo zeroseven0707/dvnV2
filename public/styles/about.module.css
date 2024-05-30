@@ -247,3 +247,39 @@ gap: 20px;
     border-radius: 43px;
     border: 1px solid #E74058;
     }
+    .awan1{
+        width: 688px;
+        height: 317px;
+        top: 28px;
+        left: -300px;
+        gap: 0px;
+        opacity: 0px;
+        /* angle: -180 deg; */
+        position: absolute;
+    }
+    .awan2{
+        position: absolute;
+        width: 371px;
+    height: 171px;
+    top: 15px;
+    left: 779px;
+    gap: 0px;
+    opacity: 0px;
+    /* angle: -180 deg; */
+    
+    }
+    .awan3{
+    /* border: 1px solid black; */
+        width: 688px;
+    height: 317px;
+    top: 302px;
+    left: 1008px;
+    gap: 0px;
+    opacity: 0px;
+    angle: -180 deg;
+    position: absolute;
+    }
+    .garisimage{
+        height: 56px;
+        width: 100%;
+    }

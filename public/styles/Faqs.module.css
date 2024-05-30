@@ -6,6 +6,25 @@
   justify-content: center;
   min-height: 100vh;
 }
+.awan{
+  /* border: 1px solid black; */
+  width: 371px;
+height: 171px;
+top: 116px;
+left: 962px;
+gap: 0px;
+opacity: 0px;
+/* angle: -180 deg; */
+position: absolute;
+}
+.awan2{
+  width: 688px;
+height: 317px;
+top: -103px;
+left: -200px;
+/* angle: -180 deg; */
+position: absolute;
+}
 .container section{
   width: 1008px;
   height: 193px;
