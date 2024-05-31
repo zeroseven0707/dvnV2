@@ -198,11 +198,6 @@ position: absolute;
 .footer{
   width: 100%;
   height: 540px;
-  top: 3850px;
-  gap: 0px;
-  /* border: 1px solid black; */
-  opacity: 0px;
-  /* position: relative; */
   background-image: url('/image/Footer.png');
   background-repeat: no-repeat; 
   background-position: center; 
@@ -229,7 +224,7 @@ position: absolute;
   gap: 0px;
   padding: 30px;
   opacity: 87%;  
-  border-radius: 21px 21px 21px 21px ;
+  border-radius: 21px;
   background-color: #f0d9d9;
   z-index: 9999;
 }
@@ -238,7 +233,6 @@ position: absolute;
 }
 .containerForm p{
   font-family: 'Redshift-Bold', sans-serif;
-  top: 30px;
   font-size: 24px;
   font-weight: bold;
   line-height: 32.64px;
@@ -249,7 +243,7 @@ position: absolute;
   width: 340.09px;
   height: 43px;
   gap: 0px;
-  border-radius: 6px 6px 6px 6px;
+  border-radius: 6px;
   opacity: 0px;
   outline: none;
   border: none;
@@ -259,7 +253,7 @@ position: absolute;
   width: 340.09px;
   height: 100px;
   gap: 0px;
-  border-radius: 6px 6px 6px 6px;
+  border-radius: 6px;
   opacity: 0px;
   border: none;
   outline: none;
@@ -284,7 +278,6 @@ position: absolute;
   text-align: center;
   color: #C83244;
   z-index: 9999;
-
 }
 .fadeOver {
   position: absolute;
@@ -313,7 +306,6 @@ position: absolute;
   list-style-type: none;
   padding: 0; 
   margin: 0;
-  
 }
 .footer_li{
   list-style: none;
@@ -329,7 +321,7 @@ position: absolute;
   color: #C83244;
 }
 .social_media{
-  width: 110.44px;
+  width: 37.92px;
   margin-top: 120px;
   height: 28.87px;
   display: flex;
@@ -340,6 +332,10 @@ position: absolute;
 }
 .social_media a{
   z-index: 9999;
+}
+.dvnLogo{
+  width: 30.22;
+  height: 15.45;
 }
 .garisFooter{
   width: 188px;
@@ -360,7 +356,6 @@ border-radius: 7px;
 border: 1px solid #FF6986;
 color:#E83166;
 opacity: 0px;
-
 }
 /* .awankanan{
   position: absolute;
@@ -379,17 +374,121 @@ opacity: 0px;
   /* border: 1px solid black; */
   position: absolute;
 }
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
-  }
-}
 
-@media (prefers-color-scheme: dark) {
+
+
+@media (max-width: 768px) {
+.footer{
+  background-image: url('/image/mobile-footer.png');
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover;
+  width: 100%;
+  height: 191px;
+}
+.dvnLogo{
+  width: 30.22px;
+  height: 15.45px;
+}
+.footer_li a{
+  font-size: 8px;
+  line-height: 10.88px;
+}
+.footer_li{
+  padding: -15px; 
+  margin: -15px;
+}
+.footer_ul{
+  padding: 8px; 
+  margin: 8px;
+}
+.garisFooter{
+width: 55px;
+}
+.awankanan{
+  width: 202px;
+  height: 133px;
+}.awankiri{
+  width: 242px;
+  height: 733px;
+}
+.social_media{
+  width: 37.92px;
+  height: 9.91px;
+  margin-top: 20px;
+  padding: 0px;
+  gap: 5px;
+  opacity: 0px;
+  /* border: 1px solid black; */
+}
+.sosmedImage{
+  width: 8.47px;
+  height: 9.91px;
+}
+.textFooter{
+  font-family: 'Redshift-Book',sans-serif;
+  font-size: 8px;
+  color: black;
+  z-index: 9999;
+}
+.containerForm{
+  padding: 12px;
+  width: 226px;
+  /* height: 136px; */
+  margin-left: -100px;
+  gap: 0px;
+  opacity: 0px;
+
+}
+.containerForm p{
+  font-size: 13px;
+  line-height: 17.68px;
+  
+}
+.input::placeholder{
+  font-family: Redshift-BookOblique;
+  font-size: 8px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 10.88px;
+  text-align: left;
+}
+.input{
+  width: 199px;
+  height: 20.15px;
+  border-radius: 3px;
+  opacity: 0px;
+  }
+.message::placeholder{
+  font-family: Redshift-BookOblique;
+  font-size: 8px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 10.88px;
+  text-align: left;
+}
+.message{
+  margin-top:4px;
+  width: 199px;
+  height: 31.23px;
+  gap: 0px;
+  border-radius: 3px;
+}
+.button{
+  width: 200px;
+  height: 20.15px;
+  border-radius: 3px;
+  opacity: 0px;
+}
+.fadeOver {
+  margin-top: -550px;
+}
+}
+/* @media (prefers-color-scheme: dark) {
   .vercelLogo {
     filter: invert(1);
   }
-
+  
   .logo {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
@@ -401,5 +500,11 @@ opacity: 0px;
   }
   to {
     transform: rotate(0deg);
+  }
+} */
+
+@media (min-width: 701px) and (max-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(2, 50%);
   }
 }

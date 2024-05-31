@@ -37,7 +37,7 @@ export default function Product() {
           </div>
           <img src="/image/Botol_DVN.svg" className={product.botol} />
           <p className={product.mainIngredients}>Main<span> Ingredients</span></p>
-          <p className={product.mainDetail}>Collagen Peptide</p>
+        <p className={product.mainDetail}>Collagen Peptide</p>
           <img src="/image/CollagenPeptide.svg" className={product.peptide} />
           <div className={product.kotak_informasi}>
             <div>

@@ -33,20 +33,16 @@
 .email{
   width: 429px;
   height: 43px;
-  top: 356px;
-  left: 682px;
   gap: 0px;
-  border-radius: 6px 6px 6px 6px;
+  border-radius: 6px;
   opacity: 0px;  
   border: none;
 }
 .noHP{
   width: 429px;
   height: 43px;
-  top: 469px;
-  left: 682px;
   gap: 0px;
-  border-radius: 6px 6px 6px 6px;
+  border-radius: 6px;
   opacity: 0px;
   border: none;
   margin-top: 20px;
@@ -64,4 +60,70 @@
   background-color: #E95760;
   color: #FFFFFF;
   border: none;
+}
+@media (max-width: 768px) {
+ .form{
+  top: 17vh;
+  left: 10vw;
+  width: 80vw;
+  height: 28vh;
+}
+.form p{
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 17.68px;
+}
+.email{
+  width: 236px;
+  height: 20px;
+  top: 152px;
+  left: 61px;
+  border-radius: 3px;
+}
+.noHP{
+  width: 236px;
+  height: 20px;
+  top: 176px;
+  left: 61px;
+  margin-top: 4px;
+  border-radius: 3px;
+}
+.email::placeholder{
+  font-family: 'Redshift-Book',sans-serif;
+  font-size: 8px;
+  font-style:italic;
+  font-weight: 400;
+  line-height: 10.88px;
+  text-align: left;
+}
+.noHP::placeholder{
+  font-family: 'Redshift-Book',sans-serif;
+  font-size: 8px;
+  font-style:italic;
+  font-weight: 400;
+  line-height: 10.88px;
+  text-align: left;
+}
+.button{
+  width: 75px;
+  height: 20px;
+  top: 220px;
+  margin-left: 43vw;
+  border-radius: 3px;
+  font-family: "Redshift-Bold",sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 10.88px;
+  text-align: center;
+}
+.container{
+  width: 100%;
+  height: 355px;
+  gap: 0px;
+  background-image: url('/image/mobile-joindealers.png');
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover;
+}
+
 }

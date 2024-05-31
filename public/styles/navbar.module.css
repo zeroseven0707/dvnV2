@@ -16,6 +16,18 @@
     border: 1px solid black;
     padding-top :14px;
   } */
+  .hamburger {
+    display: none; /* Hide by default */
+    cursor: pointer;
+  }
+  
+  .hamburger div {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
   
   .nav ul {
     display: flex;
@@ -70,3 +82,29 @@
     height: 100%;
     width: 50%;
   }
+  /* Transform the hamburger menu into a cross (X) */
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+@media (max-width: 768px) {
+  .nav{
+    height: 52px;
+    top: 0px;
+    width: 100vw;
+  }
+  .hamburger{
+    display: inline-block;
+  }
+  .nav ul{
+    display: none;
+  }
+  .dvn{
+    width: 44px;
+    height: 22.49px;
+    margin-left: 24px;
+  }
+}

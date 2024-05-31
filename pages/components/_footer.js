@@ -7,7 +7,7 @@ const footer = () => {
 <div className={styles.footer}>
     <div className={styles.contentFooter}>
     <div className={styles.containerText2}>
-            <img src="/image/dvn-logo.svg"/>
+            <img src="/image/dvn-logo.svg" className={styles.dvnLogo}/>
             <hr className={styles.garisFooter} />
             <ul className={styles.footer_ul}>
                 <li className={styles.footer_li}><Link href="/product">Product</Link> </li>
@@ -15,16 +15,16 @@ const footer = () => {
                 <li className={styles.footer_li}><Link href="/faqs">FaQ</Link></li>
             </ul>
             <div className={styles.social_media}>
-            <Link href="/product"><img src="/image/tiktok.svg"/></Link>
-            <Link href="/product"><img src="/image/facebook.svg"/></Link>
-            <Link href="/product"><img src="/image/insta.svg"/></Link>
+            <Link href="/product"><img className={styles.sosmedImage} src="/image/tiktok.svg"/></Link>
+            <Link href="/product"><img className={styles.sosmedImage} src="/image/facebook.svg"/></Link>
+            <Link href="/product"><img className={styles.sosmedImage} src="/image/insta.svg"/></Link>
             </div>
         </div>
         <div className={styles.dflex}>    
             <div className={styles.containerForm}>
             <form className={styles.form}>
             <p>Get in Touch with us</p>
-                <input type="text" placeholder="Email Address" className={styles.input}/>
+                <input type="text" placeholder="Email" className={styles.input}/>
                 <textarea className={styles.message} placeholder="Message"></textarea>
                 <button className={styles.button}>Send</button>
             </form>

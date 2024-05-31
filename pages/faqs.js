@@ -14,12 +14,15 @@ export default function Faqs() {
       </Head>
     <section>
     <div>
+      <picture>
+          <source srcset="/image/mobile-faqs.svg" media="(max-width: 768px)"/>
           <img src="/image/faqs.png" className={styles.image}/>
+      </picture>
           <img src="/image/awankirifooter.png" className={styles.awan} />
           <img src="/image/awankirifooter.png" className={styles.awan2} />
           <img src="/image/Botol_DVN.svg" className={styles.image_product}/>
           <div className={styles.header_text}>
-            <p className={styles.faq_header}>FAQ</p>
+            <p className={styles.faq_header}>FaQ</p>
             <p className={styles.question_header}>(Frequently Asked Questions)</p>
           </div>
         </div>
