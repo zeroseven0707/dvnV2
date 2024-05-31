@@ -43,7 +43,7 @@ const CarouselComponent = () => {
     >
       <div>
         <img src="/image/caraousel.png" alt="caraousel 1" />
-        <p className={Slides.text_atas}>D.V.N</p> 
+        <p className={Slides.text_atas}><img src="/image/D.V.N.svg" /></p> 
         <p className={Slides.text}>LUMINOUS BEAUTY SHINE INSIDE OUT</p> 
         <img src="/image/bulat1.svg" alt="" className={Slides.bulat1}/>
         <img src="/image/bulat2.svg" alt="" className={Slides.bulat2}/>
@@ -52,7 +52,7 @@ const CarouselComponent = () => {
         </div>
       <div>
         <img src="/image/caraousel.png" alt="caraousel 2" />
-        <p className={Slides.text_atas}>D.V.N</p> 
+        <p className={Slides.text_atas}><img src="/image/D.V.N.svg" /></p> 
         <p className={Slides.text}>LUMINOUS BEAUTY SHINE INSIDE OUT</p> 
         <img src="/image/bulat1.svg" alt="" className={Slides.bulat1}/>
         <img src="/image/bulat2.svg" alt="" className={Slides.bulat2}/>

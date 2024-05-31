@@ -91,8 +91,9 @@ color:#E83166;
 .header_text{
   width: 254px;
   height: 73px;
-  top: 201px;
-  left: 513px;
+  top: 15vw;
+  transform: translate(-50%, -50%);
+  left: 50vw;
   position: absolute;
 }
 .faq_header{
@@ -119,10 +120,10 @@ font-family: 'Redshift-Bold',sans-serif;
 }
 .image_product{
   width: 359px;
-height: 224px;
-top: 218px;
-left: 155px;
-gap: 0px;
-opacity: 0px;
-position: absolute;
+  height: 224px;
+  top: 20vw;
+  left: 155px;
+  gap: 0px;
+  opacity: 0px;
+  position: absolute;
 }

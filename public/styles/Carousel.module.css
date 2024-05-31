@@ -23,14 +23,15 @@
     position: absolute;
     width: 921px;
     height: 65px;
-    top: 176px;
-    left: 189px;
+    top: 15.17vw;
+    left: 50vw;
     gap: 0px;
     opacity: 0px;
+  transform: translate(-50%, -50%);
     font-family: 'Redshift-Bold', sans-serif;
     /* font-weight: bold; */
     font-size: 48px;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 65.28px;
     text-align: center;
     color: white;
@@ -38,8 +39,9 @@
   }.text_atas{
     width: 94px;
     height: 76px;
-    top: 100px;
-    left: 592px;
+    top: 11.21vw;
+    transform: translate(-50%, -50%);
+    left: 50vw;
     gap: 0px;
     opacity: 0px;
     font-family: 'Oruguitas';

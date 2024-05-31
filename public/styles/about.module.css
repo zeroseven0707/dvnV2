@@ -1,42 +1,77 @@
 .section{
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.about{
+    width: 100%;
     display: flex;
 }
 .col_one{
-    width: 50%;
-    height: 396px;
+    width: 100%;
+    /* height: 396px; */
     display: flex;
     align-items: center;
     justify-content: center;
+    /* border: 1px solid black; */
 }
 .col_two{
-    width: 50%;
-    height: 396px;
+    width: 100%;
+    /* height: 396px; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.col_one_image{
-    width: 50%;
-    height: 396px;
+.col_two_image {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    padding-top: 56.25%; /* Sesuaikan dengan rasio aspek gambar */
+    background-image: url('/image/blur2.png');
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover;
+    height: 0; /* Pastikan height diatur ke 0 untuk menggunakan padding-top */
+}
+
+.col_two_image > .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 443px;
+    color: white;
+}
+.col_one_image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 56.25%; /* Sesuaikan dengan rasio aspek gambar */
     background-image: url('/image/blur1.png');
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover;
+    height: 0; /* Pastikan height diatur ke 0 untuk menggunakan padding-top */
 }
-.col_two_image{
-    width: 50%;
-    height: 396px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('/image/blur2.png');
+
+.col_one_image > .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 443px;
+    color: white;
 }
+
+
 .col_two_color{
-    width: 50%;
+    width: 100%;
     height: 396px;
     display: flex;
     justify-content: center;
@@ -61,19 +96,21 @@
 .section_five{
     padding: 70px;
     height: 100vh;
+    /* height: 540px; */
     display: flex;
+    /* align-items: center; */
+    /* border:1px solid black; */
     justify-content: center;
 }
 .image{
-    width: 1280px;
-    height: 501px;
-    gap: 0px;
-    opacity: 0px;    
+    /* border: 2px solid black; */
+    width: 100%;
+    height: auto;
 }
 .container_core{
     width: 443px;
     color: white;
-    height: 164px;
+    /* height: 164px; */
     top: 673px;
 
 }
@@ -111,28 +148,30 @@
     color: #363636;
 }
 .image_center{
-    width: 356.8px;
-    height: 356.08px;
+    width: 22.58vw;  /* 356.8px dikonversi ke vw */
+    height: 52.97vh; 
 }
-.container_text_1{
-    font-family: 'Redshift-Bold',sans-serif;
-    width: 351px;
-    height: 206px;
-    top: 2227px;
-    left: 137px;
-    gap: 0px;
-    opacity: 0px;
+.container_text_1 {
+    font-family: 'Redshift-Bold', sans-serif;
+    width: 18.28vw;  /* 351px dikonversi ke vw */
+    height: 19.07vh;  /* 206px dikonversi ke vh */
+    top: 400vh;  /* Menggunakan vh untuk posisi vertikal */
+    left: 30.15vw;  /* Posisi kiri dalam vw */
+    transform: translate(-70%, -30%);
     position: absolute;
 }
-.text_1{
-    font-family: 'Redshift-Bold',sans-serif;
-    font-size: 36px;
-    font-weight: 400px;
-    line-height: 39.6px;
+
+
+.text_1 {
+    font-family: 'Redshift-Bold', sans-serif;
+    font-size: 1.88vw;
+    font-weight: 400;
+    line-height: 39.6px;    
     text-align: left;
     color: #E74058;
-
 }
+
+
 .text_2{
     font-family: 'Redshift-book',sans-serif;
     font-size: 16px;
@@ -141,22 +180,35 @@
     text-align: left;
 
 }
-.container_text_2{
-    width: 443px;
-    height: 129px;
-    top: 2602px;
-    left: 443px;
+/* .container_text_2{
+    width: 23.06vw;  
+    height: 11.94vh;
+    top: 450vh;
+    left: 52vw;
+    transform: translate(-50%, -50%);
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;
+} */
+.container_text_2 {
+    width: 23.06vw;  /* 443px dikonversi ke vw */
+    height: 11.94vh;  /* 129px dikonversi ke vh */
+    top: 460vh;  /* Menggunakan vh untuk posisi vertikal */
+    left: 54vw;  /* Posisi kiri dalam vw */
+    transform: translate(-50%, -50%);
     gap: 0px;
     opacity: 0px;
     position: absolute;
 }
+
 .container_text_3{
     width: 308px;
     height: 197px;
-    top: 2343px;
-    left: 837px;
+    top: 425vh;
+    left: 74vw;
     gap: 0px;
     opacity: 0px;
+    transform: translate(-50%, -50%);
     position: absolute;
 }
 .text_black{
@@ -183,11 +235,9 @@
 }
 .aboutheader{
     background: linear-gradient(270deg, #CF3D60 0%, rgba(233, 59, 59, 0) 98.27%);
-    width: 837px;
-    height: 501px;
-    left: 443px;
-    top: 0;
-    gap: 0px;
+    width: 70%;
+    height: 100%;
+    right: 0;
     /* border: 1px solid black; */
     opacity: 0px;
     position: absolute;
@@ -214,8 +264,9 @@
 .tombol{
 width: 406px;
 height: 59px;
-top: 472px;
-left: 437px;
+top: 95%;
+left: 50%;
+transform: translate(-50%, -50%);
 gap: 0px;
 border-radius: 43px;
 opacity: 0px;
@@ -270,13 +321,13 @@ gap: 20px;
     }
     .awan3{
     /* border: 1px solid black; */
-        width: 688px;
+    width: 688px;
     height: 317px;
-    top: 302px;
-    left: 1008px;
+    /* top: 302px; */
+    right: 0;
+    bottom: -10vh;
     gap: 0px;
     opacity: 0px;
-    angle: -180 deg;
     position: absolute;
     }
     .garisimage{

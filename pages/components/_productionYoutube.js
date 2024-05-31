@@ -10,7 +10,7 @@ const YouTubeEmbed = ({ videoId, thumbnailUrl }) => {
   };
 
   return (
-    <div style={{ position: 'relative', paddingBottom: '46.25%', height: 0 }}>
+    <div style={{ position: 'relative', paddingBottom: '32.25%', height: 0 }}>
       {!isVideoVisible && (
         <img
           src={thumbnailUrl}
@@ -20,7 +20,7 @@ const YouTubeEmbed = ({ videoId, thumbnailUrl }) => {
             top: 0,
             left: 0,
             width: '100%',
-            height: '387px',
+            height: '70vh',
             borderRadius:'30px',
             cursor: 'pointer'
           }}
@@ -36,7 +36,7 @@ const YouTubeEmbed = ({ videoId, thumbnailUrl }) => {
             left: 0,
             width: '100%',
             borderRadius:'30px',
-            height: '387px'
+            height: '70vh'
           }}
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

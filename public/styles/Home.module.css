@@ -12,26 +12,31 @@
   /* display: inline; */
   height: 540px;
   /* top: 804px; */
-  margin-top: -490px;
+  z-index: 999;
+  width: 100%;
+  /* background-color: black; */
+  margin-top: -482px;
   position: absolute;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .awankiri{
   /* border: 1px solid black; */
   /* background-color: black; */
-  margin-top: 110px;
-  /* opacity: 1000%; */
+  top: 8.4vw ;
+  left: -25vw;
   width: 942px;
   height: 433px;
+  z-index: 1;
+  position: inherit;
 
-}.awankanan{
-  /* border: 1px solid black; */
-  /* background-color: black; */
-  margin-top: 100px;
-  width: 942px;
-  height: 433px;
-
+  }.awankanan {
+    right: 0; /* Menempatkan elemen di tepi kanan layar */
+    bottom: 0; /* Menempatkan elemen di tepi bawah layar */
+    position: inherit; /* Posisi elemen tetap relatif terhadap viewport */
+    width: 542px; /* Lebar tetap dalam piksel */
+    height: 433px; /* Tinggi tetap dalam piksel */
 }
+
 .picture {
   top: 844px;
   left: 615px;
@@ -128,7 +133,7 @@ align-items: center;
 .containerText .span .know{
   font-family: 'Redshift-Bold', sans-serif;
 font-size: 36px;
-font-weight: 400;
+font-weight: bold;
 line-height: 39.6px;
 text-align: left;
 color: #E74058;
@@ -141,7 +146,7 @@ color: #E74058;
   text-align: left;
 }
 .youtube{
-  margin-top: 10%;
+  padding-top: 10%;
   background-color: #FFF9F9;
 }
 .video{
@@ -181,12 +186,13 @@ color: #E74058;
   -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 80%);
 }
 .ImageBotolPudar{
-  width: 277.23px;
-  height: 279.91px;
-  top: 256px;
-  left: 497.59px;
+  width: 480.94;
+  height: 300;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  left: 50%;
   gap: 0px;
-  opacity: 19%;
+  opacity: 30%;
 position: absolute;  
 }
 .footer{
@@ -225,9 +231,9 @@ position: absolute;
   opacity: 87%;  
   border-radius: 21px 21px 21px 21px ;
   background-color: #f0d9d9;
+  z-index: 9999;
 }
 .form{
-  
   text-align: center;
 }
 .containerForm p{
@@ -245,6 +251,7 @@ position: absolute;
   gap: 0px;
   border-radius: 6px 6px 6px 6px;
   opacity: 0px;
+  outline: none;
   border: none;
 }
 .message{
@@ -255,6 +262,7 @@ position: absolute;
   border-radius: 6px 6px 6px 6px;
   opacity: 0px;
   border: none;
+  outline: none;
 
 }
 .button{
@@ -283,20 +291,18 @@ position: absolute;
   margin-top: -520px;
   width: 100%;
   height: 540px; 
-  z-index: 9999;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #e87c88 100%);
   pointer-events: none;
 }
-.cloud{
-width: 314px;
-height: 391px;
-top: 582px;
-left: 1060px;
-z-index: 1;
-gap: 0px;
-position: absolute;
-opacity: 0px;
+.cloud {
+  width: 20vw; /* Lebar awan akan menjadi 20% dari lebar viewport */
+  height: auto; /* Menjaga rasio aspek */
+  top: 100vh; /* Jarak dari atas akan menjadi 10% dari tinggi viewport */
+  right: 0vw; /* Jarak dari kanan akan menjadi 5% dari lebar viewport */
+  position: absolute; /* Posisi absolut terhadap viewport */
+  transform: translate(0, 0); /* Menghapus transformasi agar posisinya tepat */
 }
+
 .containerText2{
   /* width: 110.44px; */
   margin-top: 10%;
@@ -311,6 +317,7 @@ opacity: 0px;
 }
 .footer_li{
   list-style: none;
+  z-index: -2;
 }
 .footer_li a{
   font-family: 'Redshift-Bold', sans-serif;
@@ -331,6 +338,9 @@ opacity: 0px;
   opacity: 0px;
   
 }
+.social_media a{
+  z-index: 9999;
+}
 .garisFooter{
   width: 188px;
   height: 0px;
@@ -340,9 +350,10 @@ opacity: 0px;
   width: 169px;
   z-index: 999;
 height: 41px;
-top: 132px;
+top: 30%;
 background:none;
-left: 555px;
+left: 50%;
+transform: translate(-50%, -50%);
 gap: 0px;
 position: absolute;
 border-radius: 7px;

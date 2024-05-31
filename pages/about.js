@@ -14,7 +14,7 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section>
-        <div>
+        <div className={about.about}>
           <img src="/image/about.svg" className={about.image}/>
           <div className={about.aboutheader}>
           <div className={about.aboutheadertitle}>
@@ -29,7 +29,7 @@ export default function About() {
           <img src="/image/garis.png"className={about.garisimage}/>
           <img src="/image/awankirifooter.png" className={about.awan1}/>
           <img src="/image/awankirifooter.png" className={about.awan2}/>
-          <img src="/image/awankirifooter.png" className={about.awan3}/>
+          <img src="/image/aboutkanan.svg" className={about.awan3}/>
         </div>
         <div className={about.tombol}>
         <button className={about.brand}>Brand</button>
@@ -38,13 +38,13 @@ export default function About() {
       </section>
       <section className={about.section}>
           <div className={about.col_one}>
-            <div className={about.container_core}>
-              <p className={about.core}><span className={about.black}>Core</span> Brand Values</p>
+          <div className={about.container_core}>
+              <p className={about.core}><span className={about.black}>Core</span> Brand values</p>
               <p className={about.value_core}>DVN&apos;s core values ​​lie in advocating the combination of beauty and strength, and encouraging women to unleash their inner beauty and power. We are dedicated to providing women with nutritional beauty solutions that not only focus on skincare but also help women achieve confident growth and influence.</p>
             </div>
           </div>
-          <div className={about.col_two_color}>
-            <Image src="/image/dvn_about.svg" className={about.dvn} width={295.7} height={149.27}/>
+          <div className={about.col_two}>
+          <Image src="/image/botol_dvn.svg" className={about.botol_dvn} width={295.7} height={149.27} layout="responsive" />
           </div>
       </section>
       <section className={about.section}>
@@ -71,14 +71,14 @@ export default function About() {
       </section>
       <section className={about.section}>
           <div className={about.col_one_image}>
-          <div className={about.container_core}>
+          <div className={about.content}>
               <p className={about.core_down}>Brand Mission</p>
               <p className={about.value_core_down}>DVN&apos;s mission is to help women unleash their inner beauty and power through nutritional beauty solutions, enabling them to grow in confidence and bring about change through influence.</p>
             </div>
           {/* <Image src="/image/blur1.png" className={about.blur1} width={295.7} height={149.27}/> */}
           </div>
           <div className={about.col_two_image}>
-          <div className={about.container_core}>
+          <div className={about.content}>
               <p className={about.core_down}>Brand Vision</p>
               <p className={about.value_core_down}>DVN&apos;s vision is to become a leader in women&apos;s beauty and strength, providing safe and effective nutritional beauty solutions for women worldwide, allowing them to shine in their self-defined beauty.</p>
             </div>

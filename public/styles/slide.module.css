@@ -1,6 +1,11 @@
+.slidesContainer1{
+  /* border: 1px solid black; */
+  width: 100%;
+}
 .slidesContainer{
-  top: 643px;
-  left: 214px;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   gap: 48px;
   opacity: 0px; 
   display: flex;
