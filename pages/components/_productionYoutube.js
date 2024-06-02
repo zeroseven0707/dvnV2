@@ -1,7 +1,7 @@
 // components/YouTubeEmbed.js
 
 import React, { useState } from 'react';
-
+import product from "../../public/styles/product.module.css";
 const YouTubeEmbed = ({ videoId, thumbnailUrl }) => {
   const [isVideoVisible, setIsVideoVisible] = useState(false);
 
@@ -15,29 +15,14 @@ const YouTubeEmbed = ({ videoId, thumbnailUrl }) => {
         <img
           src={thumbnailUrl}
           alt="Video Thumbnail"
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '70vh',
-            borderRadius:'30px',
-            cursor: 'pointer'
-          }}
+          className={product.productionThumb}
           onClick={handleThumbnailClick}
         />
       )}
       {isVideoVisible && (
         <iframe
           src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            borderRadius:'30px',
-            height: '70vh'
-          }}
+          className={product.productionVideo}
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

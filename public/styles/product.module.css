@@ -24,13 +24,12 @@ position: absolute;
     padding-bottom: 250px;
     display: flex;
     align-items: center;
-    /* border: 1px solid black; */
 }
 .video_youtube2{
     width: 65%;
-    /* border: 1px solid black; */
 }
 .detail_youtube2{
+    display: inline-block;
     width: 35%;
     padding: 60px;
 }
@@ -66,7 +65,6 @@ position: absolute;
 .ingredientsContainer{
     width: 100%;
     height: 110vh;
-    /* border: 1px solid black; */
     background-color: #FFF9F9;
 }
 .garisContainer{
@@ -81,9 +79,7 @@ position: absolute;
     height: 356px;
     top: 220vh;
     left: 11vw;
-    gap: 0px;
     position: absolute;
-    opacity: 0px;
 
 }
 .kotak_informasi {
@@ -117,11 +113,12 @@ position: absolute;
     line-height: 21.76px;
     text-align: left;
     color: #5E0E0E;
+    padding-left: 6%;
 }
 .kotak_informasi p{
-    font-family: Redshift-Bold;
+    font-family: 'Redshift-Bold',sans-serif;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 27.2px;
     text-align: left;
     color: #D65063;
@@ -150,7 +147,7 @@ position: absolute;
     justify-content: center;
 }
 .containerWorks p{
-    font-family: Montserrat;
+    font-family: 'Montserrat',sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 21.76px;
@@ -161,6 +158,16 @@ position: absolute;
     height: 175px;
     gap: 0px;
     opacity: 0px;
+    color: #363636;
+    font-family: "Montserrat",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.76px;
+    text-align: left;
+
+}
+.image_works{
+    width: 100%;
 }
 .howtoworks{
     width: 222px;
@@ -171,9 +178,6 @@ position: absolute;
     transform: translate(-50%, -50%);
     opacity: 0px;
     position: absolute;
-}
-.image_works{
-    width: 100%;
 }
 .howtoworks p{
     font-family: 'Redshift-Bold',sans-serif;
@@ -207,7 +211,7 @@ position: absolute;
     display: flex;
     justify-content: center;
 }
-.imageFeatured img{
+.imageFeatured .imageFeatureds{
     width: 277.23px;
     height: 279.91px;
 }
@@ -215,7 +219,6 @@ position: absolute;
     width: 100%;
     padding-top: 50px;
     padding-left: 50px;
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -229,7 +232,7 @@ position: absolute;
     color: #F56F83;
 }
 .text{
-    font-family: Montserrat;
+    font-family: 'Montserrat',sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 17.07px;
@@ -251,7 +254,6 @@ color: black;
 .tombol {
     display: flex;
     gap: 20px;
-    /* border: 1px solid black; */
     margin-top: auto; /* Mendorong tombol ke bawah */
   }
 .buynow{
@@ -356,8 +358,359 @@ color: black;
 
     font-family: 'Redshift-Bold',sans-serif;
     font-size: 28px;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 38.08px;
     text-align: left;
     color: #F56F83;
   }
+  .detail_youtube2_mobile{
+    display: none;
+  }
+  .productionThumb{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    border-radius:30px;
+    cursor: pointer;
+  }
+  .productionVideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius:30px;
+    height: 70vh;
+  }
+  .peptide_blue{
+    display: none;
+  }
+  .detailFeaturedMobile{
+    display: none;
+  }
+  .MobileDetailFeatured{
+    display: none;
+  }
+  .ContainerReviews{
+    padding-top: 7%;
+    padding-bottom: 2%;
+}
+@media (max-width:768px) {    
+    .image_product{
+        width: 110.59px;
+        height: 111.65px;
+        top: 43vw;
+        left: 50vw;
+    }
+    .text_header{
+        width: 78px;
+        height: 21px;
+        top: 13%;
+        left: 15vw;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 17.6px;
+    }
+    .youtube{
+        padding: 5%;
+
+        height: 100vw;
+    }
+    .youtube p{
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 14.3px;
+    }
+    .productionThumb{
+        width: 100%;
+        height: 70vw;
+    }
+    .productionVideo{
+        width: 100%;
+        height: 70vw;
+    }
+/* benefit */
+.benefit{
+    height: 100vw;
+}
+    .ingredientsContainer{
+        width: 100%;
+        height: 157px;
+        
+    }
+    .garisContainer{
+        width: 100%;
+        height: 80vw;
+        top: 195vw;
+        background: radial-gradient(53.8% 53.8% at 50.12% 31.4%, #FFEDED 0%, #FE9A9A 74.41%);
+    }
+    .flexText{
+        justify-content: center;
+        padding: 5%;
+        /* gap: 10%; */
+        align-items: center;
+        display: flex;
+
+      }
+    .mainIngredients{
+        width: 50vw;
+        height: 34px;
+        position:unset;
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 14.3px;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 14.3px;    
+      }
+      .mainDetail{
+        position:unset;
+        width: 50vw;
+        height: 34px;
+        text-align: right;
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 13.6px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+      }
+      .botol{
+
+        width: 210px;
+        height: 210px;
+        top: 170vw;
+        left: 21vw;
+        /* box-shadow: 14px 14px 14px 14px #951B3121; */
+      
+        position: absolute;
+      }
+      .peptide_blue{
+
+        margin-top: 3.5%;
+        display:inline-block;
+      }
+      .kotak_informasi {
+        width: 85vw;
+        height: 122px;
+        top: 223vw;
+        left: 24px;
+    }
+    .imagereviews{
+        width: 312px;
+        height: 66.9px;
+        top: 250vw;
+        left: 24px;
+        gap: 0px;
+        opacity: 0px;
+    }
+    .kotak_informasi ul{
+        margin-top: -7%;
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 10.88px;    
+    }
+    .kotak_informasi p{
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 13.6px;
+    }
+    .peptide{
+        width: 62px;
+        height: 61px;
+        top: 217vw;
+        left: 259px;
+        
+      }
+/* Section How Does it Works */
+    .containerWorks{
+        height: 80vw;
+        gap: 5%;
+    }
+    .howtoworks{
+        width: 82px;
+        height: 18px;
+        top: 303vw;
+        left: 25vw;
+
+    }
+    .howtoworks p{
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 13.2px;
+    }
+    .containerWorks .text p{
+        width: 123px;
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 10.88px;
+        margin-top: 20vw;
+         
+    }.image_works{
+        width: 156.39px;
+        height: 154.99px;
+        margin-top: 17vw;
+    }
+/* SECTION FEATURED */
+    .title_featured{
+        display: none;
+    }
+    .title_featuredMobile{
+        font-family: 'Redshift-Bold',sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 14.3px;
+        text-align: left;
+        color: #E74058;
+        width: 166.12px;
+        height: 11.28px;
+    }
+    .title_featuredMobile span{
+        color: #575757;
+    }
+    .title{
+        width: 144px;
+        height: 7px;
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 13.6px;
+        text-align: left;
+    }
+    .imageFeatured{
+        width: 156.7px;
+        height: 158.07px;
+    }
+    .imageFeatured .imageFeatureds{
+        width: 116.16px;
+        height: 117.29px;
+    }
+    .featured{
+        padding: 0px;
+        gap: 5vw;
+    }
+    .container_featured{
+        background-color: #FFF9F9;
+        padding: 5%;
+    }
+    .detailFeatured{
+        display: none;
+    }
+    .detailFeaturedMobile{
+        margin-top: 7vw;;
+        display: inline-block;
+    }
+    .MobileDetailFeatured .text{
+        width: 100%;
+        height: 35vw;
+
+        font-family: "Montserrat",sans-serif;
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 9.75px;
+        text-align: left;
+
+    }
+    .MobileDetailFeatured{
+        font-family: "Montserrat",sans-serif;
+        font-size: 8px;
+        width: 90vw;
+
+        font-weight: 400;
+        padding-top: 10vw;
+        line-height: 9.75px;
+        text-align: left;
+    }
+    .MobileDetailFeatured{
+        display: inline-block;
+    }
+    .tombolMobile{
+        width: 88px;
+        height: 45px;
+        margin-top: 7vw;
+    }
+    .buynowMobile{
+        width: 56px;
+        height: 20px;
+        border-radius: 50px;
+        opacity: 0px;
+
+        font-family: "Redshift-Bold",sans-serif;
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 9.6px;
+        text-align: center;
+        color: #FFFFFF;
+        border: 1px solid #E74058;
+        background-color: #E74058;
+    }
+    .consultMobile{
+        width: 88px;
+        height: 20px;
+        border-radius: 50px;
+        border: 0.5px solid #E74058;
+        background: #DD7B8126;
+        opacity: 0px;
+
+        font-family: "Redshift-Bold",sans-serif;
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 9.6px;
+        color:#E74058;
+        text-align: center;
+
+    }
+/* SECTION TESTIMONI */
+    .youtube2{
+        padding: 5%;
+        display: block;
+        align-items: center;
+    }
+    .video_youtube2{
+    width: 100%;
+    }
+    .detail_youtube2_mobile{
+        width: 100%;
+        display: block;
+    }
+    .detail_youtube2{
+        display: none;
+    }
+    .testimonial{
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 14.3px;   
+    }
+    .testimonial_detail{
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 13.6px;
+    }
+    .ContainerReviews{
+        padding: 5%;
+
+    }
+    .reviews{
+        padding-left: 0px;
+    }
+    .reviews .textnya {
+        font-family: "Redshift-Book",sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 13.6px;
+      }
+    .reviews .textnya span {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 14.3px;     
+    }
+    .awan1{
+       display: none;
+    
+    }.awan2{
+        display: none;
+    }
+}

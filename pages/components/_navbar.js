@@ -41,11 +41,11 @@ const Navbar = () => {
           </div>
         </li>
       </ul>
-      <div class="hamburger" id="hamburger">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-  </div>
+      {/* <div class="hamburger" id="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div> */}
     </nav>
     </div>
   );

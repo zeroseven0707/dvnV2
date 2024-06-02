@@ -1,9 +1,8 @@
 .slidesContainer1{
-  /* border: 1px solid black; */
   width: 100%;
 }
 .slidesContainer{
-  top: 120%;
+  top: 130%;
   left: 50%;
   transform: translate(-50%, -50%);
   gap: 48px;
@@ -14,5 +13,36 @@
   z-index: 1;
   }
   .slide{
-    width: 100%;    
+    width: 100%;  
+    /* border: 1px solid black;   */
+  }
+  @media (max-width: 768px) {
+    .slidesContainer{
+      top: 40%;
+      width: 100vw;
+      overflow-x:auto; 
+      -ms-overflow-style: none;  
+    scrollbar-width: none; 
+      gap: 30px;
+      transform: translate(-50%, -50%);
+      }
+      .slide{
+        width: 100%;   
+      }
+      .halal{
+        width: 65.3px;
+      }
+      .bpom{
+        width: 65.3px;
+      }
+      .tablet{
+        width:103px;
+        
+      }
+      .ingredients{
+        width: 132px;
+      }
+      .collagen{
+        width: 124px;
+      }
   }

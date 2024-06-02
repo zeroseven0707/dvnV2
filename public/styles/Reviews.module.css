@@ -1,16 +1,14 @@
 .reviewsContainer {
     display: flex;
     overflow-x: auto;
-    padding: 20px;
+    /* padding: 20px; */
     gap: 20px;
-    -ms-overflow-style: none;  /* Hides scrollbar in Internet Explorer */
-    scrollbar-width: none;  /* Hides scrollbar in Firefox */
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
 }
-
 .reviewsContainer::-webkit-scrollbar {
-    display: none;  /* Hides scrollbar in Chrome, Safari, Opera */
+    display: none; 
 }
-
 .review {
     box-shadow: 0 0 10px 0 #EB9AB0;
     background-color: #FFFFFF; 
@@ -23,35 +21,73 @@
     border-radius: 30px;
     opacity: 0px;
     display: flex;
-    flex-direction: column; /* Menggunakan flexbox untuk mengatur tata letak */
+    flex-direction: column; 
   }
-  
   .review .images {
     width: 100%;
     text-align: center;
   }
-  
   .review b {
-    font-family: Redshift-Bold;
+    font-family: 'Redshift-Bold',sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24.48px;
     text-align: left;   
   }
-  
   .review p {
-    font-family: Redshift-Book;
+    font-family: 'Redshift-Book',sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 21.76px;
     text-align: left;
+    color: #636363;
   }
-  
   .review .tgl {
+    font-family: 'Redshift-Book',sans-serif;
     margin-top: auto;
     color: #969696;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.04px;
+    text-align: left;
+
   }
-  
 .review:active {
-    cursor: grabbing; /* Cursor berubah saat ulasan sedang digeser */
+  cursor: grabbing;
+}
+.imageReview{
+  width: 100%;
+  height: auto;
+}
+@media (max-width:786px) {
+  .imageReview{
+    width: 97.22px;
+    height: 16.81px;
+
+  }
+  .reviewsContainer{
+    width: 100vw;
+    height: 210px;
+  }
+  .review{
+    width: 151px;
+    height: 210px;
+  }
+  .review b {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.32px;
+    
+  }
+  .review p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+  .review .tgl {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13.6px;
+  }
+
 }

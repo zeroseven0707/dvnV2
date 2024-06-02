@@ -123,3 +123,26 @@ position: absolute;
   border: 1px solid black;
   position: absolute;
 }
+
+@media (max-width:768){
+
+.arrowPrev, .arrowNext {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.arrowPrev {
+  left: 225px;
+}
+
+.arrowNext {
+  right: 125px;
+}
+}

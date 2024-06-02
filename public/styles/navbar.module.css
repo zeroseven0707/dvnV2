@@ -7,15 +7,8 @@
     position: fixed;
     top: 15px;
     width: 100%;
-    z-index: 1;
-    /* margin-top: 100px; */
-    /* border: 1px solid black; */
+    z-index: 99999;
   }
-  /* ..navbar {
-   height: 100px;
-    border: 1px solid black;
-    padding-top :14px;
-  } */
   .hamburger {
     display: none; /* Hide by default */
     cursor: pointer;
@@ -91,11 +84,11 @@
   opacity: 0;
 }
 @media (max-width: 768px) {
-  .nav{
+  .nav {
     height: 52px;
     top: 0px;
     width: 100vw;
-  }
+    }
   .hamburger{
     display: inline-block;
   }

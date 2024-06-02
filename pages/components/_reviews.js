@@ -2,49 +2,11 @@ import React, { useRef } from 'react';
 import styles from '../../public/styles/Reviews.module.css';
 
 const Reviews = () => {
-    const reviewsContainerRef = useRef(null);
-
-    const handleMouseDown = (e) => {
-        const reviewsContainer = reviewsContainerRef.current;
-        reviewsContainer.isDown = true;
-        reviewsContainer.classList.add(styles.active);
-        reviewsContainer.startX = e.pageX - reviewsContainer.offsetLeft;
-        reviewsContainer.scrollLeft = reviewsContainer.scrollLeft;
-    };
-
-    const handleMouseLeave = () => {
-        const reviewsContainer = reviewsContainerRef.current;
-        reviewsContainer.isDown = false;
-        reviewsContainer.classList.remove(styles.active);
-    };
-
-    const handleMouseUp = () => {
-        const reviewsContainer = reviewsContainerRef.current;
-        reviewsContainer.isDown = false;
-        reviewsContainer.classList.remove(styles.active);
-    };
-
-    const handleMouseMove = (e) => {
-        const reviewsContainer = reviewsContainerRef.current;
-        if (!reviewsContainer.isDown) return;
-        e.preventDefault();
-        const x = e.pageX - reviewsContainer.offsetLeft;
-        const walk = (x - reviewsContainer.startX) * 3;
-        reviewsContainer.scrollLeft = reviewsContainer.scrollLeft - walk;
-    };
-
     return (
-        <div
-            className={styles.reviewsContainer}
-            ref={reviewsContainerRef}
-            onMouseDown={handleMouseDown}
-            onMouseLeave={handleMouseLeave}
-            onMouseUp={handleMouseUp}
-            onMouseMove={handleMouseMove}
-        >
+        <div className={styles.reviewsContainer}>
             <div className={styles.review}>
                 <div className={styles.images}>
-                    <img src="/image/imagereviews.png" />
+                    <img src="/image/imagereviews.png" className={styles.imageReview} />
                     <hr/>
                 </div>
                 <b>Perfect!</b>
@@ -53,7 +15,7 @@ const Reviews = () => {
             </div>
             <div className={styles.review}>
             <div className={styles.images}>
-                    <img src="/image/imagereviews.png" />
+                    <img src="/image/imagereviews.png" className={styles.imageReview}/>
                     <hr/>
                 </div>
                 <b>This is the best.</b>
@@ -62,7 +24,7 @@ const Reviews = () => {
             </div>
             <div className={styles.review}>
             <div className={styles.images}>
-                    <img src="/image/imagereviews.png" />
+                    <img src="/image/imagereviews.png" className={styles.imageReview}/>
                     <hr/>
                 </div>
                 <b>Speechless</b>
@@ -71,7 +33,7 @@ const Reviews = () => {
             </div>
             <div className={styles.review}>
             <div className={styles.images}>
-                    <img src="/image/imagereviews.png" />
+                    <img src="/image/imagereviews.png" className={styles.imageReview}/>
                     <hr/>
                 </div>
                 <b>WOW!</b>
@@ -80,7 +42,7 @@ const Reviews = () => {
             </div>
             <div className={styles.review}>
             <div className={styles.images}>
-                    <img src="/image/imagereviews.png" />
+                    <img src="/image/imagereviews.png" className={styles.imageReview}/>
                     <hr/>
                 </div>
                 <b>Make my skin soft</b>

@@ -23,12 +23,12 @@ export default function Home() {
       <CarouselComponent />
       <img src="/image/awankirifooter.png" alt="" className={styles.awannya_caraousel}/>
       <img className={styles.cloud} src="/image/Cloud1.png" alt="caraousel 1" /> 
-      <img src="/image/garis.png" alt="caraousel 1" width="100%" />
+      <img src="/image/garis.png" className={styles.garis} alt="caraousel 1" width="100%" />
       <Slides />
       <PerfectPage />
       <section className={styles.youtube}>
         <div className={styles.containerText}>
-            <span className={styles.span}>Do you <span className={styles.know}>Know?</span> </span> <span className={styles.descript}>Uneven skin tone is a major problem for women.</span>
+            <span className={styles.span}>Do you <span className={styles.know}>Know?</span> <br className={styles.know_br}/> </span> <span className={styles.descript}>Uneven skin tone is a major problem for women.</span>
         </div>
         <div className={styles.video}>
         <YouTubeEmbed videoId="IKCSNNeRTDA" thumbnailUrl="image/youtube.png" />
@@ -41,7 +41,6 @@ export default function Home() {
       </section>
       <PicturePudar />
       <div>
-      <Footer />
       </div>
     </>
   );
