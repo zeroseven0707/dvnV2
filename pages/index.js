@@ -8,6 +8,9 @@ import Footer from "./components/_footer";
 import PicturePudar from "./components/_picture_pudar";
 import PerfectPage from "./components/_perfect";
 import YouTubeEmbed from './components/_youtubeEmbed';
+import Burger from "./components/_burger";
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -19,8 +22,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <main className={`${styles.main} ${inter.className}`}> */}
       <CarouselComponent />
+      <Burger />
       <img src="/image/awankirifooter.png" alt="" className={styles.awannya_caraousel}/>
       <img className={styles.cloud} src="/image/Cloud1.png" alt="caraousel 1" /> 
       <img src="/image/garis.png" className={styles.garis} alt="caraousel 1" width="100%" />

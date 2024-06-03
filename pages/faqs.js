@@ -2,7 +2,7 @@ import Head from "next/head";
 import Footer from './components/_footer';
 import FormJoin from './components/_join_dealers';
 import styles from "../public/styles/Faqs.module.css";
-
+import Burger from "./components/_burger";
 export default function Faqs() {
   return (
     <>
@@ -27,6 +27,7 @@ export default function Faqs() {
           </div>
         </div>
     </section>
+        <Burger />
     <div className={styles.container}>
       <section>
         <div className={styles.title}>

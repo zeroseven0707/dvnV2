@@ -2,6 +2,7 @@ import Head from "next/head";
 import about from "../public/styles/about.module.css";
 import Image from "next/image";
 import Footer from './components/_footer';
+import Burger from "./components/_burger";
 
 
 export default function About() {
@@ -16,7 +17,7 @@ export default function About() {
         <section>
           <div className={about.about}>
             <picture>
-              <source srcset="/image/mobile-about.svg" media="(max-width: 768px)"/>
+              <source srcSet="/image/mobile-about.svg" media="(max-width: 768px)"/>
               <img src="/image/about.svg" className={about.image}/>
             </picture>
             <div className={about.aboutheader}>
@@ -39,6 +40,7 @@ export default function About() {
             <button className={about.management}>Management</button>
           </div>
         </section>
+      <Burger />
         <section className={about.section}>
             <div className={about.col_1}>
             <div className={about.container_core}>
@@ -48,7 +50,7 @@ export default function About() {
             </div>
             <div className={about.col_2}>
               <picture>
-                <source srcset="/image/mobile-dvn.svg" media="(max-width: 768px)"/>
+                <source srcSet="/image/mobile-dvn.svg" media="(max-width: 768px)"/>
                 <img src="/image/dvn_about.svg" layout="responsive"/>
               </picture>
             </div>
@@ -56,7 +58,7 @@ export default function About() {
         <section className={about.section}>
             <div className={about.col_3}>
             <picture className={about.duo}>
-              <source srcset="/image/mobile-duo.svg" media="(max-width: 768px)"/>
+              <source srcSet="/image/mobile-duo.svg" media="(max-width: 768px)"/>
               <Image src="/image/duo.svg" width={295.7} height={149.27} layout="responsive"/>
             </picture>
             </div>
@@ -76,7 +78,7 @@ export default function About() {
             </div>
             <div className={about.col_6}>
             <picture className={about.botol_dvn}>
-              <source srcset="/image/mobile-botol.svg" media="(max-width: 768px)"/>
+              <source srcSet="/image/mobile-botol.svg" media="(max-width: 768px)"/>
               <Image src="/image/botol_dvn.svg" width={0.7} height={149.27} layout="responsive" />
             </picture>
             </div>

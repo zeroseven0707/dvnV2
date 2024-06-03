@@ -394,13 +394,23 @@ gap: 20px;
     height: 24px;
 }
 .awan1{
-    display: none;
+    width: 100vw;
+    top: 10vw;
+    left: -70vw;
+    height: 30vw;
 }
 .awan2{
-    display: none;
+    width: 40vw;
+    top: -2vw;
+    left: 40vw;
+    height: 30vw;
 }
 .awan3{
-    display: none;
+    width: 50vw;
+    top: 50vw;
+    left: 50vw;
+    height: 30vw;
+    /* border: 1px solid black; */
 }
 .image_center{
     display: none;

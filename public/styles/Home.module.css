@@ -8,21 +8,15 @@
 }
 .awan{
   display: flex;
-  /* gap: 70px; */
-  /* display: inline; */
   height: 540px;
-  /* top: 804px; */
   z-index: 999;
   width: 100%;
-  /* background-color: black; */
   margin-top: -482px;
   position: absolute;
   /* border: 1px solid black; */
 }
 .awankiri{
-  /* border: 1px solid black; */
-  /* background-color: black; */
-  top: 8.4vw ;
+  top: 7.8vw ;
   left: -25vw;
   width: 942px;
   height: 433px;
@@ -62,7 +56,6 @@ align-items: center;
   border-radius: 18px 0px 0px 0px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
-  /* border: 1px solid black; */
 
 }
 
@@ -190,7 +183,6 @@ align-items: center;
   height: 569px;
   position: relative;
   display: inline-block;
-  /* border: 1px solid black; */
 }
 
 .pudarGambar {
@@ -223,7 +215,6 @@ align-items: center;
   width: 25%;
   height: 100%;
   display: flex;
-  /* border: 1px solid black; */
   align-items: center;
   margin-left: 120px;
 }
@@ -316,7 +307,6 @@ align-items: center;
   /* width: 110.44px; */
   margin-top: 10%;
   margin-left: 10%;
-  /* border: 1px solid black; */
 }
 .footer_ul{
   list-style-type: none;
@@ -381,7 +371,6 @@ align-items: center;
   gap: 0px;
   opacity: 0px;
   /* angle: -180 deg;   */
-  /* border: 1px solid black; */
   position: absolute;
 }
 .know_br{
@@ -419,12 +408,15 @@ align-items: center;
 width: 55px;
 }
 .awankanan{
-  width: 202px;
-  height: 80px;
-  top:80%;
+  width: 40vw;
+  height: 20vw;
+  top:80.5%;
+  /* border: 1px solid black;   */
 }.awankiri{
-  width: 242px;
-  height: 733px;
+  /* border: 1px solid black;   */
+  width: 70vw;
+  top: 73.5%;
+  height: 30vw;
 }
 .social_media{
   width: 37.92px;
@@ -433,7 +425,6 @@ width: 55px;
   padding: 0px;
   gap: 5px;
   opacity: 0px;
-  /* border: 1px solid black; */
 }
 .sosmedImage{
   width: 8.47px;
@@ -502,10 +493,8 @@ width: 55px;
   height: 193.82px;
   position: relative;
   display: inline-block;
-  /* border: 1px solid black; */
 }
 .ImageBotolPudar{
-  /* border: 1px solid black; */
   width: 163.82px;
   height: 102.19px;
   top: 60%;
@@ -554,7 +543,6 @@ width: 55px;
 }
 .youtube{
   height: 236px;
-  /* border: 1px solid black; */
 }
 .YoutubeThumb{
   height: 116px;
@@ -571,7 +559,6 @@ width: 55px;
 }
 .container2{
   width: 50%;
-  /* border: 1px solid black; */
 }
 .picture {
   height: 201px;
@@ -606,6 +593,18 @@ width: 55px;
 }
 .garis{
   display: none;
+}
+.awannya_caraousel{
+  top: 0vw;
+  left: -10vw;
+  width: 50vw;
+  height: 30vw;
+}
+.cloud {
+  top: 70vw;
+  width: 30vw;
+  height: 30vw;
+ /* border: 1px solid black; */
 }
 }
 /* @media (min-width: 701px) and (max-width: 1120px) {

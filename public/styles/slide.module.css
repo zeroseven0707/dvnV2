@@ -2,7 +2,7 @@
   width: 100%;
 }
 .slidesContainer{
-  top: 130%;
+  top: 58vw;
   left: 50%;
   transform: translate(-50%, -50%);
   gap: 48px;
@@ -18,11 +18,11 @@
   }
   @media (max-width: 768px) {
     .slidesContainer{
-      top: 40%;
+      top: 95vw;
       width: 100vw;
       overflow-x:auto; 
       -ms-overflow-style: none;  
-    scrollbar-width: none; 
+      scrollbar-width: none; 
       gap: 30px;
       transform: translate(-50%, -50%);
       }

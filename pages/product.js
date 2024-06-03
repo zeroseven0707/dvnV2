@@ -5,7 +5,7 @@ import Footer from './components/_footer';
 import Production from './components/_productionYoutube';
 import Testimoni from './components/_testimoniYoutube';
 import Reviews from './components/_reviews';
-
+import Burger from "./components/_burger";
 
 export default function Product() {
   return (
@@ -28,6 +28,7 @@ export default function Product() {
           <img src="/image/awankirifooter.png" className={product.awan2} />
         </div>
       </section>
+        <Burger />
       <section>
       <div className={product.youtube}>
         <p><span>Our</span> Production Process</p>
@@ -38,6 +39,8 @@ export default function Product() {
           <div className={product.ingredientsContainer}>
           <div className={product.garisContainer}>
           </div>
+          <img src="/image/awan3.png" className={product.awan3} />
+          <img src="/image/awan4.png" className={product.awan4} />
           <img src="/image/Botol_DVN.svg" className={product.botol} />
           <div className={product.flexText}>
             <p className={product.mainIngredients}>Main<span> Ingredients</span></p>

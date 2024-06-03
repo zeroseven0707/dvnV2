@@ -66,7 +66,8 @@
 
   }
   .reviewsContainer{
-    width: 100vw;
+    width: 90vw;
+  /* border: 1px solid black;   */
     height: 210px;
   }
   .review{

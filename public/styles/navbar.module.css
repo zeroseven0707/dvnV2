@@ -7,19 +7,7 @@
     position: fixed;
     top: 15px;
     width: 100%;
-    z-index: 99999;
-  }
-  .hamburger {
-    display: none; /* Hide by default */
-    cursor: pointer;
-  }
-  
-  .hamburger div {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
+    z-index: 1;
   }
   
   .nav ul {
@@ -83,15 +71,13 @@
 .change .bar2 {
   opacity: 0;
 }
+
 @media (max-width: 768px) {
   .nav {
     height: 52px;
     top: 0px;
     width: 100vw;
     }
-  .hamburger{
-    display: inline-block;
-  }
   .nav ul{
     display: none;
   }
@@ -100,4 +86,6 @@
     height: 22.49px;
     margin-left: 24px;
   }
+
+  
 }
