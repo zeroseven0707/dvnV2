@@ -5,7 +5,12 @@ import burger from '../../public/styles/BurgerMenu.module.css';
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(() => {
     // Mengambil nilai isOpen dari localStorage atau menggunakan nilai default false jika tidak ada
-    return localStorage.getItem('isOpen') === 'true';
+    if (typeof window !== 'undefined') {
+      // Memastikan bahwa kode ini hanya dijalankan di lingkungan browser
+      return localStorage.getItem('isOpen') === 'true';
+    } else {
+      return false; // Jika kode dijalankan di server, kembalikan nilai default
+    }
   });
 
   useEffect(() => {
