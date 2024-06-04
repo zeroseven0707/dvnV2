@@ -45,39 +45,33 @@ export default function Faqs() {
           <p>Efek terdepan dari D.V.N adalah untuk mencerahkan dan menjaga kesehatan kulit. D.V.N berbentuk tablet kunyah yang mengandung Collagen Tripeptide, Collagen Peptide, Viqua Pomegranate, L-Glutathione, dan Japanese Knotweed radix Extract.</p>
         </details>
         <details>
-          <summary>Accordion 2
+          <summary>Siapa yang diangjurkan untuk konsumsi D.V.N
             <span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
               <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" className={styles.carret}/>
             </svg>
               </span>
               </summary>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quo fugiat perspiciatis! Nihil at
-            voluptatibus veniam inventore, blanditiis quidem cumque, provident architecto voluptate asperiores culpa.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Produk ini dianjurkan untuk usia 12 tahun keatas. Cocok untuk mereka menjaga kesehatan kulit terutama struktur kulit, pigmentasi, kelembapan, kekenyalan kulit, serta mencegah terjadinya kerutan</p>
         </details>
         <details>
-          <summary>Accordion 3
+          <summary>Apakah D.V.N aman dikonsumsi?
             <span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
               <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" className={styles.carret}/>
             </svg>
             </span></summary>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quo fugiat perspiciatis! Nihil at
-            voluptatibus veniam inventore, blanditiis quidem cumque, provident architecto voluptate asperiores culpa.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Aman dikonsumsi karena menggunakan bahan utama yang memiliki kandungan terbaik dan telah memlalui uji laboratorium.</p>
         </details>
         <details>
-          <summary>Accordion 4
+          <summary>Apakah D.V.N aman dikonsumsi oleh ibu hamil dan menyusui?
             <span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                 <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" className={styles.carret} /> 
               </svg>
             </span>
             </summary>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quo fugiat perspiciatis! Nihil at
-            voluptatibus veniam inventore, blanditiis quidem cumque, provident architecto voluptate asperiores culpa.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Aman, karena collagen merupakan struktur utama pembentukan kulit dan juga dibutuhkan untuk perkembangan janin, serta menjaga struktur kulit ibu dari stretch mark.</p>
         </details>
       </section>
     </div>

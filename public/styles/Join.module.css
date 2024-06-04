@@ -1,7 +1,7 @@
 
 .container{
   width: 100%;
-  height: auto;
+  height: 50vw;
   gap: 0px;
   background-image: url('/image/join-dealers.png');
   background-repeat: no-repeat; 

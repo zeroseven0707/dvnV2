@@ -13,7 +13,6 @@
   width: 100%;
   margin-top: -482px;
   position: absolute;
-  /* border: 1px solid black; */
 }
 .awankiri{
   top: 7.8vw ;
@@ -409,14 +408,12 @@ width: 55px;
 }
 .awankanan{
   width: 40vw;
-  height: 20vw;
+  height: 16.5vw;
   top:80.5%;
-  /* border: 1px solid black;   */
 }.awankiri{
-  /* border: 1px solid black;   */
   width: 70vw;
   top: 73.5%;
-  height: 30vw;
+  height: 19.9vw;
 }
 .social_media{
   width: 37.92px;
@@ -606,9 +603,12 @@ width: 55px;
   height: 30vw;
  /* border: 1px solid black; */
 }
+.awan{
+  display: flex;
+  height: 170px;
+  z-index:1;
+  width: 100%;
+  margin-top: -170px;
+  position: absolute;
 }
-/* @media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
-  }
-} */
+}
