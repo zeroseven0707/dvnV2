@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import product from "../../public/styles/product.module.css";
-const YouTubeEmbed = ({ videoId, thumbnailUrl }) => {
+const YouTubeEmbed = ({ videoId }) => {
   const [isVideoVisible, setIsVideoVisible] = useState(false);
 
   const handleThumbnailClick = () => {
@@ -12,12 +12,15 @@ const YouTubeEmbed = ({ videoId, thumbnailUrl }) => {
   return (
     <div style={{ position: 'relative', paddingBottom: '32.25%', height: 0 }}>
       {!isVideoVisible && (
-        <img
-          src={thumbnailUrl}
-          alt="Video Thumbnail"
-          className={product.productionThumb}
-          onClick={handleThumbnailClick}
-        />
+               <picture>
+                <source srcset="/image/mobile-production.png" media="(max-width: 768px)" onClick={handleThumbnailClick}/>
+                  <img
+                      src="/image/youtube.png"
+                      alt="Video Thumbnail"
+                      className={product.productionThumb}
+                      onClick={handleThumbnailClick}
+                    />
+            </picture>
       )}
       {isVideoVisible && (
         <iframe

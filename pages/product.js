@@ -32,7 +32,7 @@ export default function Product() {
       <section>
       <div className={product.youtube}>
         <p><span>Our</span> Production Process</p>
-        <Production videoId="IKCSNNeRTDA" thumbnailUrl="image/youtube.png" />
+        <Production videoId="IKCSNNeRTDA" />
       </div>
       </section>
       <section className={product.benefit}>
