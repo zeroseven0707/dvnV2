@@ -99,36 +99,28 @@ export default function About() {
             {/* <Image src="/image/blur2.png" className={about.blur2} width={295.7} height={149.27}/> */}
             </div>
         </section>
-        <section>
-            <div className={about.section_five}>
-              <img className={about.image_center} src="/image/dvn-group.png" />
-            </div>
+        <section className={about.sectionAdvan}>
             <div className={about.container_text}>
-              <div>
+
               <div className={about.container_text_1}>
-                <p className={about.text_1}><span className={about.text_black}>Brand</span> Advantages</p>
-                <div className={about.leading}>
-                <p className={about.text21}>
-                Leading Technology: We integrate top-notch patented technology globally, providing safe and effective nutritional beauty solutions.
-                </p>
-                <p className={about.text22}>
-                Inner and Outer Balance: We focus on women&apos;s inner beauty and strength, striving to enhance women&apos;s overall beauty from the inside out.
-                </p>
+                <h1>Brand <span>Advantages</span></h1>
+                <div className={about.p_layout}>
+                <p>Leading Technology: We integrate top-notch patented technology globally, providing safe and effective nutritional beauty solutions.</p>
+                <p>Inner and Outer Balance: We focus on women&apos;s inner beauty and strength, striving to enhance women&apos;s overall beauty from the inside out.</p>
                 </div>
               </div>
-              <div className={about.container_text_2}>
-                <p className={about.text_1}><span className={about.text_black}>Brand</span> Philosophy</p>
-                <p className={about.text_2}>
-                We uphold the combination of beauty and strength, encouraging women to bravely pursue their inner beauty and strength, free from any standards and definitions.
-                </p>
-              </div>
+
+              <img src="/image/dvn-group.png" />
+
               <div className={about.container_text_3}>
-                <p className={about.text_1}><span className={about.text_black}>Customized</span><br/>Solution</p>
-                <p className={about.text_2}>
-                Our products and services are customized according to individual needs, meeting the beauty and health needs of different women.
-                </p>
+                <h1>Customized <span>Solution</span></h1>
+                <p>Our products and services are customized according to individual needs, meeting the beauty and health needs of different women.</p>
               </div>
+
             </div>
+            <div className={about.container_text_2}>
+              <h1>Brand<span> Philosophy</span></h1>
+              <p>We uphold the combination of beauty and strength, encouraging women to bravely pursue their inner beauty and strength, free from any standards and definitions.</p>
             </div>
         </section>
     </>

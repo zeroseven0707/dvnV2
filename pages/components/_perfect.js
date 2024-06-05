@@ -21,13 +21,13 @@ const perfectPage = () => {
               </div>
               <div className={perfect.container2}>
               <picture>
-            <source srcSet="/image/mobile-beauty.png" media="(max-width: 768px)"/>
-            <Image src="/image/section2.png"
-                  alt="Vercel Logo"
-                  className={perfect.picture}
-                  width={735}
-                  height={599}/>
-          </picture>
+                <source srcSet="/image/mobile-beauty.png" media="(max-width: 768px)" />
+                  <Image src="/image/section2.png"
+                        alt="Vercel Logo"
+                        className={perfect.picture}
+                        width={735}
+                        height={599}/>
+                </picture>
               </div>
           </div>
       </section>

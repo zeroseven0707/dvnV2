@@ -1,60 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 .awan1{
     position: absolute;
-    width: 371px;
-    height: 171px;
-    top: 15px;
-    left: 779px;
-    gap: 0px;
-    opacity: 0px;
-/* angle: -180 deg; */
+    width: 30vw;
+    height: 20vw;
+    top: -3vw;
+    left: 55vw;
+    /* border: 1px solid black; */
 
 }.awan2{
-    width: 688px;
-height: 317px;
-top: -103px;
-left: -200px;
-/* angle: -180 deg; */
+    width: 50vw;
+height: 23vw;
+top: -8vw;
+left: -20vw;
 position: absolute;
 }
 .youtube{
-    padding: 90px;
+    width: 100%;
+    padding: 5vw 9vw;
+    height: max-content;
 }
 .youtube2{
-    padding: 90px;
-    padding-bottom: 250px;
+    padding: 5vw 9vw;
+    padding-bottom: 15vw;
     display: flex;
     align-items: center;
+    /* border: 1px solid black; */
 }
 .video_youtube2{
     width: 65%;
 }
 .detail_youtube2{
+    /* border: 1px solid black; */
+    margin-top: 5vw;
     display: inline-block;
-    width: 35%;
-    padding: 60px;
+    width: 35vw;
+    padding: 5vw;
 }
 .testimonial{
     font-family: 'Redshift-Bold',sans-serif;
-    font-size: 36px;
+    font-size: 2.3vw;
     font-weight: bold;
-    line-height: 39.6px;
+    line-height: 1vw;
     text-align: left;
     color: #E83166;
 }
 .testimonial_detail{
     color: #363636;
     font-family: 'Redshift-Book',sans-serif;
-    font-size: 24px;
+    font-size: 1.55vw;
     font-weight: 400;
-    line-height: 32.64px;
+    line-height: 2vw;
     text-align: left;
 }
 
 .youtube p{
     font-family: 'Redshift-Bold',sans-serif;
-    font-size: 36px;
+    font-size: 2.5vw;
     font-weight: bold;
-    line-height: 39.6px;
+    line-height: 2vw;
     text-align: left;
     color: #E74058;
 }
@@ -64,7 +67,7 @@ position: absolute;
 }
 .ingredientsContainer{
     width: 100%;
-    height: 110vh;
+    height: max-content;
     background-color: #FFF9F9;
 }
 .garisContainer{
@@ -142,42 +145,35 @@ position: absolute;
 }
 .containerWorks{
     display: flex;
-    padding-top: 20vw;
     height: 100vh;
     align-items: center;
     justify-content: center;
 }
 .containerWorks p{
     font-family: 'Montserrat',sans-serif;
-    font-size: 16px;
+    font-size: 1vw;
     font-weight: 400;
-    line-height: 21.76px;
+    line-height: 1.4vw;
     text-align: left;
 }
 .containerWorks .text{
-    width: 394px;
-    height: 175px;
-    gap: 0px;
-    opacity: 0px;
+    width: 25vw;
+    height: 10vw;
+    /* border: 1px solid black; */
     color: #363636;
     font-family: "Montserrat",sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 21.76px;
-    text-align: left;
 
 }
 .image_works{
     width: 100%;
 }
 .howtoworks{
-    width: 222px;
-    height: 80px;
-    top: 169vw;
-    left: 40vw;
-    gap: 0px;
+    width: 17vw;
+    /* border: 1px solid black; */
+    height: 6vw;
+    top: 164vw;
+    left: 42vw;
     transform: translate(-50%, -50%);
-    opacity: 0px;
     position: absolute;
 }
 .howtoworks p{
@@ -192,7 +188,7 @@ position: absolute;
     color: #575757;
 }
 .container_featured{
-    background-color: #FFF9F9;
+    background-color:#FFF9F9;
    /* padding: 100px; */
 }
 .featured{
@@ -200,52 +196,53 @@ position: absolute;
     /* align-items: center; */
     justify-content: center;
     background-color: #FFF9F9;
-    padding: 230px;
+    padding: 5vw 9vw;
     /* padding-bottom: 200px; */
 }
 .imageFeatured{
-    width: 394px;
-    height: 421px;
-    border-radius: 15px;
+    width: 27vw;
+    height: 30vw;
+    border-radius: 1vw;
     border: 2px solid #D29AA2;
     align-items: center;
     display: flex;
     justify-content: center;
 }
 .imageFeatured .imageFeatureds{
-    width: 277.23px;
-    height: 279.91px;
+    width: 22vw;
+    height: 22vw;
 }
 .detailFeatured {
     width: 100%;
-    padding-top: 50px;
-    padding-left: 50px;
+    padding-top: 8vw;
+    padding-left: 4vw;
     display: flex;
+    /* border: 1px solid black; */
     flex-direction: column;
     justify-content: space-between;
   }
 .title{
     font-family: 'Redshift-Bold',sans-serif;
-    font-size: 28px;
+    font-size: 2vw;
     font-weight: bold;
-    line-height: 38.08px;
+    line-height: 4vw;
     text-align: left;
     color: #F56F83;
 }
 .text{
     font-family: 'Montserrat',sans-serif;
-    font-size: 14px;
+    font-size: 0.9vw;
     font-weight: 400;
-    line-height: 17.07px;
+    line-height: 1vw;
     text-align: left;
-    width: 565px;
+    width: 36.49vw;
     height: 216px;
 }
 .title_featured{
     font-family: 'Redshift-Bold',sans-serif;
-    font-size: 36px;
+    font-size: 2.6vw;
     font-weight: bold;
-    line-height: 39.6px;
+    line-height:8vw;
     text-align: left;
     color: #E74058;
 }
@@ -258,28 +255,31 @@ color: black;
     margin-top: auto; /* Mendorong tombol ke bawah */
   }
 .buynow{
-    width: 112.14px;
-    height: 42.14px;
-    border-radius: 43px;
+    width: 10vw;
+    height: 3vw;
+    border-radius: 2vw;
     background-color: #E74058;
     border: 1px solid #E74058;
     color: #FFFFFF;
+    font-size: 1vw;
+    font-weight: bold;
 }
 .consult{
-    width: 166.43px;
-    height: 42.14px;
-    border-radius: 43px;
+    width: 13vw;
+    height: 3vw;
+    border-radius: 2vw;
     border: 1px solid #E74058;
     color: #E74058;
     background-color: #DD7B8126;
-
+    font-size: 1vw;
+    font-weight: bold;
 }
 .reviews{
-    padding-left: 130px;
+    padding-left: 6vw;
 }
 .reviews .textnya {
     font-family: 'Redshift-Book',sans-serif;
-    font-size: 24px;
+    font-size: 1.6vw;
     font-weight: 400;
     line-height: 32.64px;
     text-align: left;
@@ -287,36 +287,33 @@ color: black;
   }
   .reviews .textnya span {
     font-family: 'Redshift-Bold',sans-serif;
-    font-size: 36px;
+    font-size: 3vw;
     font-weight: bold;
     line-height: 39.6px;
     text-align: left;
     color: #E74058;
   }
   .text_header{
-    width: 196px;
-    height: 53px;
+    width: 16vw;
+    /* border:1px solid black; */
+    height: 5vw;
     top: 17vw;
     left: 15vw;
-    gap: 0px;
-    transform: translate(-50%, -50%);
     opacity: 0px;
     position: absolute;
     font-family: 'Redshift-Bold',sans-serif;
-    font-size: 48px;
+    font-size: 4vw;
     font-weight: bold;
-    line-height: 52.8px;
+    line-height: 5vw;
     text-align: left;
     color: #FFFFFF;
   }
   .image_product{
-    width: 480.94px;
-    height: 300px;
-    top: 30vw;
+    width: 30vw;
+    height: 27vw;
+    top: 27.5vw;
     transform: translate(-50%, -50%);
-    left: 69vw;
-    gap: 0px;
-    opacity: 0px;
+    left: 65vw;
     position: absolute;
   }
   .peptide{
@@ -368,21 +365,16 @@ color: black;
     display: none;
   }
   .productionThumb{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 70vh;
+    height: 37vw;
     border-radius:30px;
     cursor: pointer;
   }
   .productionVideo{
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
     border-radius:30px;
-    height: 70vh;
+    height: 37vw;
   }
   .peptide_blue{
     display: none;
@@ -403,7 +395,208 @@ color: black;
  .awan4{
     display: none;
  }
-@media (max-width:768px) {    
+ .benefit{
+    display: grid;
+    grid-template-columns: 37% 63%;
+    width: 100%;
+    padding: 7vw 7vw;
+    padding-right: 8.5vw;
+    padding-bottom: 11vw;
+    box-sizing: border-box;
+    align-items: flex-end;
+    background-image: url(../image/bg-benefit.png);
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+ }
+ .benefit_image_product img{
+    width: 100%;
+    margin-bottom: -3.6vw;
+ }
+ .benefit_content_product{
+    margin-left: 1vw;
+ }
+ .benefit_content_product h1{
+    font-size: 2.8vw;
+    margin-bottom: 1.2vw;
+    font-family: 'Redshift-Bold',sans-serif;
+    font-weight: 800;
+    color: #575757;
+    display: block;
+ }
+ .benefit_content_product h1 span{
+    color: #E74058;
+ }
+ .benefit_content_product h3{
+    font-size: 1.9vw;
+    color: #F56F83;
+    font-family: 'Redshift-Bold',sans-serif;
+    font-weight: bold;
+    margin-bottom: 1vw;
+    display: block;
+ }
+ .benefit_box_product{
+    background-color: #FFEFEF;
+    border: .1vw solid rgba(248, 149, 176, 0.58);
+    padding: 2vw 3vw;
+    border-radius: 1vw;
+    position: relative;
+    padding-bottom:6.6vw;
+ }
+ .benefit_box_product h5{
+    font-size: 1.9vw;
+    color: #D65063;
+ }
+ .peptide_image{
+    position: absolute;
+    right: 1vw;
+    top: -7.3vw;
+    width: 13vw;
+ }
+ .bahan_image{
+    width: 54vw;
+    position: absolute;
+    bottom: -8vw;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+ .benefit_box_product ul {
+    line-height: 1.3;
+ }
+ .benefit_box_product ul li{
+    font-size: 1.3vw;
+    font-family: "Montserrat", sans-serif;
+    color: #5E0E0E;
+ }
+ .awan_desktop_1{
+    position: absolute;
+    left: 0;
+    bottom: -2.9vw;
+    width: 18vw;
+    display: block;
+ }
+ .awan_desktop_2{
+    position: absolute;
+    right: 0;
+    bottom: 13.6vw;
+    width: 10vw;
+    display: block;
+ }
+ .awan_desktop_3{
+    display: none;
+ }
+ .awan_desktop_4{
+    display: none;
+ } 
+ .benefit_content_product_mobile{
+    display: none;
+ }
+@media (max-width:768px) {  
+    .awan_desktop_1{
+        position: absolute;
+        left: 0;
+        bottom: -2.9vw;
+        width: 18vw;
+        display: none;
+     }
+     .awan_desktop_2{
+        position: absolute;
+        right: 0;
+        bottom: 13.6vw;
+        width: 10vw;
+        display: none;
+     } 
+     .awan_desktop_3{
+        position: absolute;
+        left: 0;
+        bottom: 37vw;
+        width: 23vw;
+        display: block;
+     }
+     .awan_desktop_4{
+        position: absolute;
+        right: 0;
+        bottom: 73vw;
+        width: 31vw;
+        display: block;
+     } 
+    .benefit_content_product_mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5vw;
+    }
+    .benefit_content_product_mobile h1{
+        font-size: 4.2vw;
+        margin-bottom: 1.2vw;
+        font-family: 'Redshift-Bold',sans-serif;
+        font-weight: 800;
+        color: #575757;
+        display: block;
+     }
+     .benefit_content_product_mobile span{
+        color: #D65063;
+     }
+     .benefit_content_product_mobile h3{
+        font-size: 3.6vw;
+        color: #F56F83;
+        font-family: 'Redshift-Bold',sans-serif;
+        font-weight: bold;
+        display: flex;
+        margin-bottom: -.7vw;
+        align-items: center;
+     }
+     .benefit_content_product_mobile h3 img{
+        width: 6vw;
+        margin-bottom: -2vw;
+     }
+    .benefit{
+        grid-template-columns: 100%;
+        background-position-y: bottom;
+        padding: 6vw 5vw;
+        padding-bottom: 18vw;
+        background-image: url(../image/bg-benefit-mobile.png);
+        background-position: center center;
+    } 
+    .benefit_image_product img{
+        width: 46vw;
+        margin-bottom: -3.6vw;
+        display: block;
+        margin: auto;
+     }
+     .benefit_content_product h1{
+        display: none;
+     }
+     .benefit_content_product h3{
+        display: none;
+     }
+     .benefit_box_product{
+        border: .2vw solid rgba(248, 149, 176, 0.58);
+        background-color: #FFEFEF;
+        padding: 4vw 5.2vw;
+        border-radius: 3vw;
+        padding-bottom:6.6vw;
+     }
+     .benefit_box_product h5{
+        font-size: 3.8vw;
+     }
+     .benefit_box_product ul {
+        line-height: 1.4;
+        margin-left: -4vw;
+     }
+     .benefit_box_product ul li{
+        font-size: 2.6vw;
+     }
+     .bahan_image{
+        width: 92vw;
+        bottom: -13vw;
+     }
+     .peptide_image{
+        right: 2vw;
+        top: -11vw;
+        width: 23vw;
+     }
     .image_product{
         width: 110.59px;
         height: 111.65px;
@@ -421,7 +614,6 @@ color: black;
     }
     .youtube{
         padding: 5%;
-
         height: 100vw;
     }
     .youtube p{
@@ -437,10 +629,6 @@ color: black;
         width: 100%;
         height: 70vw;
     }
-/* benefit */
-.benefit{
-    height: 100vw;
-}
     .ingredientsContainer{
         width: 100%;
         height: 157px;
@@ -536,31 +724,36 @@ color: black;
 /* Section How Does it Works */
     .containerWorks{
         height: 80vw;
-        gap: 5%;
+        /* border: 1px solid black; */
+        /* gap: 5%; */
+        position: relative;
     }
     .howtoworks{
-        width: 82px;
-        height: 18px;
-        top: 313vw;
-        left: 25vw;
+        width: 20vw;
+        /* border: 1px solid black; */
+        height: 8vw;
+        top: 39.9vw;
+        left: 30vw;
 
     }
     .howtoworks p{
-        font-size: 12px;
+        font-size: 3vw;
         font-weight: bold;
-        line-height: 13.2px;
+        line-height: 4vw;
     }
     .containerWorks .text p{
-        width: 123px;
-        font-size: 8px;
+        width: 35vw;
+        margin-top: -7vw;
+        /* border: 1px solid black; */
+        font-size: 2vw;
         font-weight: 400;
-        line-height: 10.88px;
-        margin-top: 20vw;
+        line-height:2.7vw;
          
     }.image_works{
-        width: 156.39px;
-        height: 154.99px;
-        margin-top: 17vw;
+        width: 50vw;
+        height: 50vw;
+        margin-left: -25vw;
+        /* margin-top: 17vw; */
     }
 /* SECTION FEATURED */
     .title_featured{

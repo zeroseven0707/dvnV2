@@ -45,7 +45,7 @@ const CarouselComponent = () => {
         )
       }
     >
-      <div>
+      <div className={Slides.crousel}>
         <picture>
             <source srcSet="/image/mobile-index.svg" media="(max-width: 768px)"/>
             <img src="/image/caraousel.png" alt="caraousel 1" />
@@ -54,10 +54,10 @@ const CarouselComponent = () => {
           <p className={Slides.text}>LUMINOUS BEAUTY SHINE INSIDE OUT</p> 
           <img src="/image/bulat1.svg" alt="" className={Slides.bulat1}/>
           <img src="/image/bulat2.svg" alt="" className={Slides.bulat2}/>
-          <img src="/image/qris.svg" alt="" className={Slides.qris}/>
+          {/* <img src="/image/qris.svg" alt="" className={Slides.qris}/> */}
           <img src="/image/no1.svg" alt="" className={Slides.no1}/>
       </div>
-      <div>
+      <div className={Slides.crousel}>
         <picture>
             <source srcSet="/image/mobile-index.svg" media="(max-width: 768px)"/>
             <img src="/image/caraousel.png" alt="caraousel 2" />
@@ -66,7 +66,7 @@ const CarouselComponent = () => {
         <p className={Slides.text}>LUMINOUS BEAUTY SHINE INSIDE OUT</p> 
         <img src="/image/bulat1.svg" alt="" className={Slides.bulat1}/>
         <img src="/image/bulat2.svg" alt="" className={Slides.bulat2}/>
-        <img src="/image/qris.svg" alt="" className={Slides.qris}/>
+        {/* <img src="/image/qris.svg" alt="" className={Slides.qris}/> */}
         <img src="/image/no1.svg" alt="" className={Slides.no1}/>
       </div>
     </Carousel>

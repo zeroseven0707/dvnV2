@@ -20,7 +20,6 @@ const footer = () => {
             <Link href="/product"><img className={styles.sosmedImage} src="/image/insta.svg"/></Link>
             </div>
         </div>
-        <div className={styles.dflex}>    
             <div className={styles.containerForm}>
             <form className={styles.form}>
             <p>Get in Touch with us</p>
@@ -29,7 +28,6 @@ const footer = () => {
                 <button className={styles.button}>Send</button>
             </form>
             </div>
-        </div>
     </div>
     <div className={styles.awan}>
         <img className={styles.awankiri} src="/image/KIRI.svg" alt="kiri" />

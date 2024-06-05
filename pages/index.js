@@ -24,7 +24,7 @@ export default function Home() {
       </Head>
       <CarouselComponent />
       <Burger />
-      <img src="/image/awankirifooter.png" alt="" className={styles.awannya_caraousel}/>
+      <img src="/image/awan-home-kiri.png" alt="" className={styles.awannya_caraousel}/>
       <img className={styles.cloud} src="/image/Cloud1.png" alt="caraousel 1" /> 
       <img src="/image/garis.png" className={styles.garis} alt="caraousel 1" width="100%" />
       <Slides />

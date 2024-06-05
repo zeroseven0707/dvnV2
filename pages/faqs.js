@@ -22,7 +22,7 @@ export default function Faqs() {
           <img src="/image/awankirifooter.png" className={styles.awan2} />
           <img src="/image/Botol_DVN.svg" className={styles.image_product}/>
           <div className={styles.header_text}>
-            <p className={styles.faq_header}>FaQ</p>
+            <p className={styles.faq_header}>FAQ</p>
             <p className={styles.question_header}>(Frequently Asked Questions)</p>
           </div>
         </div>
@@ -45,7 +45,7 @@ export default function Faqs() {
           <p>Efek terdepan dari D.V.N adalah untuk mencerahkan dan menjaga kesehatan kulit. D.V.N berbentuk tablet kunyah yang mengandung Collagen Tripeptide, Collagen Peptide, Viqua Pomegranate, L-Glutathione, dan Japanese Knotweed radix Extract.</p>
         </details>
         <details>
-          <summary>Siapa yang diangjurkan untuk konsumsi D.V.N
+          <summary>Siapa yang diangjurkan untuk konsumsi D.V.N?
             <span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
               <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" className={styles.carret}/>

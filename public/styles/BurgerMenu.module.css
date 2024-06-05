@@ -19,7 +19,7 @@
     width: 129px;
     height: 150px;
     top: 0px;
-    left: 66%;
+    right: 0;
     gap: 0px;
     opacity: 0px;
     z-index: 99999;
@@ -31,9 +31,14 @@
     background: transparent;
   }
   .content{
-    padding: 3%;
     margin-top: 13px;
     background-color: #E83166;
+    position: absolute;
+    right: 0;
+    width: max-content;
+    padding: 2vw 5vw;
+    padding-right: 7vw;
+    padding-bottom: 4vw;
   }
   .ul{
     margin: 0;
@@ -47,18 +52,22 @@
   .ul li a{
     text-decoration: none;
     color: white;
+    display: block;
+    font-size: 3.6vw;
+    width: max-content;
   }
   .translate{
     display: flex;
     align-items: center;
     border-radius: 4px;
     border: 1px solid #FFFFFF;
+    margin-top: 3vw;
   }
   .id{
     width: 50%;
     height: 23px;
     font-family: "Redshift-Book",sans-serif;
-    font-size: 16px;
+    font-size: 3.4vw;
     font-weight: 400;
     line-height: 21.76px;
     text-align: center;
@@ -70,7 +79,7 @@
     border-radius: 3px;
     background: #FFFFFF;
     font-family: "Redshift-Book",sans-serif;
-    font-size: 16px;
+    font-size: 3.4vw;
     font-weight: 400;
     line-height: 21.76px;
     text-align: center;

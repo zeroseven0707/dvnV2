@@ -14,99 +14,65 @@
   }
   
   .slide img {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: auto;
     object-fit: cover;
   }
   
   .text {
     position: absolute;
-    width: 921px;
-    height: 65px;
+    width: 71vw;
+    height: 4vw;
     top: 15.17vw;
     left: 50vw;
     gap: 0px;
     opacity: 0px;
     transform: translate(-50%, -50%);
     font-family: 'Redshift-Bold', sans-serif;
-    /* font-weight: bold; */
-    font-size: 48px;
+    font-size: 3.7vw;
     font-weight: bold;
-    line-height: 65.28px;
     text-align: center;
     color: white;
 
-  }.text_atas{
-    width: 94px;
-    height: 76px;
+  }.text_atas img{
+    width: 3.3vw;
+    height: 3.3vw;
     top: 11.21vw;
     transform: translate(-50%, -50%);
     left: 50vw;
-    gap: 0px;
-    opacity: 0px;
-    font-family: 'Oruguitas';
-    font-size: 56px;
-    font-weight: 400;
-    line-height: 76.16px;
-    text-align: center;
-    color: white;
+    font-family: 'Oruguitas',sans-serif;
     position: absolute;
   }
-
-  /* styles/customCarousel.module.css */
-
-.arrowPrev, .arrowNext {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.arrowPrev {
-  left: 125px;
-}
-
-.arrowNext {
-  right: 125px;
-}
+  .arrowPrev{
+    display: none;
+  }
+  .arrowNext{
+    display: none;
+  }
 
 .bulat1{
-  width: 74px;
-  height: 74px;
-  top: 354px;
-  left: -230px;
-  gap: 0px;
-  opacity: 0px;
+  width: 7vw;
+  height: 7vw;
+  top: 25vw;
+  left: -20vw;
   position: absolute;
 }
 .bulat2{
-  width: 120px;
-  height: 118px;
-  top: 257px;
-  left: 157px;
-  gap: 0px;
-  opacity: 0px;
+  width: 10vw;
+  height: 10vw;
+  top: 18vw;
+  left: 15vw;
   position: absolute;
 }
 .qris{
-  width: 65px;
-  height: 84px;
-  top: 8vw;
-  left: 44vw;
-  gap: 0px;
-  opacity: 0px;
-  position: absolute;
+display: none;
+visibility: hidden;
 }
 .no1{
-  width: 65px;
-  height: 89px;
+  width: 8vw;
+  height: 8vw;
   top: 17vw;
-  left: 44vw;
+  left: 44.5vw;
   gap: 0px;
   border-radius: 8px;
   opacity: 0px;
@@ -115,12 +81,9 @@
 .awannya_caraousel{
   width: 847px;
   height: 389px;
-  /* top: 389px; */
   left: 237px;
   gap: 0px;
   opacity: 0px;
-  /* angle: -180 deg;   */
-  border: 1px solid black;
   position: absolute;
 }
 .kanan{
@@ -130,8 +93,9 @@
 display: none;
 }
 @media (max-width:786px) {
-  .images{
-    margin-top: 100px;
+  .crousel{
+    /* border: 1px solid black; */
+    margin-top: 14vw;
   }
 .arrowPrev, .arrowNext {
   font-size: 2rem;
@@ -146,31 +110,33 @@ display: none;
   right: 10vw;
 }
 .qris{
-  width: 46.62px;
-  height: 63.84px;
-  top: 50vw;
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  top: 62vw;
   left: 35vw;
+  display: block;
 }
 .no1{
-  width: 46.62px;
-  height: 63.84px;
-  top: 50vw;
+  width: 20vw;
+  height: 20vw;
+  top: 62vw;
   left: -35vw;
 
 }
 .text {
-  width: 381px;
-  height: 21px;
-  top: 22vw;
+  width: 90vw;
+  height: 2vw;
+  top: 33vw;
   font-size: 16.5px;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 22.44px;
 
 }
-.text_atas{
-  width: 34px;
-  height: 27px;
-  top: 15vw;
+.text_atas img{
+  width: 4.5vw;
+  height: 4.5vw;
+  top: 25vw;
   left: 50vw;
 }
 .awannya_caraousel{

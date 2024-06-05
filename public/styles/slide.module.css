@@ -2,47 +2,72 @@
   width: 100%;
 }
 .slidesContainer{
-  top: 58vw;
-  left: 50%;
+  top: 54.2vw;
+  left: 50vw;
   transform: translate(-50%, -50%);
-  gap: 48px;
-  opacity: 0px; 
+  gap: 4vw;
   display: flex;
   position: absolute;
-  /* border: 1px solid black; */
   z-index: 1;
   }
   .slide{
-    width: 100%;  
-    /* border: 1px solid black;   */
+    width: 100%;
+  }
+  .halal{
+    width: 7vw;
+    height: 10vw;  
+  }
+  .bpom{
+    width: 7vw;
+    height: 10vw;  
+  }
+  .tablet{
+    width: 10vw;
+    height: 10vw;  
+  }
+  .ingredients{
+    width: 15vw;
+    height: 10vw;  
+  }
+  .collagen{
+    width: 13vw;
+   height: 10vw; 
   }
   @media (max-width: 768px) {
     .slidesContainer{
-      top: 85vw;
+      top: 96vw;
       width: 100vw;
+      height: 26vw;
+      /* border: 1px solid black; */
       overflow-x:auto; 
       -ms-overflow-style: none;  
       scrollbar-width: none; 
-      gap: 30px;
+      gap: 2vw;
       transform: translate(-50%, -50%);
+      /* border: 1px solid black; */
       }
       .slide{
         width: 100%;   
       }
       .halal{
-        width: 65.3px;
+        width: 19vw;
+        height: 25vw;
       }
       .bpom{
-        width: 65.3px;
+        width: 19vw;
+        height: 25vw;
       }
       .tablet{
-        width:103px;
-        
+        width: 27vw;
+        height: 25vw;
+        /* height: auto; */
       }
       .ingredients{
-        width: 132px;
+        width: 30vw;
+        height: 25vw;
       }
       .collagen{
-        width: 124px;
+        width: 27vw;
+        height: 25vw;
       }
   }

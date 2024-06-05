@@ -35,31 +35,35 @@ export default function Product() {
         <Production videoId="IKCSNNeRTDA" />
       </div>
       </section>
+      
       <section className={product.benefit}>
-          <div className={product.ingredientsContainer}>
-          <div className={product.garisContainer}>
+        <div className={product.benefit_content_product_mobile}>
+          <h1>Main <span>Ingredients</span></h1>
+          <h3>Collagen Peptide <img src="/image/peptide-blue.svg"/></h3>
+        </div>
+        <img src="/image/awan3.png" className={product.awan_desktop_3}/>
+        <img src="/image/awan4.png" className={product.awan_desktop_4}/>
+        <img src="/image/awan-dekstop-1.png" className={product.awan_desktop_1}/>
+        <img src="/image/awan-dekstop-2.png" className={product.awan_desktop_2}/>
+        <div className={product.benefit_image_product}>
+          <img src="/image/Botol_DVN.svg" />
+        </div>
+        <div className={product.benefit_content_product}>
+          <h1>Main <span>Ingredients</span></h1>
+          <h3>Collagen Peptide</h3>
+          
+          <div className={product.benefit_box_product}>
+            <h5>Benefits</h5>
+            <ul>
+              <li>Easily absorbed by the body</li>
+              <li>Maintains skin structure (activation of collagen formation and cell regeneration)</li>
+              <li>Nourishes skin cells so that the skin barrier is stronger</li>
+              <li>Maintain skin elasticity</li>
+            </ul>
+            <img src="/image/CollagenPeptide.svg" className={product.peptide_image}/>
+            <img src="/image/ingredients.svg" className={product.bahan_image}/>
           </div>
-          <img src="/image/awan3.png" className={product.awan3} />
-          <img src="/image/awan4.png" className={product.awan4} />
-          <img src="/image/Botol_DVN.svg" className={product.botol} />
-          <div className={product.flexText}>
-            <p className={product.mainIngredients}>Main<span> Ingredients</span></p>
-            <p className={product.mainDetail}>Collagen Peptide  <img src="/image/peptide-blue.svg" className={product.peptide_blue} /></p>
-          </div>
-          <img src="/image/CollagenPeptide.svg" className={product.peptide} />
-          <div className={product.kotak_informasi}>
-            <div>
-              <p>Benefits</p>
-              <ul>
-                <li>Easily absorbed by the body</li>
-                <li>Maintains skin structure (activation of collagen formation and <br/> cell regeneration)</li>
-                <li>Nourishes skin cells so that the skin barrier is stronger</li>
-                <li>Maintain skin elasticity</li>
-              </ul>
-            </div>
-          </div>
-          <img src="/image/ingredients.svg" className={product.imagereviews} />
-          </div>
+        </div>
       </section>
       <section>
         <div className={product.containerWorks}>
@@ -93,7 +97,7 @@ export default function Product() {
             </div>
             <div className={product.detailFeatured}>
               <p className={product.title}>D.V.N Chewable Tablet</p>
-              <p className={product.text}>Discover our standout featured product, meticulously crafted to exceed your expectations. It embodies a fusion of quality and innovation, boasting a multitude of certifications that underscore its excellence. With HALAL certification, it ensures adherence to strict dietary requirements, while GMP and ISO 9001 registrations guarantee manufacturing practices of the highest caliber. Endorsed by BPOM, it meets Indonesian regulatory standards with precision.Furthermore, it has triumphed in rigorous heavy metal and hazardous materials testing, ensuring unparalleled safety. What sets it apart is its patented ingredients sourced from Spain, epitomizing cutting-edge research and efficacy. Enriched with the finest collagen sourced from Korea and Europe, it offers unparalleled benefits for your well-being. Elevate your experience with our product, where quality, safety, and innovation converge seamlessly.</p>
+              <p className={product.text}>Discover our standout featured product, meticulously crafted to exceed your expectations. It embodies a fusion of quality and innovation, boasting a multitude of certifications that underscore its excellence. With HALAL certification, it ensures adherence to strict dietary requirements, while GMP and ISO 9001 registrations guarantee manufacturing practices of the highest caliber. Endorsed by BPOM, it meets Indonesian regulatory standards with precision.<br/><br/> Furthermore, it has triumphed in rigorous heavy metal and hazardous materials testing, ensuring unparalleled safety. What sets it apart is its patented ingredients sourced from Spain, epitomizing cutting-edge research and efficacy. Enriched with the finest collagen sourced from Korea and Europe, it offers unparalleled benefits for your well-being. Elevate your experience with our product, where quality, safety, and innovation converge seamlessly.</p>
               <div className={product.tombol}>
                 <button className={product.buynow}>Buy now</button>
                 <button className={product.consult}>Consult With us</button>

@@ -10,7 +10,7 @@ const YouTubeEmbed = ({ videoId }) => {
   };
 
   return (
-    <div style={{ position: 'relative', paddingBottom: '32.25%', height: 0 }}>
+    <>
       {!isVideoVisible && (
                <picture>
                 <source srcset="/image/mobile-production.png" media="(max-width: 768px)" onClick={handleThumbnailClick}/>
@@ -32,7 +32,7 @@ const YouTubeEmbed = ({ videoId }) => {
           title="Embedded YouTube Video"
         ></iframe>
       )}
-    </div>
+    </>
   );
 };
 

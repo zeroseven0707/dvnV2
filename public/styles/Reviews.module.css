@@ -2,7 +2,8 @@
     display: flex;
     overflow-x: auto;
     /* padding: 20px; */
-    gap: 20px;
+    gap: 2.3vw;
+    padding: 2vw;
     -ms-overflow-style: none;  
     scrollbar-width: none; 
 }
@@ -10,16 +11,14 @@
     display: none; 
 }
 .review {
-    box-shadow: 0 0 10px 0 #EB9AB0;
+    box-shadow: 0px 4px 9.6px 0px #EB9AB069;
     background-color: #FFFFFF; 
     border: 1px solid #E8C7CD; 
-    width: 292px;
-    height: 335px;
-    left: 648px;
-    gap: 0px;
-    padding: 24px;
-    border-radius: 30px;
-    opacity: 0px;
+    width: 30vw;
+    /* border: 1px solid black; */
+    height: 21vw;
+    padding: 2vw;
+    border-radius: 2vw;
     display: flex;
     flex-direction: column; 
   }
@@ -29,16 +28,17 @@
   }
   .review b {
     font-family: 'Redshift-Bold',sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24.48px;
+    font-size: 1vw;
+    margin-top: 1.5vw;
+    font-weight: bold;
+    line-height: 2vw;
     text-align: left;   
   }
   .review p {
     font-family: 'Redshift-Book',sans-serif;
-    font-size: 16px;
+    font-size: 0.9vw;
     font-weight: 400;
-    line-height: 21.76px;
+    line-height:1.2vw;
     text-align: left;
     color: #636363;
   }
@@ -46,9 +46,9 @@
     font-family: 'Redshift-Book',sans-serif;
     margin-top: auto;
     color: #969696;
-    font-size: 14px;
+    font-size: 0.7vw;
     font-weight: 400;
-    line-height: 19.04px;
+    line-height: 1vw;
     text-align: left;
 
   }
@@ -68,11 +68,12 @@
   .reviewsContainer{
     width: 90vw;
   /* border: 1px solid black;   */
-    height: 210px;
+    height: 50vw;
   }
   .review{
-    width: 151px;
-    height: 210px;
+    width: 40vw;
+    border-radius: 5vw;
+    height: 46vw;
   }
   .review b {
     font-size: 12px;
