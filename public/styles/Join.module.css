@@ -18,7 +18,7 @@
   padding: 3vw;
   position: absolute;  
   border-radius: 2vw ;
-  background-color: #f0d9d9;
+  background: #FFFFFF47;
   text-align: center;
 }
 .form p{
@@ -47,7 +47,7 @@
   font-size: 1.3vw;
   height: 4vw;
   font-style: italic;
-  border-radius: 0,4vw;
+  border-radius: 0.4vw;
   opacity: 0px;
   border: none;
   margin-top: 1vw;
