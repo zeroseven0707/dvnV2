@@ -30,11 +30,13 @@ const footer = () => {
             </div>
     </div>
     <div className={styles.awan}>
-        <img className={styles.awankiri} src="/image/KIRI.svg" alt="kiri" />
+        <picture >
+            <source srcset="/image/awan-mobile-kiri.png" media="(max-width: 768px)"/>
+            <img className={styles.awankiri} src="/image/KIRI.svg" alt="kiri" />
+        </picture>
         <img className={styles.awankanan} src="/image/awankananfooter.png" alt="kanan" />
     </div>
     <footer className={styles.textFooter}><p>Copyright © 2024 dvn.com</p></footer>
-    <div className={styles.fadeOver}></div>
 </div>
 </section>
   );

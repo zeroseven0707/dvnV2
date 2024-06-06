@@ -7,19 +7,19 @@
   min-height: 100vh;
 }
 .awan{
-  display: flex;
-  height: 38.5vw;
   z-index: 999;
   width: 100vw;
   top: 0;
+  bottom: 0;
   position: absolute;
   /* border: 1px solid black; */
 }
 .awankiri{
+  /* border: 1px solid black; */
   bottom: 0;
   left: 0;
-  width: 30vw;
-  height: 10vw;
+  width: 20vw;
+  height: 18vw;
   z-index: 1;
   position: absolute;
 
@@ -204,13 +204,15 @@ align-items: center;
   position: absolute;  
 }
 .footer{
-  width: 100vw;
+  width: 100%;
   height: 38.5vw;
-  background-image: url('/image/Footer.png');
+  background-image: url('/image/Footer.png'), linear-gradient(180deg, #fd919163 0%, rgba(255, 255, 255, 0) 100%);
   background-repeat: no-repeat; 
   background-position: center; 
   background-size: cover;
   position: relative;
+  overflow-x: hidden;
+  background-blend-mode: luminosity;
 }
 .contentFooter{ 
   display: flex;
@@ -286,14 +288,15 @@ align-items: center;
   color:#C83244;
   z-index: 999999;
 }
-.fadeOver {
+/* .fadeOver {
   position: absolute;
   bottom: 0;
+  background-blend-mode: luminosity;
   width: 100vw;
   height: 100%; 
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #C83244 130%);
+  background-color: #fd919163;
   pointer-events: none;
-}
+} */
 .cloud {
   width: 20vw; /* Lebar awan akan menjadi 20% dari lebar viewport */
   height: auto; /* Menjaga rasio aspek */
@@ -311,6 +314,7 @@ align-items: center;
 .footer_ul{
   list-style-type: none;
   padding: 0; 
+  z-index: 10;
   margin: 0;
 }
 .footer_li{
@@ -328,7 +332,7 @@ align-items: center;
 }
 .social_media{
   width: 10vw;
-  margin-top: 10vw;
+  margin-top: 7vw;
   height: 5vw;
   display: flex;
   padding: 0px;
@@ -417,11 +421,13 @@ width: 55px;
 .awankanan{
   width: 40vw;
   height: 20vw;
-  top:17vh;
+  bottom:0;
+  /* border: 1px solid black; */
 }.awankiri{
-  width: 50vw;
-  top: 30.5vw;
-  height: 19.9vw;
+  width: 22vw;
+  /* border: 1px solid black; */
+  bottom: 0;
+  height: 30vw;
 }
 .social_media{
   width: 37.92px;
@@ -623,7 +629,6 @@ width: 55px;
   bottom: 0;
   width: 100vw;
   height: 100%;
-  /* margin-top: -170px; */
-  position: absolute;
+  /* border: 1px solid black; */
 }
 }

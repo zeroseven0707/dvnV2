@@ -68,10 +68,7 @@ export default function Product() {
       <section>
         <div className={product.containerWorks}>
           <div>
-            <img src="/image/works.png" className={product.image_works} />
-          </div>
-          <div className={product.howtoworks}>
-            <p><span>How Does it</span> Works</p>
+            <img src="/image/extract-image.png" className={product.image_works} />
           </div>
           <div className={product.text}>
               <p className={product.text_works}>Viqua Pomegranate and Vitamin C are the main components that are formed in one chewable tablet and absorbed by the body, to help maintain natural collagen and fiber in the skin. L-Glutathione and Japanese Knotweed radix Extract work as antioxidants to prevent excess melanin production, so the skin looks brighter.</p>

@@ -20,14 +20,34 @@ position: absolute;
     height: max-content;
 }
 .youtube2{
-    padding: 5vw 9vw;
-    padding-bottom: 15vw;
+    padding: 3vw 9vw;
     display: flex;
+    padding-bottom: 7vw;
     align-items: center;
     /* border: 1px solid black; */
 }
 .video_youtube2{
     width: 65%;
+    height: 27.7vw;
+    position: relative;
+    border-radius: 2vw;
+    overflow: hidden;
+}
+.video_youtube2 iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.video_youtube2 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    object-position: center;
 }
 .detail_youtube2{
     /* border: 1px solid black; */
@@ -144,43 +164,46 @@ position: absolute;
     height: auto;
 }
 .containerWorks{
-    display: flex;
-    height: 100vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 0 7vw;
+    padding-top: 2vw;
+    padding-bottom: 7vw;
     align-items: center;
     justify-content: center;
+    position: relative;
+    box-sizing: border-box;
 }
 .containerWorks p{
     font-family: 'Montserrat',sans-serif;
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-weight: 400;
-    line-height: 1.4vw;
+    line-height: 1.4;
     text-align: left;
+    margin-top: 4vw;
 }
 .containerWorks .text{
-    width: 25vw;
-    height: 10vw;
-    /* border: 1px solid black; */
     color: #363636;
     font-family: "Montserrat",sans-serif;
-
+    padding-right: 4vw;
+    
 }
 .image_works{
     width: 100%;
 }
 .howtoworks{
     width: 17vw;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     height: 6vw;
-    top: 164vw;
-    left: 42vw;
-    transform: translate(-50%, -50%);
+    top: 24vw;
+    left: 32vw;
     position: absolute;
 }
 .howtoworks p{
     font-family: 'Redshift-Bold',sans-serif;
-    font-size: 36px;
+    font-size: 2.5vw;
     font-weight: bold;
-    line-height: 39.6px;
+    line-height: 3vw;
     text-align: left;
     color: #E74058;
 }
@@ -200,17 +223,18 @@ position: absolute;
     /* padding-bottom: 200px; */
 }
 .imageFeatured{
-    width: 27vw;
-    height: 30vw;
+    width: 29vw;
+    height: 32vw;
     border-radius: 1vw;
     border: 2px solid #D29AA2;
     align-items: center;
     display: flex;
+    background-color: white;
     justify-content: center;
 }
 .imageFeatured .imageFeatureds{
-    width: 22vw;
-    height: 22vw;
+    width: 27vw;
+    height: 27vw;
 }
 .detailFeatured {
     width: 100%;
@@ -225,24 +249,23 @@ position: absolute;
     font-family: 'Redshift-Bold',sans-serif;
     font-size: 2vw;
     font-weight: bold;
-    line-height: 4vw;
     text-align: left;
     color: #F56F83;
+    margin-bottom: .4vw;
 }
 .text{
     font-family: 'Montserrat',sans-serif;
-    font-size: 0.9vw;
+    font-size: 1.1vw;
     font-weight: 400;
-    line-height: 1vw;
+    line-height: 1.2;
     text-align: left;
-    width: 36.49vw;
-    height: 216px;
+    width: 100%;
+    height: max-content;
 }
 .title_featured{
     font-family: 'Redshift-Bold',sans-serif;
     font-size: 2.6vw;
     font-weight: bold;
-    line-height:8vw;
     text-align: left;
     color: #E74058;
 }
@@ -723,10 +746,13 @@ color: black;
       }
 /* Section How Does it Works */
     .containerWorks{
-        height: 80vw;
-        /* border: 1px solid black; */
-        /* gap: 5%; */
+        grid-template-columns: 58% 42%;
         position: relative;
+        align-items: center;
+        grid-gap: 3vw;
+        padding: 0 4vw;
+        padding-top: 8vw;
+        padding-bottom: 8vw;
     }
     .howtoworks{
         width: 20vw;
@@ -742,18 +768,16 @@ color: black;
         line-height: 4vw;
     }
     .containerWorks .text p{
-        width: 35vw;
-        margin-top: -7vw;
-        /* border: 1px solid black; */
         font-size: 2vw;
         font-weight: 400;
         line-height:2.7vw;
-         
-    }.image_works{
-        width: 50vw;
-        height: 50vw;
-        margin-left: -25vw;
-        /* margin-top: 17vw; */
+        margin-top: 12vw;
+    }
+    .containerWorks .text{
+        color: #363636;
+        font-family: "Montserrat",sans-serif;
+        padding-right: 2vw;
+        
     }
 /* SECTION FEATURED */
     .title_featured{
@@ -781,12 +805,13 @@ color: black;
         text-align: left;
     }
     .imageFeatured{
-        width: 156.7px;
-        height: 158.07px;
+        width: 38vw;
+        height: 39vw;
+        border-radius: 4vw;
     }
     .imageFeatured .imageFeatureds{
-        width: 116.16px;
-        height: 117.29px;
+        width:30vw;
+        height:30vw;
     }
     .featured{
         padding: 0px;
@@ -805,23 +830,21 @@ color: black;
     }
     .MobileDetailFeatured .text{
         width: 100%;
-        height: 35vw;
-
+        height: max-content;
         font-family: "Montserrat",sans-serif;
-        font-size: 8px;
+        font-size: 2.5vw;
         font-weight: 400;
-        line-height: 9.75px;
+        line-height: 1.1;
         text-align: left;
+        padding: 0 4.6vw;
 
     }
     .MobileDetailFeatured{
         font-family: "Montserrat",sans-serif;
         font-size: 8px;
         width: 90vw;
-
         font-weight: 400;
-        padding-top: 10vw;
-        line-height: 9.75px;
+        padding-top: 5vw;
         text-align: left;
     }
     .MobileDetailFeatured{
@@ -871,6 +894,10 @@ color: black;
     }
     .video_youtube2{
     width: 100%;
+    height: 36.7vw;
+    position: relative;
+    border-radius: 4vw;
+    overflow: hidden;
     }
     .detail_youtube2_mobile{
         width: 100%;
@@ -890,11 +917,11 @@ color: black;
         line-height: 13.6px;
     }
     .ContainerReviews{
-        padding: 5%;
+        padding: 0;
 
     }
     .reviews{
-        padding-left: 0px;
+        padding-left: 8vw;
     }
     .reviews .textnya {
         font-family: "Redshift-Book",sans-serif;
