@@ -4,7 +4,7 @@ import SlidesCss from "../../public/styles/slide.module.css";
 const Slides = () => {
   return (
         <div className={SlidesCss.slidesContainer1}>
-        <div className={SlidesCss.slidesContainer}>
+    <div className={SlidesCss.slidesContainer}>
             <div className={SlidesCss.slide}>
                 <img src="/image/halal.png" className={SlidesCss.halal} alt="slide1" />
             </div>

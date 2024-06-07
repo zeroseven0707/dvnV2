@@ -3,23 +3,17 @@ import Link from 'next/link';
 import burger from '../../public/styles/BurgerMenu.module.css';
 
 const HamburgerMenu = () => {
-  const [isOpen, setIsOpen] = useState(() => {
-    // Mengambil nilai isOpen dari localStorage atau menggunakan nilai default false jika tidak ada
-    if (typeof window !== 'undefined') {
-      // Memastikan bahwa kode ini hanya dijalankan di lingkungan browser
-      return localStorage.getItem('isOpen') === 'true';
-    } else {
-      return false; // Jika kode dijalankan di server, kembalikan nilai default
-    }
-  });
+  const [isOpen, setIsOpen] = useState(false); // Default value false
 
   useEffect(() => {
-    // Menyimpan nilai isOpen ke localStorage setiap kali nilainya berubah
-    localStorage.setItem('isOpen', isOpen);
-  }, [isOpen]);
+    // Mengambil nilai isOpen dari localStorage saat komponen di-mount
+    const localStorageValue = localStorage.getItem('isOpen');
+    setIsOpen(localStorageValue === 'true'); // Mengubah string 'true' menjadi boolean true
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    localStorage.setItem('isOpen', !isOpen); // Mengubah nilai isOpen di localStorage
   };
 
   return (

@@ -1,19 +1,9 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+.percobaan{
+width: 100%;
+height: 700px;
+border: 1px solid black;
 }
-.awan{
-  z-index: 999;
-  width: 100vw;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  /* border: 1px solid black; */
-}
+
 .awankiri{
   /* border: 1px solid black; */
   bottom: 0;
@@ -24,7 +14,7 @@
   position: absolute;
 
   }.awankanan {
-    right: 0; /* Menempatkan elemen di tepi kanan layar */
+    right: 0;
     bottom: 0; /* Menempatkan elemen di tepi bawah layar */
     position: absolute; 
     width: 30vw; /* Lebar tetap dalam piksel */
@@ -36,30 +26,19 @@
   height: auto;
 }
 .containerS2{
+width: 100vw;
   display: flex;
 }
 .container{
-width: 40vw;
+width: 40%;
 margin: 0 auto;
 display: flex;
 justify-content: center;
 align-items: center;
 }
 .container2{
-  width: 60vw;
+  width: 60%;
 }
-.textcontainer2{
-  width: 259px;
-  height: 105.36px;
-  top: 1109px;
-  left: 135px;
-  gap: 0px;
-  border-radius: 18px 0px 0px 0px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
-
-}
-
 .rectangle {
   margin-top: 10%;
   width: 17vw;
@@ -75,6 +54,7 @@ align-items: center;
   opacity: 1; 
 }
 .textValue{
+  /* border: 1px solid black; */
   width: 14vw;
   height: 4vw;
 }
@@ -104,10 +84,11 @@ align-items: center;
   color: #E74058; 
 }
 .containerText{
-  height: 40px;
-  top: 1522px;
-  margin-left: 10%;
+  height: 3vw;
+  width: 100vw;
+  padding-left: 10vw;
   gap: 0px;
+  /* border: 1px solid black; */
   opacity: 0px;
 }
 .containerText .span{
@@ -138,12 +119,13 @@ align-items: center;
 
 }
 .youtube{
-  padding-top: 10%;
+  padding-top: 10vw;
+  width: 100vw;
+  /* border: 1px solid black; */
   background-color: #FFF9F9;
 }
 .YoutubeThumb{
   position: absolute;
-  width: 100%;
   height: 30vw;
   border-radius:30px;
   cursor: pointer;
@@ -158,23 +140,19 @@ align-items: center;
   cursor: pointer;
 }
 .video{
-  padding-left: 10%;
-  padding-right: 10%;
+  width: 100%;
+  padding-left: 10vw;
+  /* border: 1px solid black; */
+  padding-right: 10vw;
   margin-top: 5%;
-  /* width: 1010px; */
-  /* height: 387px; */
-  /* top: 1609px; */
-  /* left: 135px; */
-  /* gap: 0px; */
-  /* opacity: 0px; */
-  /* position: absolute; */
 }
 .badfactor{
   gap: 0px;
-  opacity: 0px;
+  width: 100vw;
+  /* border: 1px solid black; */
 }
 .badfactor img{
-  width: 100%;
+  width: 89.5vw;
 }
 /* styles.module.css */
 
@@ -187,7 +165,7 @@ align-items: center;
 
 .pudarGambar {
   display: block;
-  width: 100%;
+  width: 100vw;
   height: auto;
   z-index: 1;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
@@ -204,7 +182,7 @@ align-items: center;
   position: absolute;  
 }
 .footer{
-  width: 100%;
+  width: 100vw;
   height: 38.5vw;
   background-image: url('/image/Footer.png'), linear-gradient(180deg, #fd919163 0%, rgba(255, 255, 255, 0) 100%);
   background-repeat: no-repeat; 
@@ -229,6 +207,8 @@ align-items: center;
   margin-top: 7vw; 
   border-radius: 1.5vw;
   background: #FFFFFF47;
+  -webkit-backdrop-filter: blur(10px); /* Chrome, Safari */
+  backdrop-filter: blur(10px); 
   z-index: 9999;
 }
 .form{
@@ -283,8 +263,11 @@ align-items: center;
   font-family: 'Redshift-Book',sans-serif;
   font-size: 1.2vw;
   font-weight: bold;
+  position: absolute;
   line-height: 2vw;
-  text-align: center;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   color:#C83244;
   z-index: 999999;
 }
@@ -300,8 +283,8 @@ align-items: center;
 .cloud {
   width: 20vw; /* Lebar awan akan menjadi 20% dari lebar viewport */
   height: auto; /* Menjaga rasio aspek */
-  top: 100vh; /* Jarak dari atas akan menjadi 10% dari tinggi viewport */
-  right: 0vw; /* Jarak dari kanan akan menjadi 5% dari lebar viewport */
+  top: 45vw; /* Jarak dari atas akan menjadi 10% dari tinggi viewport */
+  right: 0vw; 
   position: absolute; /* Posisi absolut terhadap viewport */
   transform: translate(0, 0); /* Menghapus transformasi agar posisinya tepat */
 }
@@ -375,9 +358,9 @@ align-items: center;
   opacity: 0px;
 }
 .awannya_caraousel{
-  width: 17vw;
-  height: 24vw;
-  top: 34vw;
+  width: 19vw;
+  height: 28vw;
+  top: 30vw;
   gap: 0px;
   opacity: 0px;
   position: absolute;
@@ -392,12 +375,12 @@ align-items: center;
 }
 @media (max-width: 768px) {
 .footer{
-  background-image: url('/image/mobile-footer.png');
+  background-image: url('/image/mobile-footer.png'),#FD9191;  ;
   background-repeat: no-repeat; 
   background-position: center; 
   background-size: cover;
   width: 100%;
-  height: 191px;
+  height: 50vw;
 }
 .dvnLogo{
   width: 30.22px;
@@ -445,12 +428,13 @@ width: 55px;
   font-family: 'Redshift-Book',sans-serif;
   font-size: 8px;
   color: white;
+  bottom: 2vw;
   z-index: 1;
 }
 .containerForm{
   padding: 1vw;
   width: 60vw;
-  height:35vw;
+  height:38vw;
   margin-left: 10vw;
   gap: 0px;
   margin-top: 5vw;
@@ -504,7 +488,7 @@ width: 55px;
   margin-top: -550px;
 }
 .pudar {
-  width: 100%;
+  width: 100vw;
   height: 193.82px;
   position: relative;
   display: inline-block;
@@ -556,15 +540,13 @@ width: 55px;
 .know_br{
   display: inline;
 }
-.youtube{
-  height: 236px;
-}
 .YoutubeThumb{
-  height: 116px;
+  border-radius:4vw;
+  height: 32vw;
 }
 .YoutubeVideo{
-  height: 116px;
-
+  height: 32vw;
+  border-radius:4vw;
 }
 .containerS2{
   padding-top: 13vw;
@@ -580,7 +562,7 @@ width: 55px;
 }
 .picture {
   width: 100%;
-  height: 201px;
+  /* height: 201px; */
 }
 .textValue{
   width: 211.3px;
@@ -606,6 +588,7 @@ width: 55px;
   
 }
 .rectangle {
+  border-radius: 4vw;
   width: 106px;
   height: 87.4px;
 }
@@ -622,13 +605,5 @@ width: 55px;
   top: 70vw;
   width: 30vw;
   height: 30vw;
-}
-.awan{
-  display: flex;
-  z-index:1;
-  bottom: 0;
-  width: 100vw;
-  height: 100%;
-  /* border: 1px solid black; */
 }
 }

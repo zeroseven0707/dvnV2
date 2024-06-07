@@ -37,7 +37,7 @@ export default function Faqs() {
         <details>
           <summary>Mengapa D.V.N berbeda?
             <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" className={styles.carretWH} fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
               <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" className={styles.carret}/>
             </svg>
             </span>
@@ -47,7 +47,7 @@ export default function Faqs() {
         <details>
           <summary>Siapa yang diangjurkan untuk konsumsi D.V.N?
             <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" className={styles.carretWH} fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
               <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" className={styles.carret}/>
             </svg>
               </span>
@@ -57,7 +57,7 @@ export default function Faqs() {
         <details>
           <summary>Apakah D.V.N aman dikonsumsi?
             <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" className={styles.carretWH} fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
               <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" className={styles.carret}/>
             </svg>
             </span></summary>
@@ -66,7 +66,7 @@ export default function Faqs() {
         <details>
           <summary>Apakah D.V.N aman dikonsumsi oleh ibu hamil dan menyusui?
             <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <svg xmlns="http://www.w3.org/2000/svg" className={styles.carretWH} fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                 <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" className={styles.carret} /> 
               </svg>
             </span>

@@ -8,10 +8,11 @@ import { useState } from 'react';
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+        <link rel="icon" href="/image/dvn-logo.svg" />
+      </Head>
       <body>
       <Navbar />
-      {/* <Burger /> */}
         <Main />
         <NextScript />
         <Footer/>
