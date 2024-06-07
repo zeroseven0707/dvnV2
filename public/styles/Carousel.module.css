@@ -65,8 +65,7 @@
   position: absolute;
 }
 .qris{
-display: none;
-visibility: hidden;
+width: 1px;
 }
 .no1{
   width: 8vw;
