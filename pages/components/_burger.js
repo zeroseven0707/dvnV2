@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import burger from '../../public/styles/BurgerMenu.module.css';
+import { useTranslation } from 'next-i18next';
+// import { useState, useEffect } from 'react';
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false); // Default value false
@@ -9,11 +11,27 @@ const HamburgerMenu = () => {
     // Mengambil nilai isOpen dari localStorage saat komponen di-mount
     const localStorageValue = localStorage.getItem('isOpen');
     setIsOpen(localStorageValue === 'true'); // Mengubah string 'true' menjadi boolean true
+    const storedLanguage = localStorage.getItem('language');
+    if (storedLanguage) {
+      i18n.changeLanguage(storedLanguage);
+      setActiveLanguage(storedLanguage);
+    }
   }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
     localStorage.setItem('isOpen', !isOpen); // Mengubah nilai isOpen di localStorage
+  };
+
+  const { t, i18n } = useTranslation('common');
+  const [activeLanguage, setActiveLanguage] = useState('en');
+
+  
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setActiveLanguage(lng);
+    localStorage.setItem('language', lng);
   };
 
   return (
@@ -36,35 +54,25 @@ const HamburgerMenu = () => {
       {isOpen && (
         <div className={burger.content}>
           <ul className={burger.ul}>
-            <li>
-              <Link href="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/about">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link href="/product">
-                Product
-              </Link>
-            </li>
-            <li>
-              <Link href="/faqs">
-                FAQs
-              </Link>
-            </li>
-            <li>
-              <Link href="/join-dealers">
-                Join Dealers
-              </Link>
-            </li>
+          <li>
+            <Link href="/" suppressHydrationWarning>{t('home')}</Link>
+          </li>
+          <li>
+            <Link href="/about" suppressHydrationWarning>{t('about')}</Link>
+          </li>
+          <li>
+            <Link href="/product"suppressHydrationWarning>{t('product')}</Link>
+          </li>
+          <li>
+            <Link href="/faqs"suppressHydrationWarning>{t('faqs')}</Link>
+          </li>
+          <li>
+            <Link href="/join-dealers"suppressHydrationWarning>{t('join-dealers')}</Link>
+          </li>
             <li>
               <div className={burger.translate}>
-                <div className={burger.id}>ID</div>
-                <div className={burger.en}>EN</div>
+                <div onClick={() => changeLanguage('id')} className={`${burger.id} ${activeLanguage === 'id' ? burger.active : ''}`} >ID</div>
+                <div onClick={() => changeLanguage('en')} className={`${burger.en} ${activeLanguage === 'en' ? burger.active : ''}`} >EN</div>
               </div>
             </li>
           </ul>

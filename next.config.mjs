@@ -1,9 +1,15 @@
-/** @type {import('next').NextConfig} */
+// next.config.mjs
+import i18n from './i18next.config.mjs';
+
 const nextConfig = {
   reactStrictMode: true,
-  // output: 'export',
   images: {
-    unoptimized: true, // Menonaktifkan optimisasi gambar secara global
+    unoptimized: true,
+  },
+  i18n: {
+    locales: ['en', 'id'],
+    defaultLocale: 'en',
+    localeDetection: false
   },
 };
 

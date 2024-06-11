@@ -1,22 +1,18 @@
-import { Html, Head, Main, NextScript } from "next/document";
-import Link from "next/link";
-import Navbar from "./components/_navbar";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 import Footer from "./components/_footer";
-// import Burger from "./components/_burger";
-import { useState } from 'react';
-
-export default function Document() {
-  return (
-    <Html lang="en">
-      <Head>
-        <link rel="icon" href="/image/dvn-logo.svg" />
-      </Head>
-      <body>
-      <Navbar />
-        <Main />
-        <NextScript />
-        <Footer/>
-      </body>
-    </Html>
-  );
+class MyDocument extends Document {
+  render() {
+    return (
+      <Html>
+        <Head />
+        <body>
+          <Main />
+          <NextScript />
+          <Footer />
+        </body>
+      </Html>
+    );
+  }
 }
+
+export default MyDocument;

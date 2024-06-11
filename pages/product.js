@@ -5,6 +5,7 @@ import Footer from './components/_footer';
 import Production from './components/_productionYoutube';
 import Testimoni from './components/_testimoniYoutube';
 import Reviews from './components/_reviews';
+// import Slider from './components/_slider';
 import Burger from "./components/_burger";
 
 export default function Product() {
@@ -111,6 +112,7 @@ export default function Product() {
           <p className={product.textnya}><span>Review</span> what people say</p>
         </div>
       <Reviews />
+      {/* <Slider /> */}
       </section>
       <section>
         <div className={product.youtube2}>

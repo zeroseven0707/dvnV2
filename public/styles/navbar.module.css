@@ -43,26 +43,31 @@
     height: auto;
     margin-left: 3vw;
   }
+  /* Tambahkan ini di file CSS Anda */
+button.active {
+  color: white;
+  background-color: #363636;
+}
   .translate{
     width: 4.5vw;
     height:1.7vw;
-    border-radius: 4px 4px 4px 4px;
     border: 1px solid black;
     display: flex;
   }
   .id{
+    border: none;
+    border-radius: 0px 4px 4px 0px;
     text-align: center;
     font-size: 1.2vw;
-    height: 10%;
+    height: 100%;
     width: 50%;
   }
   .en{
+    border: none;
     font-size: 1.2vw;
     text-align: center;
     border-radius: 4px 0px 0px 4px;
-    color: white;
-    background-color: #363636;
-    border-left: 1px solid black;
+    border: none;
     height: 100%;
     width: 50%;
   }
