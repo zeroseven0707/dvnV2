@@ -1,7 +1,7 @@
 // import "@/styles/globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../public/styles/fonts.module.css';
-import "../public/styles/globals.css";
+import '@/styles/fonts.module.css';
+import '@/styles/globals.css';
 import Navbar from './components/_navbar';
 import '../i18next.config.mjs';
 

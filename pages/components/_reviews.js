@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import styles from '../../public/styles/Reviews.module.css';
+import styles from '@/styles/Reviews.module.css';
 
 const Reviews = () => {
     return (

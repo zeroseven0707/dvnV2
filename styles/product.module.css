@@ -427,7 +427,7 @@ color: black;
     padding-bottom: 11vw;
     box-sizing: border-box;
     align-items: flex-end;
-    background-image: url(../image/bg-benefit.png);
+    background-image: url('/image/bg-benefit.png');
     background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -579,7 +579,7 @@ color: black;
         background-position-y: bottom;
         padding: 6vw 5vw;
         padding-bottom: 18vw;
-        background-image: url(../image/bg-benefit-mobile.png);
+        background-image: url('/image/bg-benefit-mobile.png');
         background-position: center center;
     } 
     .benefit_image_product img{

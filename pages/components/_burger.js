@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import burger from '../../public/styles/BurgerMenu.module.css';
+import burger from '@/styles/BurgerMenu.module.css';
 import { useTranslation } from 'next-i18next';
 // import { useState, useEffect } from 'react';
 

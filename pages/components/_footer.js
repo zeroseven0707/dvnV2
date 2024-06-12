@@ -1,9 +1,9 @@
-import styles from "../../public/styles/Home.module.css";
+import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import { useTranslation } from 'next-i18next';
 
 
-const footer = () => {
+const Footer = () => {
     const { t } = useTranslation('common');
 
     return (
@@ -44,4 +44,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;

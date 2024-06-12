@@ -1,5 +1,5 @@
 import Head from "next/head";
-import about from "../public/styles/about.module.css";
+import about from "@/styles/about.module.css";
 import Image from "next/image";
 import Footer from './components/_footer';
 import Burger from "./components/_burger";

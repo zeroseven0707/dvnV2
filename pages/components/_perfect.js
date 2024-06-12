@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import perfect from "../../public/styles/Home.module.css"; 
+import perfect from "@/styles/Home.module.css"; 
 import { useTranslation } from 'next-i18next';
 
 const PerfectPage = () => {

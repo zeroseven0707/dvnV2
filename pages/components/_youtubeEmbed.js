@@ -1,5 +1,5 @@
 // components/YouTubeEmbed.js
-import styles from "../../public/styles/Home.module.css";
+import styles from "@/styles/Home.module.css";
 import React, { useState } from 'react';
 
 const YouTubeEmbed = ({ videoId, thumbnailUrl }) => {

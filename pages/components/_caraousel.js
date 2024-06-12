@@ -3,7 +3,7 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Slides from "../../public/styles/Carousel.module.css"; // membutuhkan file CSS
+import Slides from "@/styles/Carousel.module.css"; // membutuhkan file CSS
  // membutuhkan file CSS
 import { useTranslation } from 'next-i18next';
 

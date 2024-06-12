@@ -1,7 +1,7 @@
 // components/YouTubeEmbed.js
 
 import React, { useState } from 'react';
-import product from "../../public/styles/product.module.css";
+import product from "@/styles/product.module.css";
 const YouTubeEmbed = ({ videoId }) => {
   const [isVideoVisible, setIsVideoVisible] = useState(false);
 

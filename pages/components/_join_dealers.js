@@ -1,5 +1,5 @@
 
-import Join from "../../public/styles/Join.module.css"; 
+import Join from "@/styles/Join.module.css"; 
 import { useTranslation } from 'next-i18next';
 
 const JoinDealers = () => {

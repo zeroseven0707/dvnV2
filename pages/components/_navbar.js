@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
-import navbar from "../../public/styles/navbar.module.css";
+import navbar from "@/styles/navbar.module.css";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation('common');

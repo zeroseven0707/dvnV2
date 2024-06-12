@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useTranslation } from 'next-i18next';
-import styles from '../public/styles/Home.module.css';
+import styles from '@/styles/Home.module.css';
 import CarouselComponent from './components/_caraousel';
 import Slides from './components/_slide';
 import Footer from './components/_footer';

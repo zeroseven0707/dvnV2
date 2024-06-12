@@ -1,5 +1,5 @@
 
-import SlidesCss from "../../public/styles/slide.module.css"; 
+import SlidesCss from "@/styles/slide.module.css"; 
 
 const Slides = () => {
   return (

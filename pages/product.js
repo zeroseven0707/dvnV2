@@ -1,5 +1,5 @@
 import Head from "next/head";
-import product from "../public/styles/product.module.css";
+import product from "@/styles/product.module.css";
 import Image from "next/image";
 import Footer from './components/_footer';
 import Production from './components/_productionYoutube';
