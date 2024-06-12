@@ -3,9 +3,11 @@ import about from "../public/styles/about.module.css";
 import Image from "next/image";
 import Footer from './components/_footer';
 import Burger from "./components/_burger";
+import { useTranslation } from 'next-i18next';
 
 
 export default function About() {
+  const { t } = useTranslation('common');
   return (
     <>
       <Head>
@@ -22,10 +24,10 @@ export default function About() {
             </picture>
             <div className={about.aboutheader}>
             <div className={about.aboutheadertitle}>
-              <p className={about.titleheader}>About</p>
+              <p className={about.titleheader} suppressHydrationWarning>{t('about')}</p>
             </div>
             <div className={about.aboutheadertext}>
-              <p className={about.titledetail}>DVN&apos;s story begins with the exploration of beauty inside and out for women. We believe that every woman has the right to define her own beauty, which is not only external but also stems from inner strength. At the same time, we are committed to encouraging women to bravely pursue their inner beauty and strength, free from any standards and definitions.</p>
+              <p className={about.titledetail} suppressHydrationWarning>{t('dvn story')}</p>
             </div>
             </div>
           </div>
@@ -36,16 +38,16 @@ export default function About() {
             <img src="/image/aboutkanan.svg" className={about.awan3}/>
           </div>
           <div className={about.tombol}>
-            <button className={about.brand}>Brand</button>
-            <button className={about.management}>Management</button>
+            <button className={about.brand} suppressHydrationWarning>{t('brand')}</button>
+            <button className={about.management} suppressHydrationWarning>{t('management')}</button>
           </div>
         </section>
       <Burger />
         <section className={about.section}>
             <div className={about.col_1}>
             <div className={about.container_core}>
-                <p className={about.core}><span className={about.black}>Core</span> Brand values</p>
-                <p className={about.value_core}>DVN&apos;s core values ​​lie in advocating the combination of beauty and strength, and encouraging women to unleash their inner beauty and power.<br className={about.mobile_br} /><br className={about.mobile_br} />We are dedicated to providing women with nutritional beauty solutions that not only focus on skincare but also help women achieve confident growth and influence.</p>
+                <p className={about.core} suppressHydrationWarning><span className={about.black} suppressHydrationWarning>{t('core')}</span> {t('brand values')}</p>
+                <p className={about.value_core} suppressHydrationWarning>{t('dvn core')}</p>
               </div>
             </div>
             <div className={about.col_2}>
@@ -64,16 +66,16 @@ export default function About() {
             </div>
             <div className={about.col_4}>
             <div className={about.container_core}>
-                <p className={about.core}><span className={about.black}>Global Leading </span><br />Beauty Concept</p>
-                <p className={about.value_core}>DVN adheres to the globally leading beauty concept, combining the concept of nutritional beauty with revolutionary skincare solutions, to bring women a comprehensive beauty experience from the inside out. Our products integrate top-notch patented technology globally, aiming to provide women with safe and effective beauty solutions.</p>
+                <p className={about.core} suppressHydrationWarning><span className={about.black} suppressHydrationWarning>{t('global leading')}</span><br />{t('beauty concept')}</p>
+                <p className={about.value_core} suppressHydrationWarning>{t('dvn adheres')}</p>
               </div>
             </div>
         </section>
         <section className={about.section}>
             <div className={about.col_5}>
             <div className={about.container_core}>
-                <p className={about.core}><span className={about.black}>Brand</span><br /> Original Intention</p>
-                <p className={about.value_core}>DVN&apos;s original intention is to offer women more choices, allowing them to confidently define their beauty and strength. We hope to inspire women&apos;s confidence and courage from within through our products and concepts, empowering them to be the masters of their own lives.</p>
+                <p className={about.core} suppressHydrationWarning><span className={about.black} suppressHydrationWarning>{t('brand')}</span><br /> {t('original intention')}</p>
+                <p className={about.value_core} suppressHydrationWarning>{t('dvn original')}</p>
               </div>
             </div>
             <div className={about.col_6}>
@@ -86,15 +88,15 @@ export default function About() {
         <section className={about.section}>
             <div className={about.col_one_image}>
             <div className={about.content}>
-                <p className={about.core_down}>Brand Mission</p>
-                <p className={about.value_core_down}>DVN&apos;s mission is to help women unleash their inner beauty and power through nutritional beauty solutions, enabling them to grow in confidence and bring about change through influence.</p>
+                <p className={about.core_down} suppressHydrationWarning>{t('brand mission')}</p>
+                <p className={about.value_core_down} suppressHydrationWarning>{t('dvn mission')}</p>
               </div>
             {/* <Image src="/image/blur1.png" className={about.blur1} width={295.7} height={149.27}/> */}
             </div>
             <div className={about.col_two_image}>
             <div className={about.content}>
-                <p className={about.core_down}>Brand Vision</p>
-                <p className={about.value_core_down}>DVN&apos;s vision is to become a leader in women&apos;s beauty and strength, providing safe and effective nutritional beauty solutions for women worldwide, allowing them to shine in their self-defined beauty.</p>
+                <p className={about.core_down} suppressHydrationWarning>{t('brand vision')}</p>
+                <p className={about.value_core_down} suppressHydrationWarning>{t('dvn vision')}</p>
               </div>
             {/* <Image src="/image/blur2.png" className={about.blur2} width={295.7} height={149.27}/> */}
             </div>
@@ -103,26 +105,27 @@ export default function About() {
             <div className={about.container_text}>
 
               <div className={about.container_text_1}>
-                <h1>Brand <span>Advantages</span></h1>
+                <h1 suppressHydrationWarning>{t('brand')}<span suppressHydrationWarning> {t('advantages')}</span></h1>
                 <div className={about.p_layout}>
-                <p>Leading Technology: We integrate top-notch patented technology globally, providing safe and effective nutritional beauty solutions.</p>
-                <p>Inner and Outer Balance: We focus on women&apos;s inner beauty and strength, striving to enhance women&apos;s overall beauty from the inside out.</p>
+                <p suppressHydrationWarning>{t('leading technologi')}</p>
+                <p suppressHydrationWarning>{t('inner and outer')}</p>
                 </div>
               </div>
 
               <img src="/image/dvn-group.png" />
 
               <div className={about.container_text_3}>
-                <h1>Customized <span>Solution</span></h1>
-                <p>Our products and services are customized according to individual needs, meeting the beauty and health needs of different women.</p>
+                <h1 suppressHydrationWarning>{t('customized')} <span suppressHydrationWarning>{t('solution')}</span></h1>
+                <p suppressHydrationWarning>{t('product our')}</p>
               </div>
 
             </div>
             <div className={about.container_text_2}>
-              <h1>Brand<span> Philosophy</span></h1>
-              <p>We uphold the combination of beauty and strength, encouraging women to bravely pursue their inner beauty and strength, free from any standards and definitions.</p>
+              <h1 suppressHydrationWarning>{t('brand')}<span suppressHydrationWarning> {t('philosophy')}</span></h1>
+              <p suppressHydrationWarning>{t('we upload')}</p>
             </div>
         </section>
+        <Footer />
     </>
   );
 }

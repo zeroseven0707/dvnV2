@@ -129,6 +129,7 @@ export default function Product() {
         </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

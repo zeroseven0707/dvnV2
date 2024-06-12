@@ -8,7 +8,6 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <Footer />
         </body>
       </Html>
     );

@@ -5,8 +5,12 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Slides from "../../public/styles/Carousel.module.css"; // membutuhkan file CSS
  // membutuhkan file CSS
+import { useTranslation } from 'next-i18next';
+
 
 const CarouselComponent = () => {
+  const { t } = useTranslation('common');
+
   return (
 <Carousel
       autoPlay
@@ -51,7 +55,7 @@ const CarouselComponent = () => {
             <img src="/image/caraousel.png" alt="caraousel 1" />
         </picture>
           <p className={Slides.text_atas}><img src="/image/D.V.N.svg" /></p> 
-          <p className={Slides.text}>LUMINOUS BEAUTY SHINE INSIDE OUT</p> 
+          <p className={Slides.text} suppressHydrationWarning>{t('luminos')}</p> 
           <img src="/image/bulat1.svg" alt="" className={Slides.bulat1}/>
           <img src="/image/bulat2.svg" alt="" className={Slides.bulat2}/>
           {/* <img src="/image/qris.svg" alt="" className={Slides.qris}/> */}
@@ -63,7 +67,7 @@ const CarouselComponent = () => {
             <img src="/image/caraousel.png" alt="caraousel 2" />
         </picture>
         <p className={Slides.text_atas}><img src="/image/D.V.N.svg" /></p> 
-        <p className={Slides.text}>LUMINOUS BEAUTY SHINE INSIDE OUT</p> 
+        <p className={Slides.text} suppressHydrationWarning>{t('luminos')}</p> 
         <img src="/image/bulat1.svg" alt="" className={Slides.bulat1}/>
         <img src="/image/bulat2.svg" alt="" className={Slides.bulat2}/>
         {/* <img src="/image/qris.svg" alt="" className={Slides.qris}/> */}

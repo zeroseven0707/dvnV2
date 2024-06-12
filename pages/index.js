@@ -29,7 +29,7 @@ const Home = () => {
       <PerfectPage />
       <section className={styles.youtube}>
       <div className={styles.containerText}>
-            <span className={styles.span}>Do you <span className={styles.know}>Know?</span> <br className={styles.know_br}/> </span> <span className={styles.descript}>Uneven skin tone is a major problem for women.</span>
+            <span className={styles.span} suppressHydrationWarning>{t('do you')} <span className={styles.know} suppressHydrationWarning>{t('know')}</span> <br className={styles.know_br}/> </span> <span className={styles.descript} suppressHydrationWarning>{t('uneven')}</span>
         </div>
         <div className={styles.video}>
           <YouTubeEmbed videoId="IKCSNNeRTDA" thumbnailUrl="image/youtube.png" />
@@ -41,7 +41,7 @@ const Home = () => {
         </div>
       </section>
       <PicturePudar />
-      <div></div>
+      <Footer />
     </>
   );
 };

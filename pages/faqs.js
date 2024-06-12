@@ -75,6 +75,7 @@ export default function Faqs() {
         </details>
       </section>
     </div>
+    <Footer />
     </>
   );
 }
