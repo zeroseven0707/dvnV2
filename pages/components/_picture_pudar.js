@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useTranslation } from 'next-i18next';
 
 const PicturePudar = () => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation('translation');
 
   return (
     <section>

@@ -23,7 +23,7 @@ const HamburgerMenu = () => {
     localStorage.setItem('isOpen', !isOpen); // Mengubah nilai isOpen di localStorage
   };
 
-  const { t, i18n } = useTranslation('common');
+  const { t, i18n } = useTranslation('translation');
   const [activeLanguage, setActiveLanguage] = useState('en');
 
   

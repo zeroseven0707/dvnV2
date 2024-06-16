@@ -4,7 +4,7 @@ import perfect from "@/styles/Home.module.css";
 import { useTranslation } from 'next-i18next';
 
 const PerfectPage = () => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation('translation');
 
   return (
     <div>
@@ -26,11 +26,9 @@ const PerfectPage = () => {
               <div className={perfect.container2}>
               <picture>
                 <source srcSet="/image/mobile-beauty.png" media="(max-width: 768px)" />
-                  <Image src="/image/section2.png"
+                  <img src="/image/section2.png"
                         alt="Vercel Logo"
-                        className={perfect.picture}
-                        width={735}
-                        height={599}/>
+                        className={perfect.picture}/>
                 </picture>
               </div>
           </div>

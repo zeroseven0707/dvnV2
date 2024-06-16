@@ -3,7 +3,7 @@ import Join from "@/styles/Join.module.css";
 import { useTranslation } from 'next-i18next';
 
 const JoinDealers = () => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation('translation');
   return (
     <div className={Join.container}>
             <form className={Join.form}>

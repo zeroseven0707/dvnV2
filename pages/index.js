@@ -10,7 +10,7 @@ import YouTubeEmbed from './components/_youtubeEmbed';
 import Burger from './components/_burger';
 
 const Home = () => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation('translation');
 
   return (
     <>

@@ -7,7 +7,7 @@ import { useTranslation } from 'next-i18next';
 
 
 export default function About() {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation('translation');
   return (
     <>
       <Head>
@@ -20,7 +20,7 @@ export default function About() {
           <div className={about.about}>
             <picture>
               <source srcSet="/image/mobile-about.svg" media="(max-width: 768px)"/>
-              <img src="/image/about.svg" className={about.image}/>
+              <img src="/image/about.svg" className={about.image} alt="about"/>
             </picture>
             <div className={about.aboutheader}>
             <div className={about.aboutheadertitle}>
@@ -32,10 +32,10 @@ export default function About() {
             </div>
           </div>
           <div>
-            <img src="/image/garis.png"className={about.garisimage}/>
-            <img src="/image/awankirifooter.png" className={about.awan1}/>
-            <img src="/image/awankirifooter.png" className={about.awan2}/>
-            <img src="/image/aboutkanan.svg" className={about.awan3}/>
+            <img src="/image/garis.png"className={about.garisimage} alt=""/>
+            <img src="/image/awankirifooter.png" className={about.awan1} alt=""/>
+            <img src="/image/awankirifooter.png" className={about.awan2} alt=""/>
+            <img src="/image/aboutkanan.svg" className={about.awan3} alt=""/>
           </div>
           <div className={about.tombol}>
             <button className={about.brand} suppressHydrationWarning>{t('brand')}</button>
@@ -53,7 +53,7 @@ export default function About() {
             <div className={about.col_2}>
               <picture>
                 <source srcSet="/image/mobile-dvn.svg" media="(max-width: 768px)"/>
-                <img src="/image/dvn_about.svg" layout="responsive"/>
+                <img src="/image/dvn_about.svg" alt="dvn"/>
               </picture>
             </div>
         </section>
@@ -112,7 +112,7 @@ export default function About() {
                 </div>
               </div>
 
-              <img src="/image/dvn-group.png" />
+              <img src="/image/dvn-group.png" alt="dvn-group"/>
 
               <div className={about.container_text_3}>
                 <h1 suppressHydrationWarning>{t('customized')} <span suppressHydrationWarning>{t('solution')}</span></h1>

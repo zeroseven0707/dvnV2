@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next';
 
 
 const Footer = () => {
-    const { t } = useTranslation('common');
+    const { t } = useTranslation('translation');
 
     return (
 <section>
@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
     </div>
         <picture >
-            <source srcset="/image/awan-mobile-kiri.png" media="(max-width: 768px)"/>
+            <source srcSet="/image/awan-mobile-kiri.png" media="(max-width: 768px)"/>
             <img className={styles.awankiri} src="/image/KIRI.svg" alt="kiri" />
         </picture>
         <img className={styles.awankanan} src="/image/awankananfooter.png" alt="kanan" />

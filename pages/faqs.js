@@ -5,7 +5,7 @@ import styles from "@/styles/Faqs.module.css";
 import Burger from "./components/_burger";
 import { useTranslation } from 'next-i18next';
 export default function Faqs() {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation('translation');
   return (
     <>
       <Head>

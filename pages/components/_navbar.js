@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next';
 import navbar from "@/styles/navbar.module.css";
 
 const Navbar = () => {
-  const { t, i18n } = useTranslation('common');
+  const { t, i18n } = useTranslation('translation');
   const [activeLanguage, setActiveLanguage] = useState('en');
 
   // Load language from local storage on component mount

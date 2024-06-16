@@ -9,7 +9,7 @@ import { useTranslation } from 'next-i18next';
 
 
 const CarouselComponent = () => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation('translation');
 
   return (
 <Carousel

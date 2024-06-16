@@ -10,7 +10,7 @@ import Burger from "./components/_burger";
 import { useTranslation } from 'next-i18next';
 
 export default function Product() {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation('translation');
   return (
     <>
       <Head>
