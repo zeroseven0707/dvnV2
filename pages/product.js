@@ -7,8 +7,10 @@ import Testimoni from './components/_testimoniYoutube';
 import Reviews from './components/_reviews';
 // import Slider from './components/_slider';
 import Burger from "./components/_burger";
+import { useTranslation } from 'next-i18next';
 
 export default function Product() {
+  const { t } = useTranslation('common');
   return (
     <>
       <Head>
@@ -19,7 +21,7 @@ export default function Product() {
       </Head>
       <section>
         <div>
-          <div className={product.text_header}>Product</div>
+          <div className={product.text_header} suppressHydrationWarning>{t('product')}</div>
           <img src="/image/Botol_DVN.svg" className={product.image_product} />
           <picture >
               <source srcset="/image/mobile-product.svg" media="(max-width: 768px)"/>
@@ -32,15 +34,14 @@ export default function Product() {
         <Burger />
       <section>
       <div className={product.youtube}>
-        <p><span>Our</span> Production Process</p>
+        <p suppressHydrationWarning><span suppressHydrationWarning>{t('our')}</span> {t('production process')}</p>
         <Production videoId="IKCSNNeRTDA" />
       </div>
       </section>
-      
       <section className={product.benefit}>
         <div className={product.benefit_content_product_mobile}>
-          <h1>Main <span>Ingredients</span></h1>
-          <h3>Collagen Peptide <img src="/image/peptide-blue.svg"/></h3>
+          <h1 suppressHydrationWarning>{t('main')} <span suppressHydrationWarning>{t('ingredients')}</span></h1>
+          <h3 suppressHydrationWarning>{t('collagen peptide')} <img src="/image/peptide-blue.svg"/></h3>
         </div>
         <img src="/image/awan3.png" className={product.awan_desktop_3}/>
         <img src="/image/awan4.png" className={product.awan_desktop_4}/>
@@ -50,16 +51,16 @@ export default function Product() {
           <img src="/image/Botol_DVN.svg" />
         </div>
         <div className={product.benefit_content_product}>
-          <h1>Main <span>Ingredients</span></h1>
-          <h3>Collagen Peptide</h3>
+          <h1 suppressHydrationWarning>{t('main')} <span suppressHydrationWarning>{t('ingredients')}</span></h1>
+          <h3 suppressHydrationWarning>{t('collagen peptide')}</h3>
           
           <div className={product.benefit_box_product}>
-            <h5>Benefits</h5>
+            <h5 suppressHydrationWarning>{t('benefits')}</h5>
             <ul>
-              <li>Easily absorbed by the body</li>
-              <li>Maintains skin structure (activation of collagen formation and cell regeneration)</li>
-              <li>Nourishes skin cells so that the skin barrier is stronger</li>
-              <li>Maintain skin elasticity</li>
+              <li suppressHydrationWarning>{t('easily')}</li>
+              <li suppressHydrationWarning>{t('maintains')}</li>
+              <li suppressHydrationWarning>{t('Nourishes')}</li>
+              <li suppressHydrationWarning>{t('maintain')}</li>
             </ul>
             <img src="/image/CollagenPeptide.svg" className={product.peptide_image}/>
             <img src="/image/ingredients.svg" className={product.bahan_image}/>
@@ -72,7 +73,7 @@ export default function Product() {
             <img src="/image/extract-image.png" className={product.image_works} />
           </div>
           <div className={product.text}>
-              <p className={product.text_works}>Viqua Pomegranate and Vitamin C are the main components that are formed in one chewable tablet and absorbed by the body, to help maintain natural collagen and fiber in the skin. L-Glutathione and Japanese Knotweed radix Extract work as antioxidants to prevent excess melanin production, so the skin looks brighter.</p>
+              <p className={product.text_works} suppressHydrationWarning>{t('viqua')}</p>
           </div>
         </div>
       </section>
@@ -80,36 +81,36 @@ export default function Product() {
         <div className={product.container_featured}>
           <div className={product.featured}>
           <div>
-            < p className={product.title_featured}><span>Featured</span> Product</p>
+            < p className={product.title_featured} suppressHydrationWarning><span suppressHydrationWarning>{t('featured')}</span> {t('product')}</p>
             <div className={product.imageFeatured}>
               <img src="/image/Botol_DVN.svg" className={product.imageFeatureds}/>
             </div>
           </div>
             <div className={product.detailFeaturedMobile}>
-              <p className={product.title_featuredMobile}><span>Featured</span> Product</p>
-              <p className={product.title}>D.V.N Chewable Tablet</p>
+              <p className={product.title_featuredMobile} suppressHydrationWarning><span suppressHydrationWarning>{t('Featured')}</span> {t('product')}</p>
+              <p className={product.title} suppressHydrationWarning>D.V.N {t('chewable tablet')}</p>
               <div className={product.tombolMobile}>
-                <button className={product.buynowMobile}>Buy now</button>
-                <button className={product.consultMobile}>Consult with us</button>
+                <button className={product.buynowMobile} suppressHydrationWarning>{t('buy now')}</button>
+                <button className={product.consultMobile} suppressHydrationWarning>{t('consult with us')}</button>
               </div>
             </div>
             <div className={product.detailFeatured}>
-              <p className={product.title}>D.V.N Chewable Tablet</p>
-              <p className={product.text}>Discover our standout featured product, meticulously crafted to exceed your expectations. It embodies a fusion of quality and innovation, boasting a multitude of certifications that underscore its excellence. With HALAL certification, it ensures adherence to strict dietary requirements, while GMP and ISO 9001 registrations guarantee manufacturing practices of the highest caliber. Endorsed by BPOM, it meets Indonesian regulatory standards with precision.<br/><br/> Furthermore, it has triumphed in rigorous heavy metal and hazardous materials testing, ensuring unparalleled safety. What sets it apart is its patented ingredients sourced from Spain, epitomizing cutting-edge research and efficacy. Enriched with the finest collagen sourced from Korea and Europe, it offers unparalleled benefits for your well-being. Elevate your experience with our product, where quality, safety, and innovation converge seamlessly.</p>
+              <p className={product.title} suppressHydrationWarning>D.V.N {t('chewable tablet')}</p>
+              <p className={product.text} suppressHydrationWarning>{t('discover our')}</p>
               <div className={product.tombol}>
-                <button className={product.buynow}>Buy now</button>
-                <button className={product.consult}>Consult With us</button>
+                <button className={product.buynow} suppressHydrationWarning>{t('buy now')}</button>
+                <button className={product.consult} suppressHydrationWarning>{t('consult with us')}</button>
               </div>
             </div>
           </div>
           <div className={product.MobileDetailFeatured}>
-              <p className={product.text}>Discover our standout featured product, meticulously crafted to exceed your expectations. It embodies a fusion of quality and innovation, boasting a multitude of certifications that underscore its excellence. With HALAL certification, it ensures adherence to strict dietary requirements, while GMP and ISO 9001 registrations guarantee manufacturing practices of the highest caliber. Endorsed by BPOM, it meets Indonesian regulatory standards with precision. <br/><br/> Furthermore, it has triumphed in rigorous heavy metal and hazardous materials testing, ensuring unparalleled safety. What sets it apart is its patented ingredients sourced from Spain, epitomizing cutting-edge research and efficacy. Enriched with the finest collagen sourced from Korea and Europe, it offers unparalleled benefits for your well-being. Elevate your experience with our product, where quality, safety, and innovation converge seamlessly.</p>
+              <p className={product.text} suppressHydrationWarning>{t('discover our')}</p>
             </div>
         </div>
       </section>
       <section className={product.ContainerReviews}>
         <div className={product.reviews}>
-          <p className={product.textnya}><span>Review</span> what people say</p>
+          <p className={product.textnya} suppressHydrationWarning><span suppressHydrationWarning>{t('review')}</span> {t('what people say')}</p>
         </div>
       <Reviews />
       {/* <Slider /> */}
@@ -117,15 +118,15 @@ export default function Product() {
       <section>
         <div className={product.youtube2}>
         <div className={product.detail_youtube2_mobile}>
-            <p className={product.testimonial}>Testimonials</p>
-            <p className={product.testimonial_detail}>Hear what they have to say</p>
+            <p className={product.testimonial} suppressHydrationWarning>{t('testimonials')}</p>
+            <p className={product.testimonial_detail} suppressHydrationWarning>{t('hear what they have to say')}</p>
         </div>
         <div className={product.video_youtube2}>
           <Testimoni videoId="IKCSNNeRTDA" thumbnailUrl="image/youtube.png" />
         </div>
         <div className={product.detail_youtube2}>
-            <p className={product.testimonial}>Testimonials</p>
-            <p className={product.testimonial_detail}>Hear what they have to say</p>
+            <p className={product.testimonial} suppressHydrationWarning>{t('testimonials')}</p>
+            <p className={product.testimonial_detail} suppressHydrationWarning>{t('hear what they have to say')}</p>
         </div>
         </div>
       </section>

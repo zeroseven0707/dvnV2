@@ -1,4 +1,3 @@
-// i18next.config.js
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import Backend from 'i18next-http-backend';
@@ -10,12 +9,12 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
-    debug: true,
+    debug: false, // Set to false for production
     interpolation: {
-      escapeValue: false,
+      escapeValue: false, // React already escapes values
     },
     backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json',
+      loadPath: '/locales/{{lng}}/{{ns}}.json', // Path to your translation files
     },
   });
 

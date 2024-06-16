@@ -33,6 +33,7 @@
     font-weight: bold;
     text-align: center;
     color: white;
+    z-index: 9;
 
   }.text_atas img{
     width: 3.3vw;

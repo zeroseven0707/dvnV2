@@ -3,7 +3,9 @@ import Footer from './components/_footer';
 import FormJoin from './components/_join_dealers';
 import styles from "@/styles/Faqs.module.css";
 import Burger from "./components/_burger";
+import { useTranslation } from 'next-i18next';
 export default function Faqs() {
+  const { t } = useTranslation('common');
   return (
     <>
       <Head>
@@ -22,8 +24,8 @@ export default function Faqs() {
           <img src="/image/awankirifooter.png" className={styles.awan2} />
           <img src="/image/Botol_DVN.svg" className={styles.image_product}/>
           <div className={styles.header_text}>
-            <p className={styles.faq_header}>FAQ</p>
-            <p className={styles.question_header}>(Frequently Asked Questions)</p>
+            <p className={styles.faq_header} suppressHydrationWarning>{t('faqs')}</p>
+            <p className={styles.question_header} suppressHydrationWarning>({t('frequently asked questions')})</p>
           </div>
         </div>
     </section>
@@ -31,8 +33,8 @@ export default function Faqs() {
     <div className={styles.container}>
       <section>
         <div className={styles.title}>
-          <p className={styles.faq}>FAQ</p>
-          <p className={styles.question}>Frequently Asked Question</p>
+          <p className={styles.faq} suppressHydrationWarning>{t('faqs')}</p>
+          <p className={styles.question} suppressHydrationWarning>{t('frequently asked questions')}</p>
         </div>
         <details>
           <summary>Mengapa D.V.N berbeda?
