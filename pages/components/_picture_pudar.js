@@ -1,7 +1,7 @@
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import { useTranslation } from 'next-i18next';
-
+import Image from "next/image";
 const PicturePudar = () => {
   const { t } = useTranslation('translation');
 
@@ -11,9 +11,7 @@ const PicturePudar = () => {
         <Link href="/product">
           <button className={styles.learnMore} suppressHydrationWarning>{t('learn more')}</button>
         </Link>
-        <img className={styles.ImageBotolPudar} src="/image/Botol_DVN.svg" alt="botol" />
-        <img className={styles.pudarGambar} src="/image/pudar.png" alt="Pudar" />
-        <div className={styles.fadeOverlay}></div>
+        <Image width={500} height={500} className={styles.pudarGambar} src="/image/learnmore.png" alt="Pudar" />
       </div>
     </section>
   );

@@ -2,19 +2,38 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import navbar from "@/styles/navbar.module.css";
+import Image from "next/image";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation('translation');
   const [activeLanguage, setActiveLanguage] = useState('en');
 
-  // Load language from local storage on component mount
-  useEffect(() => {
+  // Function to initialize language from localStorage
+  const initializeLanguage = () => {
     const storedLanguage = localStorage.getItem('language');
     if (storedLanguage) {
       i18n.changeLanguage(storedLanguage);
       setActiveLanguage(storedLanguage);
     }
-  }, []);
+  };
+
+  useEffect(() => {
+    if (i18n.isInitialized) {
+      initializeLanguage(); // Initialize language if i18n is already initialized
+    } else {
+      // Listen for initialization if i18n is not yet initialized
+      const handleInitialized = () => {
+        initializeLanguage();
+        i18n.off('initialized', handleInitialized); // Clean up listener after initialization
+      };
+      i18n.on('initialized', handleInitialized);
+    }
+
+    // Clean up listener when component unmounts
+    return () => {
+      i18n.off('initialized', initializeLanguage);
+    };
+  }, [i18n]);
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -26,7 +45,7 @@ const Navbar = () => {
     <div>
       <nav className={navbar.nav}>
         <Link href="/">
-          <img src="image/logo.png" className={navbar.dvn} alt="Logo" width={87} height={44.47} />
+          <Image src="/image/logo.png" className={navbar.dvn} alt="logo" width={87} height={44.47} />
         </Link>
         <ul className={navbar.navLinks}>
           <li>
@@ -41,9 +60,9 @@ const Navbar = () => {
           <li>
             <Link href="/faqs" suppressHydrationWarning>{t('faqs')}</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/join-dealers" suppressHydrationWarning>{t('join-dealers')}</Link>
-          </li>
+          </li> */}
           <li>
             <div className={navbar.translate}>
               <button 

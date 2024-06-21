@@ -50,10 +50,11 @@
 }
 .col_6{
     width: 100%;
+    /* border: 1px solid black; */
     /* height: 396px; */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     
 }
 .col_two{
@@ -131,9 +132,9 @@
     width: 100%;
     height: 100%;
 }
-.botol_dvn{
-    width: 100%;
-    height: 100%;
+.botol_d{
+    width: 49.5vw;
+    height: auto;
 }
 .blur1{
     width: 100%;
@@ -277,6 +278,7 @@
 }
 .image{
     width: 100vw;
+    height: 39.2vw;
 }
 .container_core{
     width: 25vw;

@@ -1,5 +1,5 @@
 // components/YouTubeEmbed.js
-
+import Image from "next/image";
 import React, { useState } from 'react';
 import product from "@/styles/product.module.css";
 const YouTubeEmbed = ({ videoId }) => {
@@ -14,7 +14,9 @@ const YouTubeEmbed = ({ videoId }) => {
       {!isVideoVisible && (
                <picture>
                 <source srcset="/image/mobile-production.png" media="(max-width: 768px)" onClick={handleThumbnailClick}/>
-                  <img
+                  <Image
+                      width={500}
+                      height={500}
                       src="/image/youtube.png"
                       alt="Video Thumbnail"
                       className={product.productionThumb}

@@ -22,13 +22,13 @@ export default function Product() {
       <section>
         <div>
           <div className={product.text_header} suppressHydrationWarning>{t('product')}</div>
-          <img src="/image/Botol_DVN.svg" className={product.image_product} />
+          <Image width={500} height={500} src="/image/Botol DVN.svg" className={product.image_product} alt="" />
           <picture >
               <source srcset="/image/mobile-product.svg" media="(max-width: 768px)"/>
-              <img src="/image/product.png" className={product.image} />
+              <Image width={500} height={500} src="/image/product.png" className={product.image} alt="" />
           </picture>
-          <img src="/image/awankirifooter.png" className={product.awan1} />
-          <img src="/image/awankirifooter.png" className={product.awan2} />
+          <Image width={500} height={500} alt="" src="/image/awankirifooter.png" className={product.awan1} />
+          <Image width={500} height={500} alt="" src="/image/awankirifooter.png" className={product.awan2} />
         </div>
       </section>
         <Burger />
@@ -41,14 +41,14 @@ export default function Product() {
       <section className={product.benefit}>
         <div className={product.benefit_content_product_mobile}>
           <h1 suppressHydrationWarning>{t('main')} <span suppressHydrationWarning>{t('ingredients')}</span></h1>
-          <h3 suppressHydrationWarning>{t('collagen peptide')} <img src="/image/peptide-blue.svg"/></h3>
+          <h3 suppressHydrationWarning>{t('collagen peptide')} <Image width={500} height={500} alt="" src="/image/peptide-blue.svg"/></h3>
         </div>
-        <img src="/image/awan3.png" className={product.awan_desktop_3}/>
-        <img src="/image/awan4.png" className={product.awan_desktop_4}/>
-        <img src="/image/awan-dekstop-1.png" className={product.awan_desktop_1}/>
-        <img src="/image/awan-dekstop-2.png" className={product.awan_desktop_2}/>
+        <Image width={500} height={500} alt="" src="/image/awan3.png" className={product.awan_desktop_3}/>
+        <Image width={500} height={500} alt="" src="/image/awan4.png" className={product.awan_desktop_4}/>
+        <Image width={500} height={500} alt="" src="/image/awan-dekstop-1.png" className={product.awan_desktop_1}/>
+        <Image width={500} height={500} alt="" src="/image/awan-dekstop-2.png" className={product.awan_desktop_2}/>
         <div className={product.benefit_image_product}>
-          <img src="/image/Botol_DVN.svg" />
+          <Image width={500} height={500} alt="" src="/image/Botol DVN.svg" className={product.image_benefit}/>
         </div>
         <div className={product.benefit_content_product}>
           <h1 suppressHydrationWarning>{t('main')} <span suppressHydrationWarning>{t('ingredients')}</span></h1>
@@ -62,15 +62,15 @@ export default function Product() {
               <li suppressHydrationWarning>{t('Nourishes')}</li>
               <li suppressHydrationWarning>{t('maintain')}</li>
             </ul>
-            <img src="/image/CollagenPeptide.svg" className={product.peptide_image}/>
-            <img src="/image/ingredients.svg" className={product.bahan_image}/>
+            <Image width={500} height={500} alt="" src="/image/CollagenPeptide.svg" className={product.peptide_image}/>
+            <Image width={500} height={500} alt="" src="/image/ingredients.svg" className={product.bahan_image}/>
           </div>
         </div>
       </section>
       <section>
         <div className={product.containerWorks}>
           <div>
-            <img src="/image/extract-image.png" className={product.image_works} />
+            <Image width={500} height={500} alt="" src="/image/extract-image.png" className={product.image_works} />
           </div>
           <div className={product.text}>
               <p className={product.text_works} suppressHydrationWarning>{t('viqua')}</p>
@@ -83,7 +83,7 @@ export default function Product() {
           <div>
             < p className={product.title_featured} suppressHydrationWarning><span suppressHydrationWarning>{t('featured')}</span> {t('product')}</p>
             <div className={product.imageFeatured}>
-              <img src="/image/Botol_DVN.svg" className={product.imageFeatureds}/>
+              <Image width={500} height={500} alt="" src="/image/Botol DVN.svg" className={product.imageFeatureds}/>
             </div>
           </div>
             <div className={product.detailFeaturedMobile}>
@@ -122,7 +122,7 @@ export default function Product() {
             <p className={product.testimonial_detail} suppressHydrationWarning>{t('hear what they have to say')}</p>
         </div>
         <div className={product.video_youtube2}>
-          <Testimoni videoId="IKCSNNeRTDA" thumbnailUrl="image/youtube.png" />
+          <Testimoni videoId="IKCSNNeRTDA" thumbnailUrl="/image/youtube.png" />
         </div>
         <div className={product.detail_youtube2}>
             <p className={product.testimonial} suppressHydrationWarning>{t('testimonials')}</p>

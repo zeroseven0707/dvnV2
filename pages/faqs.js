@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Footer from './components/_footer';
-import FormJoin from './components/_join_dealers';
+import Image from "next/image";
 import styles from "@/styles/Faqs.module.css";
 import Burger from "./components/_burger";
 import { useTranslation } from 'next-i18next';
@@ -18,11 +18,11 @@ export default function Faqs() {
     <div>
       <picture>
           <source srcset="/image/mobile-faqs.svg" media="(max-width: 768px)"/>
-          <img src="/image/faqs.png" className={styles.image}/>
+          <Image width={500} height={500} alt="" src="/image/faqs.png" className={styles.image}/>
       </picture>
-          <img src="/image/awankirifooter.png" className={styles.awan} />
-          <img src="/image/awankirifooter.png" className={styles.awan2} />
-          <img src="/image/Botol_DVN.svg" className={styles.image_product}/>
+          <Image width={500} height={500} alt="" src="/image/awankirifooter.png" className={styles.awan} />
+          <Image width={500} height={500} alt="" src="/image/awankirifooter.png" className={styles.awan2} />
+          <Image width={500} height={500} alt="" src="/image/Botol DVN.svg" className={styles.image_product}/>
           <div className={styles.header_text}>
             <p className={styles.faq_header} suppressHydrationWarning>{t('faqs')}</p>
             <p className={styles.question_header} suppressHydrationWarning>({t('frequently asked questions')})</p>

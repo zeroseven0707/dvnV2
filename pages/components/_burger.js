@@ -2,31 +2,28 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import burger from '@/styles/BurgerMenu.module.css';
 import { useTranslation } from 'next-i18next';
-// import { useState, useEffect } from 'react';
 
 const HamburgerMenu = () => {
+  const { t, i18n } = useTranslation('translation');
   const [isOpen, setIsOpen] = useState(false); // Default value false
+  const [activeLanguage, setActiveLanguage] = useState('en');
 
   useEffect(() => {
-    // Mengambil nilai isOpen dari localStorage saat komponen di-mount
-    const localStorageValue = localStorage.getItem('isOpen');
-    setIsOpen(localStorageValue === 'true'); // Mengubah string 'true' menjadi boolean true
-    const storedLanguage = localStorage.getItem('language');
-    if (storedLanguage) {
-      i18n.changeLanguage(storedLanguage);
-      setActiveLanguage(storedLanguage);
+    if (i18n.isInitialized) {
+      const localStorageValue = localStorage.getItem('isOpen');
+      setIsOpen(localStorageValue === 'true'); // Mengubah string 'true' menjadi boolean true
+      const storedLanguage = localStorage.getItem('language');
+      if (storedLanguage) {
+        i18n.changeLanguage(storedLanguage);
+        setActiveLanguage(storedLanguage);
+      }
     }
-  }, []);
+  }, [i18n.isInitialized, i18n]); // Tambahkan i18n ke array dependensi
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
     localStorage.setItem('isOpen', !isOpen); // Mengubah nilai isOpen di localStorage
   };
-
-  const { t, i18n } = useTranslation('translation');
-  const [activeLanguage, setActiveLanguage] = useState('en');
-
-  
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -54,25 +51,35 @@ const HamburgerMenu = () => {
       {isOpen && (
         <div className={burger.content}>
           <ul className={burger.ul}>
-          <li>
-            <Link href="/" suppressHydrationWarning>{t('home')}</Link>
-          </li>
-          <li>
-            <Link href="/about" suppressHydrationWarning>{t('about')}</Link>
-          </li>
-          <li>
-            <Link href="/product"suppressHydrationWarning>{t('product')}</Link>
-          </li>
-          <li>
-            <Link href="/faqs"suppressHydrationWarning>{t('faqs')}</Link>
-          </li>
-          <li>
-            <Link href="/join-dealers"suppressHydrationWarning>{t('join-dealers')}</Link>
-          </li>
+            <li>
+              <Link href="/" suppressHydrationWarning>{t('home')}</Link>
+            </li>
+            <li>
+              <Link href="/about" suppressHydrationWarning>{t('about')}</Link>
+            </li>
+            <li>
+              <Link href="/product" suppressHydrationWarning>{t('product')}</Link>
+            </li>
+            <li>
+              <Link href="/faqs" suppressHydrationWarning>{t('faqs')}</Link>
+            </li>
+            {/* <li>
+              <Link href="/join-dealers" suppressHydrationWarning>{t('join-dealers')}</Link>
+            </li> */}
             <li>
               <div className={burger.translate}>
-                <div onClick={() => changeLanguage('id')} className={`${burger.id} ${activeLanguage === 'id' ? burger.active : ''}`} >ID</div>
-                <div onClick={() => changeLanguage('en')} className={`${burger.en} ${activeLanguage === 'en' ? burger.active : ''}`} >EN</div>
+                <div 
+                  onClick={() => changeLanguage('id')} 
+                  className={`${burger.id} ${activeLanguage === 'id' ? burger.active : ''}`}
+                >
+                  ID
+                </div>
+                <div 
+                  onClick={() => changeLanguage('en')} 
+                  className={`${burger.en} ${activeLanguage === 'en' ? burger.active : ''}`}
+                >
+                  EN
+                </div>
               </div>
             </li>
           </ul>

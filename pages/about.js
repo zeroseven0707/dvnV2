@@ -20,7 +20,7 @@ export default function About() {
           <div className={about.about}>
             <picture>
               <source srcSet="/image/mobile-about.svg" media="(max-width: 768px)"/>
-              <img src="/image/about.svg" className={about.image} alt="about"/>
+              <Image src="/image/about.svg" width={0} height={0} className={about.image} alt="about"/>
             </picture>
             <div className={about.aboutheader}>
             <div className={about.aboutheadertitle}>
@@ -32,10 +32,10 @@ export default function About() {
             </div>
           </div>
           <div>
-            <img src="/image/garis.png"className={about.garisimage} alt=""/>
-            <img src="/image/awankirifooter.png" className={about.awan1} alt=""/>
-            <img src="/image/awankirifooter.png" className={about.awan2} alt=""/>
-            <img src="/image/aboutkanan.svg" className={about.awan3} alt=""/>
+            <Image src="/image/garis.png" width={0} height={0}  className={about.garisimage} alt=""/>
+            <Image src="/image/awankirifooter.png" width={0} height={0} className={about.awan1} alt=""/>
+            <Image src="/image/awankirifooter.png" width={0} height={0} className={about.awan2} alt=""/>
+            <Image src="/image/aboutkanan.svg" width={0} height={0} className={about.awan3} alt=""/>
           </div>
           <div className={about.tombol}>
             <button className={about.brand} suppressHydrationWarning>{t('brand')}</button>
@@ -53,7 +53,7 @@ export default function About() {
             <div className={about.col_2}>
               <picture>
                 <source srcSet="/image/mobile-dvn.svg" media="(max-width: 768px)"/>
-                <img src="/image/dvn_about.svg" alt="dvn"/>
+                <Image src="/image/dvn_about.svg" width={300} height={300} layout="responsive" alt="dvn"/>
               </picture>
             </div>
         </section>
@@ -61,7 +61,7 @@ export default function About() {
             <div className={about.col_3}>
             <picture className={about.duo}>
               <source srcSet="/image/mobile-duo.svg" media="(max-width: 768px)"/>
-              <Image src="/image/duo.svg" width={295.7} height={149.27} layout="responsive"/>
+              <Image src="/image/duo.svg" width={295.7} height={149.27} layout="responsive" alt=""/>
             </picture>
             </div>
             <div className={about.col_4}>
@@ -79,9 +79,9 @@ export default function About() {
               </div>
             </div>
             <div className={about.col_6}>
-            <picture className={about.botol_dvn}>
+            <picture>
               <source srcSet="/image/mobile-botol.svg" media="(max-width: 768px)"/>
-              <Image src="/image/botol_dvn.svg" width={0.7} height={149.27} layout="responsive" />
+              <Image src="/image/botol_dvn.png" width={500} height={500} className={about.botol_d} alt=""/>
             </picture>
             </div>
         </section>
@@ -91,14 +91,12 @@ export default function About() {
                 <p className={about.core_down} suppressHydrationWarning>{t('brand mission')}</p>
                 <p className={about.value_core_down} suppressHydrationWarning>{t('dvn mission')}</p>
               </div>
-            {/* <Image src="/image/blur1.png" className={about.blur1} width={295.7} height={149.27}/> */}
             </div>
             <div className={about.col_two_image}>
             <div className={about.content}>
                 <p className={about.core_down} suppressHydrationWarning>{t('brand vision')}</p>
                 <p className={about.value_core_down} suppressHydrationWarning>{t('dvn vision')}</p>
               </div>
-            {/* <Image src="/image/blur2.png" className={about.blur2} width={295.7} height={149.27}/> */}
             </div>
         </section>
         <section className={about.sectionAdvan}>
@@ -112,7 +110,7 @@ export default function About() {
                 </div>
               </div>
 
-              <img src="/image/dvn-group.png" alt="dvn-group"/>
+              <Image src="/image/dvn-group.png" width={500} height={430} layout="responsive" alt="dvn-group"/>
 
               <div className={about.container_text_3}>
                 <h1 suppressHydrationWarning>{t('customized')} <span suppressHydrationWarning>{t('solution')}</span></h1>

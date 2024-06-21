@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import styles from '@/styles/Reviews.module.css';
+import Image from "next/image";
 
 const Reviews = () => {
     return (
@@ -7,7 +8,7 @@ const Reviews = () => {
             <div className={styles.reviewsContainer}>
                 <div className={styles.review}>
                     <div className={styles.images}>
-                        <img src="/image/imagereviews.png" className={styles.imageReview} />
+                        <Image src="/image/imagereviews.png" width={500} height={500} className={styles.imageReview} alt="" />
                         <hr/>
                     </div>
                     <b>Perfect!</b>
@@ -16,7 +17,7 @@ const Reviews = () => {
                 </div>
                 <div className={styles.review}>
                 <div className={styles.images}>
-                        <img src="/image/imagereviews.png" className={styles.imageReview}/>
+                        <Image src="/image/imagereviews.png" width={500} height={500} className={styles.imageReview} alt=""/>
                         <hr/>
                     </div>
                     <b>This is the best.</b>
@@ -25,7 +26,7 @@ const Reviews = () => {
                 </div>
                 <div className={styles.review}>
                 <div className={styles.images}>
-                        <img src="/image/imagereviews.png" className={styles.imageReview}/>
+                        <Image src="/image/imagereviews.png" width={500} height={500} className={styles.imageReview} alt=""/>
                         <hr/>
                     </div>
                     <b>Speechless</b>
@@ -34,7 +35,7 @@ const Reviews = () => {
                 </div>
                 <div className={styles.review}>
                 <div className={styles.images}>
-                        <img src="/image/imagereviews.png" className={styles.imageReview}/>
+                        <Image src="/image/imagereviews.png" width={500} height={500} className={styles.imageReview} alt=""/>
                         <hr/>
                     </div>
                     <b>WOW!</b>
@@ -43,7 +44,7 @@ const Reviews = () => {
                 </div>
                 <div className={styles.review}>
                 <div className={styles.images}>
-                        <img src="/image/imagereviews.png" className={styles.imageReview}/>
+                        <Image src="/image/imagereviews.png" width={500} height={500} className={styles.imageReview} alt=""/>
                         <hr/>
                     </div>
                     <b>Make my skin soft</b>

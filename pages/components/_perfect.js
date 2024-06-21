@@ -26,7 +26,7 @@ const PerfectPage = () => {
               <div className={perfect.container2}>
               <picture>
                 <source srcSet="/image/mobile-beauty.png" media="(max-width: 768px)" />
-                  <img src="/image/section2.png"
+                  <Image width={500} height={500} src="/image/section2.png"
                         alt="Vercel Logo"
                         className={perfect.picture}/>
                 </picture>

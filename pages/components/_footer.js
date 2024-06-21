@@ -1,6 +1,7 @@
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import { useTranslation } from 'next-i18next';
+import Image from "next/image";
 
 
 const Footer = () => {
@@ -11,7 +12,7 @@ const Footer = () => {
 <div className={styles.footer}>
     <div className={styles.contentFooter}>
     <div className={styles.containerText2}>
-            <img src="/image/dvn-logo.svg" className={styles.dvnLogo}/>
+            <Image src="/image/dvn-logo.svg" width={500} height={500} className={styles.dvnLogo} alt=""/>
             <hr className={styles.garisFooter} />
             <ul className={styles.footer_ul}>
                 <li className={styles.footer_li}><Link href="/product" suppressHydrationWarning>{t('learn more')}</Link> </li>
@@ -19,9 +20,9 @@ const Footer = () => {
                 <li className={styles.footer_li}><Link href="/faqs" suppressHydrationWarning>{t('faqs')}</Link></li>
             </ul>
             <div className={styles.social_media}>
-            <Link href="/product"><img className={styles.sosmedImage} src="/image/tiktok.svg"/></Link>
-            <Link href="/product"><img className={styles.sosmedImage} src="/image/facebook.svg"/></Link>
-            <Link href="/product"><img className={styles.sosmedImage} src="/image/insta.svg"/></Link>
+            <Link href="/product"><Image className={styles.sosmedImage} width={500} height={500} alt="" src="/image/tiktok.svg"/></Link>
+            <Link href="/product"><Image className={styles.sosmedImage} width={500} height={500} alt="" src="/image/facebook.svg"/></Link>
+            <Link href="/product"><Image className={styles.sosmedImage} width={500} height={500} alt="" src="/image/insta.svg"/></Link>
             </div>
         </div>
             <div className={styles.containerForm}>
@@ -35,9 +36,9 @@ const Footer = () => {
     </div>
         <picture >
             <source srcSet="/image/awan-mobile-kiri.png" media="(max-width: 768px)"/>
-            <img className={styles.awankiri} src="/image/KIRI.svg" alt="kiri" />
+            <Image className={styles.awankiri} width={500} height={500} src="/image/KIRI.svg" alt="kiri" />
         </picture>
-        <img className={styles.awankanan} src="/image/awankananfooter.png" alt="kanan" />
+        <Image className={styles.awankanan}width={500} height={500}  src="/image/awankananfooter.png" alt="kanan" />
     <footer className={styles.textFooter}>Copyright © 2024 dvn.com</footer>
     </div>
 </section>

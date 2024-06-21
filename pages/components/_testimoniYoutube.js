@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import styles from "@/styles/Home.module.css";
+import Image from "next/image";
 
 const YouTubeEmbed = ({ videoId, thumbnailUrl }) => {
   const [isVideoVisible, setIsVideoVisible] = useState(false);
@@ -13,7 +14,9 @@ const YouTubeEmbed = ({ videoId, thumbnailUrl }) => {
   return (
     <>
       {!isVideoVisible && (
-        <img
+        <Image
+        width={500}
+        height={500}
           src={thumbnailUrl}
           alt="Video Thumbnail"
           onClick={handleThumbnailClick}

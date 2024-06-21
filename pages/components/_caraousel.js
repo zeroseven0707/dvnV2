@@ -6,6 +6,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Slides from "@/styles/Carousel.module.css"; // membutuhkan file CSS
  // membutuhkan file CSS
 import { useTranslation } from 'next-i18next';
+import Image from "next/image";
 
 
 const CarouselComponent = () => {
@@ -52,26 +53,20 @@ const CarouselComponent = () => {
       <div className={Slides.crousel}>
         <picture>
             <source srcSet="/image/mobile-index.svg" media="(max-width: 768px)"/>
-            <img src="/image/caraousel.png" alt="caraousel 1" />
+            <Image width={500} height={500} className={Slides.carausel} src="/image/caraousel.png" priority alt="caraousel 1" />
         </picture>
-          <p className={Slides.text_atas}><img src="/image/D.V.N.svg" /></p> 
-          <p className={Slides.text} suppressHydrationWarning>{t('luminos')}</p> 
-          <img src="/image/bulat1.svg" alt="" className={Slides.bulat1}/>
-          <img src="/image/bulat2.svg" alt="" className={Slides.bulat2}/>
-          {/* <img src="/image/qris.svg" alt="" className={Slides.qris}/> */}
-          <img src="/image/no1.svg" alt="" className={Slides.no1}/>
+          <p className={Slides.text_atas}><Image width={500} height={500} src="/image/D.V.N.svg" alt='' priority /></p> 
+          <p className={Slides.textLuminos} suppressHydrationWarning>{t('luminos')}</p> 
+          <Image width={500} height={500} src="/image/no1.svg" alt="" className={Slides.no1} priority/>
       </div>
       <div className={Slides.crousel}>
         <picture>
             <source srcSet="/image/mobile-index.svg" media="(max-width: 768px)"/>
-            <img src="/image/caraousel.png" alt="caraousel 2" />
+            <Image width={500} height={500} className={Slides.carausel} src="/image/caraousel.png" alt="caraousel 2" priority />
         </picture>
-        <p className={Slides.text_atas}><img src="/image/D.V.N.svg" /></p> 
-        <p className={Slides.text} suppressHydrationWarning>{t('luminos')}</p> 
-        <img src="/image/bulat1.svg" alt="" className={Slides.bulat1}/>
-        <img src="/image/bulat2.svg" alt="" className={Slides.bulat2}/>
-        {/* <img src="/image/qris.svg" alt="" className={Slides.qris}/> */}
-        <img src="/image/no1.svg" alt="" className={Slides.no1}/>
+        <p className={Slides.text_atas}><Image width={500} height={500} src="/image/D.V.N.svg" alt='' priority /></p> 
+        <p className={Slides.textLuminos} suppressHydrationWarning>{t('luminos')}</p> 
+        <Image width={500} height={500} src="/image/no1.svg" alt="" className={Slides.no1} priority />
       </div>
     </Carousel>
     

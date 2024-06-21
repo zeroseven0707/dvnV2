@@ -1,6 +1,7 @@
 // components/YouTubeEmbed.js
 import styles from "@/styles/Home.module.css";
 import React, { useState } from 'react';
+import Image from "next/image";
 
 const YouTubeEmbed = ({ videoId, thumbnailUrl }) => {
   const [isVideoVisible, setIsVideoVisible] = useState(false);
@@ -12,7 +13,7 @@ const YouTubeEmbed = ({ videoId, thumbnailUrl }) => {
   return (
     <div style={{ position: 'relative', paddingBottom: '46.25%', height: 0 }}>
       {!isVideoVisible && (
-        <img
+        <Image width={500} height={500}
           src={thumbnailUrl}
           alt="Video Thumbnail"
           className={styles.YoutubeThumb}
