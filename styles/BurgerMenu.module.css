@@ -21,7 +21,6 @@
     top: 0px;
     right: 0;
     gap: 0px;
-    opacity: 0px;
     z-index: 99999;
   }
   .button{
@@ -62,6 +61,7 @@
     border-radius: 4px;
     border: 1px solid #FFFFFF;
     margin-top: 3vw;
+    width: 15vw;
   }
   .id{
     width: 50%;

@@ -7,6 +7,7 @@ import Image from "next/image";
 const Navbar = () => {
   const { t, i18n } = useTranslation('translation');
   const [activeLanguage, setActiveLanguage] = useState('en');
+  const [logoUrl, setLogoUrl] = useState('/image/logo.png'); // Default logo URL
 
   // Function to initialize language from localStorage
   const initializeLanguage = () => {
@@ -35,6 +36,29 @@ const Navbar = () => {
     };
   }, [i18n]);
 
+  // Function to fetch logo from API
+  useEffect(() => {
+    const fetchLogo = async () => {
+      try {
+        const response = await fetch('https://prahwa.net/api/logo', {
+          headers: {
+            'api_key': 'TddGvkPqgaq1kv6LOckmTwXnz8uHE859qlnqW3d8'
+          }
+        });
+        if (response.ok) {
+          const data = await response.json();
+          setLogoUrl(data.data.image);
+        } else {
+          console.error('Failed to fetch logo');
+        }
+      } catch (error) {
+        console.error('Error fetching logo:', error);
+      }
+    };
+
+    fetchLogo();
+  }, []);
+
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     setActiveLanguage(lng);
@@ -45,7 +69,7 @@ const Navbar = () => {
     <div>
       <nav className={navbar.nav}>
         <Link href="/">
-          <Image src="/image/logo.png" className={navbar.dvn} alt="logo" width={87} height={44.47} />
+          <Image  src={`https://prahwa.net/storage/${logoUrl}`} className={navbar.dvn} alt="logo" width={87} height={44.47} />
         </Link>
         <ul className={navbar.navLinks}>
           <li>

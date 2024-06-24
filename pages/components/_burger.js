@@ -58,10 +58,10 @@ const HamburgerMenu = () => {
               <Link href="/about" suppressHydrationWarning>{t('about')}</Link>
             </li>
             <li>
-              <Link href="/product" suppressHydrationWarning>{t('product')}</Link>
+              <Link href="/faqs" suppressHydrationWarning>{t('faqs')}</Link>
             </li>
             <li>
-              <Link href="/faqs" suppressHydrationWarning>{t('faqs')}</Link>
+              <Link href="/product" suppressHydrationWarning>{t('product')}</Link>
             </li>
             {/* <li>
               <Link href="/join-dealers" suppressHydrationWarning>{t('join-dealers')}</Link>

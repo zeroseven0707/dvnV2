@@ -378,7 +378,7 @@
     height: 39.3vw;
     right: 0;
     /* border:1px solid black; */
-    opacity: 0px;
+   
     position: absolute;
 }
 .aboutheadertext{
@@ -388,7 +388,7 @@
     left: 10vw;
     /* border:1px solid black; */
     gap: 0px;
-    opacity: 0px;
+   
     position: absolute;    
 
 }
@@ -466,7 +466,7 @@ z-index: 2;
     right: 0;
     bottom: -10vh;
     gap: 0px;
-    opacity: 0px;
+   
     position: absolute;
     }
     .garisimage{
@@ -660,7 +660,7 @@ z-index: 2;
         top: 1249px;
         left: 26px;
         gap: 0px;
-        opacity: 0px;
+       
     }
     .text22{
         
@@ -669,7 +669,7 @@ z-index: 2;
         top: 1249px;
         left: 177px;
         gap: 0px;
-        opacity: 0px;
+       
     }
     .text_1{
         font-size: 13px;

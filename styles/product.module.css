@@ -125,7 +125,6 @@ position: absolute;
     top: 269vh;
     left: 534px;
     gap: 19px;
-    opacity: 0px;
     position: absolute;
     z-index: 999;
 }
@@ -188,8 +187,13 @@ position: absolute;
     padding-right: 4vw;
     
 }
-.image_works{
+.image_benefit{
     width: 100%;
+    height: auto;
+}
+    .image_works{
+    width: 100%;
+    height: auto;
 }
 .howtoworks{
     width: 17vw;
@@ -322,7 +326,6 @@ color: black;
     height: 5vw;
     top: 17vw;
     left: 15vw;
-    opacity: 0px;
     position: absolute;
     font-family: 'Redshift-Bold',sans-serif;
     font-size: 4vw;
@@ -346,7 +349,6 @@ color: black;
     z-index: 999;
     left: 978px;
     gap: 0px;
-    opacity: 0px;
     position: absolute;
   }
   .mainIngredients{
@@ -355,7 +357,6 @@ color: black;
     top: 213vh;
     left: 545px;
     gap: 0px;
-    opacity: 0px;
     position: absolute;
 
     font-family: 'Redshift-Bold',sans-serif;
@@ -374,7 +375,6 @@ color: black;
     top: 223vh;
     left: 545px;
     gap: 0px;
-    opacity: 0px;
     position: absolute;
 
     font-family: 'Redshift-Bold',sans-serif;
@@ -476,9 +476,11 @@ color: black;
     right: 1vw;
     top: -7.3vw;
     width: 13vw;
+    height: auto;
  }
  .bahan_image{
     width: 54vw;
+    height: auto;
     position: absolute;
     bottom: -8vw;
     left: 50%;
@@ -497,6 +499,7 @@ color: black;
     left: 0;
     bottom: -2.9vw;
     width: 18vw;
+    height: auto;
     display: block;
  }
  .awan_desktop_2{
@@ -504,6 +507,7 @@ color: black;
     right: 0;
     bottom: 13.6vw;
     width: 10vw;
+    height: auto;
     display: block;
  }
  .awan_desktop_3{
@@ -521,6 +525,7 @@ color: black;
         left: 0;
         bottom: -2.9vw;
         width: 18vw;
+        height: auto;
         display: none;
      }
      .awan_desktop_2{
@@ -528,6 +533,7 @@ color: black;
         right: 0;
         bottom: 13.6vw;
         width: 10vw;
+        height: auto;
         display: none;
      } 
      .awan_desktop_3{
@@ -535,6 +541,7 @@ color: black;
         left: 0;
         bottom: 37vw;
         width: 23vw;
+        height: auto;
         display: block;
      }
      .awan_desktop_4{
@@ -542,6 +549,7 @@ color: black;
         right: 0;
         bottom: 73vw;
         width: 31vw;
+        height: auto;
         display: block;
      } 
     .benefit_content_product_mobile{
@@ -724,7 +732,7 @@ color: black;
         top: 250vw;
         left: 24px;
         gap: 0px;
-        opacity: 0px;
+
     }
     .kotak_informasi ul{
         margin-top: -7%;
@@ -859,7 +867,7 @@ color: black;
         width: 56px;
         height: 20px;
         border-radius: 50px;
-        opacity: 0px;
+
 
         font-family: "Redshift-Bold",sans-serif;
         font-size: 8px;
@@ -876,7 +884,7 @@ color: black;
         border-radius: 50px;
         border: 0.5px solid #E74058;
         background: #DD7B8126;
-        opacity: 0px;
+
 
         font-family: "Redshift-Bold",sans-serif;
         font-size: 8px;

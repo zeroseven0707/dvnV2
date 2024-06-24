@@ -1,11 +1,36 @@
-import Head from "next/head";
+import { useEffect, useState } from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '@/styles/Faqs.module.css';
+import Burger from './components/_burger';
 import Footer from './components/_footer';
-import Image from "next/image";
-import styles from "@/styles/Faqs.module.css";
-import Burger from "./components/_burger";
+import axios from 'axios'; // Import axios library
 import { useTranslation } from 'next-i18next';
+
 export default function Faqs() {
   const { t } = useTranslation('translation');
+  const [faqs, setFaqs] = useState([]);
+
+  useEffect(() => {
+    // Function to fetch FAQs from API
+    const fetchFaqs = async () => {
+      try {
+        const response = await axios.get('https://prahwa.net/api/faqs', {
+          headers: {
+            api_key: 'TddGvkPqgaq1kv6LOckmTwXnz8uHE859qlnqW3d8'
+          }
+        });
+        // Set the fetched FAQs to state
+        setFaqs(response.data.data);
+      } catch (error) {
+        console.error('Error fetching FAQs:', error);
+      }
+    };
+
+    // Call the fetchFaqs function when component mounts
+    fetchFaqs();
+  }, []); // Empty dependency array to run effect only once
+
   return (
     <>
       <Head>
@@ -14,70 +39,38 @@ export default function Faqs() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <section>
-    <div>
-      <picture>
-          <source srcset="/image/mobile-faqs.svg" media="(max-width: 768px)"/>
-          <Image width={500} height={500} alt="" src="/image/faqs.png" className={styles.image}/>
-      </picture>
+      <section>
+        <div>
+          <picture>
+            <source srcSet="/image/mobile-faqs.svg" media="(max-width: 768px)" />
+            <Image width={500} height={500} alt="" src="/image/faqs.png" className={styles.image} />
+          </picture>
           <Image width={500} height={500} alt="" src="/image/awankirifooter.png" className={styles.awan} />
           <Image width={500} height={500} alt="" src="/image/awankirifooter.png" className={styles.awan2} />
-          <Image width={500} height={500} alt="" src="/image/Botol DVN.svg" className={styles.image_product}/>
+          <Image width={500} height={500} alt="" src="/image/Botol DVN.svg" className={styles.image_product} />
           <div className={styles.header_text}>
             <p className={styles.faq_header} suppressHydrationWarning>{t('faqs')}</p>
             <p className={styles.question_header} suppressHydrationWarning>({t('frequently asked questions')})</p>
           </div>
         </div>
-    </section>
-        <Burger />
-    <div className={styles.container}>
-      <section>
-        <div className={styles.title}>
-          <p className={styles.faq} suppressHydrationWarning>{t('faqs')}</p>
-          <p className={styles.question} suppressHydrationWarning>{t('frequently asked questions')}</p>
-        </div>
-        <details>
-          <summary>Mengapa D.V.N berbeda?
-            <span>
-            <svg xmlns="http://www.w3.org/2000/svg" className={styles.carretWH} fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" className={styles.carret}/>
-            </svg>
-            </span>
-          </summary>
-          <p>Efek terdepan dari D.V.N adalah untuk mencerahkan dan menjaga kesehatan kulit. D.V.N berbentuk tablet kunyah yang mengandung Collagen Tripeptide, Collagen Peptide, Viqua Pomegranate, L-Glutathione, dan Japanese Knotweed radix Extract.</p>
-        </details>
-        <details>
-          <summary>Siapa yang diangjurkan untuk konsumsi D.V.N?
-            <span>
-            <svg xmlns="http://www.w3.org/2000/svg" className={styles.carretWH} fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" className={styles.carret}/>
-            </svg>
-              </span>
-              </summary>
-          <p>Produk ini dianjurkan untuk usia 12 tahun keatas. Cocok untuk mereka menjaga kesehatan kulit terutama struktur kulit, pigmentasi, kelembapan, kekenyalan kulit, serta mencegah terjadinya kerutan</p>
-        </details>
-        <details>
-          <summary>Apakah D.V.N aman dikonsumsi?
-            <span>
-            <svg xmlns="http://www.w3.org/2000/svg" className={styles.carretWH} fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" className={styles.carret}/>
-            </svg>
-            </span></summary>
-          <p>Aman dikonsumsi karena menggunakan bahan utama yang memiliki kandungan terbaik dan telah memlalui uji laboratorium.</p>
-        </details>
-        <details>
-          <summary>Apakah D.V.N aman dikonsumsi oleh ibu hamil dan menyusui?
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" className={styles.carretWH} fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" className={styles.carret} /> 
-              </svg>
-            </span>
-            </summary>
-          <p>Aman, karena collagen merupakan struktur utama pembentukan kulit dan juga dibutuhkan untuk perkembangan janin, serta menjaga struktur kulit ibu dari stretch mark.</p>
-        </details>
       </section>
-    </div>
-    <Footer />
+      <Burger />
+      <div className={styles.container}>
+        <section>
+          <div className={styles.title}>
+            <p className={styles.faq} suppressHydrationWarning>{t('faqs')}</p>
+            <p className={styles.question} suppressHydrationWarning>{t('frequently asked questions')}</p>
+          </div>
+          {/* Render fetched FAQs */}
+          {faqs.map((faq) => (
+            <details key={faq.id}>
+              <summary>{faq.question}</summary>
+              <p>{faq.answer}</p>
+            </details>
+          ))}
+        </section>
+      </div>
+      <Footer />
     </>
   );
 }

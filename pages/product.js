@@ -24,7 +24,7 @@ export default function Product() {
           <div className={product.text_header} suppressHydrationWarning>{t('product')}</div>
           <Image width={500} height={500} src="/image/Botol DVN.svg" className={product.image_product} alt="" />
           <picture >
-              <source srcset="/image/mobile-product.svg" media="(max-width: 768px)"/>
+              <source srcSet="/image/mobile-product.svg" media="(max-width: 768px)"/>
               <Image width={500} height={500} src="/image/product.png" className={product.image} alt="" />
           </picture>
           <Image width={500} height={500} alt="" src="/image/awankirifooter.png" className={product.awan1} />
