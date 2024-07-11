@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import navbar from "@/styles/navbar.module.css";
@@ -10,13 +10,13 @@ const Navbar = () => {
   const [logoUrl, setLogoUrl] = useState('/image/logo.png'); // Default logo URL
 
   // Function to initialize language from localStorage
-  const initializeLanguage = () => {
+  const initializeLanguage = useCallback(() => {
     const storedLanguage = localStorage.getItem('language');
     if (storedLanguage) {
       i18n.changeLanguage(storedLanguage);
       setActiveLanguage(storedLanguage);
     }
-  };
+  }, [i18n]);
 
   useEffect(() => {
     if (i18n.isInitialized) {
@@ -34,7 +34,7 @@ const Navbar = () => {
     return () => {
       i18n.off('initialized', initializeLanguage);
     };
-  }, [i18n]);
+  }, [i18n, initializeLanguage]);
 
   // Function to fetch logo from API
   useEffect(() => {
@@ -55,7 +55,6 @@ const Navbar = () => {
         console.error('Error fetching logo:', error);
       }
     };
-
     fetchLogo();
   }, []);
 
@@ -69,7 +68,7 @@ const Navbar = () => {
     <div>
       <nav className={navbar.nav}>
         <Link href="/">
-          <Image  src={`https://prahwa.net/storage/${logoUrl}`} className={navbar.dvn} alt="logo" width={87} height={44.47} />
+          <Image src={`https://prahwa.net/storage/${logoUrl}`} className={navbar.logo} width={50} height={50} alt="Logo" />
         </Link>
         <ul className={navbar.navLinks}>
           <li>
@@ -90,13 +89,13 @@ const Navbar = () => {
           <li>
             <div className={navbar.translate}>
               <button 
-                className={`${navbar.id} ${activeLanguage === 'id' ? navbar.active : ''}`} 
+                className={`${navbar.id} ${activeLanguage === 'id' ? navbar.active : ''}`}
                 onClick={() => changeLanguage('id')}
-              >
+              >  
                 ID
               </button>
               <button 
-                className={`${navbar.en} ${activeLanguage === 'en' ? navbar.active : ''}`} 
+                className={`${navbar.en} ${activeLanguage === 'en' ? navbar.active : ''}`}
                 onClick={() => changeLanguage('en')}
               >
                 EN
@@ -110,3 +109,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
