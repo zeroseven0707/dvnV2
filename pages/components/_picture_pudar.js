@@ -11,7 +11,7 @@ const PicturePudar = () => {
         <Link href="/product">
           <button className={styles.learnMore} suppressHydrationWarning>{t('learn more')}</button>
         </Link>
-        <Image width={500} height={500} className={styles.pudarGambar} src="/image/learnmore.png" alt="Pudar" />
+        <Image width={500} height={500} className={styles.pudarGambar} src="/image/learnmore.svg" alt="Pudar" />
       </div>
     </section>
   );
