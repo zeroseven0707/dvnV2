@@ -28,7 +28,7 @@ export default function Product() {
       <section>
       <div className={product.youtube}>
         <p suppressHydrationWarning><span suppressHydrationWarning>{t('our')}</span> {t('production process')}</p>
-        <Production videoId="IKCSNNeRTDA" />
+        <Production videoId={t('video')} />
       </div>
       </section>
       <section className={product.benefit}>
@@ -115,7 +115,7 @@ export default function Product() {
             <p className={product.testimonial_detail} suppressHydrationWarning>{t('hear what they have to say')}</p>
         </div>
         <div className={product.video_youtube2}>
-          <Testimoni videoId="IKCSNNeRTDA" thumbnailUrl="/image/youtube.png" />
+          <Testimoni videoId={t('video')} thumbnailUrl="/image/youtube.png" />
         </div>
         <div className={product.detail_youtube2}>
             <p className={product.testimonial} suppressHydrationWarning>{t('testimonials')}</p>

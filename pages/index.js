@@ -26,7 +26,7 @@ const Home = () => {
             <span className={styles.span} suppressHydrationWarning>{t('do you')} <span className={styles.know} suppressHydrationWarning>{t('know')}</span> <br className={styles.know_br}/> </span> <span className={styles.descript} suppressHydrationWarning>{t('uneven')}</span>
         </div>
         <div className={styles.video}>
-          <YouTubeEmbed videoId="IKCSNNeRTDA" thumbnailUrl="/image/youtube.png" />
+          <YouTubeEmbed videoId={t('video')} thumbnailUrl="/image/youtube.png" />
         </div>
       </section>
       <section>
