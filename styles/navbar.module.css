@@ -12,6 +12,7 @@
     z-index: 9999;
   }
   .logo{
+    width: 5vw;
     margin-left: 2vw;
   }
   .nav ul {
