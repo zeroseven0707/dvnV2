@@ -14,28 +14,7 @@ const Home = () => {
 
   return (
     <>
-      <CarouselComponent />
-      <Burger />
-      <Image width={500} height={500} src="/image/awan-home-kiri.png" alt="" className={styles.awannya_caraousel} />
-      <Image width={500} height={500} className={styles.cloud} src="/image/Cloud1.png" alt="caraousel" />
-      <Image width={500} height={100} src="/image/garis.png" className={styles.garis} alt="caraousel"/>
-      <Slides />
-      <PerfectPage />
-      <section className={styles.youtube}>
-      <div className={styles.containerText}>
-            <span className={styles.span} suppressHydrationWarning>{t('do you')} <span className={styles.know} suppressHydrationWarning>{t('know')}</span> <br className={styles.know_br}/> </span> <span className={styles.descript} suppressHydrationWarning>{t('uneven')}</span>
-        </div>
-        <div className={styles.video}>
-          <YouTubeEmbed videoId={t('video')} thumbnailUrl="/image/youtube.png" />
-        </div>
-      </section>
-      <section>
-        <div className={styles.badfactor}>
-          <Image width={500} height={500}  src="/image/image.png"  className={styles.images} alt=''/>
-        </div>
-      </section>
-      <PicturePudar />
-      <Footer />
+      <Image width={500} height={500} src="/image/dvn.jpeg" className={styles.dvnjpeg} alt="" />
     </>
   );
 };

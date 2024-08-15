@@ -3,6 +3,10 @@
   height: 700px;
   border: 1px solid black;
   }
+  .dvnjpeg{
+    width: 100vw;
+    height: auto;
+  }
   
   .awankiri{
     /* border: 1px solid black; */
