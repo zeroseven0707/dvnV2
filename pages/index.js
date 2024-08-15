@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <>
-      <Image width={500} height={500} src="/image/dvn.jpeg" className={styles.dvnjpeg} alt="" />
+      <Image width={500} height={500} src="/image/DVN Upgrade.jpg" className={styles.dvnjpeg} alt="" />
     </>
   );
 };
