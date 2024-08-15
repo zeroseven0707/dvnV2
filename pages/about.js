@@ -13,7 +13,7 @@ export default function About() {
           <div className={about.about}>
             <picture>
               <source srcSet="/image/mobile-about.svg" media="(max-width: 768px)"/>
-              <Image src="/image/about.svg" width={0} height={0} className={about.image} alt="about"/>
+              <Image src="/image/about.svg" width={500} height={500} className={about.image} alt="about"/>
             </picture>
             <div className={about.aboutheader}>
             <div className={about.aboutheadertitle}>
@@ -25,10 +25,10 @@ export default function About() {
             </div>
           </div>
           <div>
-            <Image src="/image/garis.png" width={0} height={0}  className={about.garisimage} alt=""/>
-            <Image src="/image/awankirifooter.png" width={0} height={0} className={about.awan1} alt=""/>
-            <Image src="/image/awankirifooter.png" width={0} height={0} className={about.awan2} alt=""/>
-            <Image src="/image/aboutkanan.svg" width={0} height={0} className={about.awan3} alt=""/>
+            <Image src="/image/garis.png" width={500} height={500}  className={about.garisimage} alt=""/>
+            <Image src="/image/awankirifooter.png" width={500} height={500} className={about.awan1} alt=""/>
+            <Image src="/image/awankirifooter.png" width={500} height={500} className={about.awan2} alt=""/>
+            <Image src="/image/aboutkanan.svg" width={500} height={500} className={about.awan3} alt=""/>
           </div>
           <div className={about.tombol}>
             <button className={about.brand} suppressHydrationWarning>{t('brand')}</button>

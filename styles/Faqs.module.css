@@ -118,6 +118,7 @@ font-family: 'Redshift-Bold',sans-serif;
 }
 .image{
   width: 100%;
+  height: auto;
 }
 .image_product{
   width: 20vw;

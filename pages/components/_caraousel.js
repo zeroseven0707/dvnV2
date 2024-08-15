@@ -71,7 +71,7 @@ const CarouselComponent = () => {
       {images.map((item, index) => (
         <div key={item.id} className={Slides.crousel}>
           <picture>
-            <source srcSet="/image/mobile-index.svg" media="(max-width: 768px)" />
+            <source srcSet={`https://prahwa.net/storage/${item.image}`} media="(max-width: 768px)" />
             <Image width={500} height={500} className={Slides.carausel} src={`https://prahwa.net/storage/${item.image}`} priority alt={`carousel ${index + 1}`} />
           </picture>
          {/* <p className={Slides.text_atas}><Image width={500} height={500} src="/image/D.V.N.svg" alt='' priority /></p>*/}
