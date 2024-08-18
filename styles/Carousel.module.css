@@ -3,7 +3,7 @@
   height: 626px;
   position: relative;
 }
-.carausel{
+.image{
   width:100vw;
   height: auto;
 }  
@@ -95,7 +95,7 @@ display: none;
 display: none;
 }
 @media (max-width:786px) {
-.crousel{
+.carousel{
   /* border: 1px solid black; */
   margin-top: 14vw;
 }
@@ -111,6 +111,10 @@ left: 10vw;
 .arrowNext {
 right: 10vw;
 }
+.image{
+  width:100vw;
+  height: 95vw;
+}  
 .qris{
 position: absolute;
 width: 20vw;

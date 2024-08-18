@@ -67,7 +67,7 @@ export default function About() {
         <section className={about.section}>
             <div className={about.col_5}>
             <div className={about.container_core}>
-                <p className={about.core} suppressHydrationWarning><span className={about.black} suppressHydrationWarning>{t('brand')}</span><br /> {t('original intention')}</p>
+                <p className={about.core} suppressHydrationWarning><span className={about.black} suppressHydrationWarning>{t('brand-org')}</span><br /> {t('original intention')}</p>
                 <p className={about.value_core} suppressHydrationWarning>{t('dvn original')}</p>
               </div>
             </div>
@@ -96,7 +96,7 @@ export default function About() {
             <div className={about.container_text}>
 
               <div className={about.container_text_1}>
-                <h1 suppressHydrationWarning>{t('brand')}<span suppressHydrationWarning> {t('advantages')}</span></h1>
+                <h1 suppressHydrationWarning>{t('brand-adv')}<span suppressHydrationWarning> {t('advantages')}</span></h1>
                 <div className={about.p_layout}>
                 <p suppressHydrationWarning>{t('leading technologi')}</p>
                 <p suppressHydrationWarning>{t('inner and outer')}</p>
@@ -112,7 +112,7 @@ export default function About() {
 
             </div>
             <div className={about.container_text_2}>
-              <h1 suppressHydrationWarning>{t('brand')}<span suppressHydrationWarning> {t('philosophy')}</span></h1>
+              <h1 suppressHydrationWarning>{t('brand-phi')}<span suppressHydrationWarning> {t('philosophy')}</span></h1>
               <p suppressHydrationWarning>{t('we upload')}</p>
             </div>
         </section>

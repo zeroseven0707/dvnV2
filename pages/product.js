@@ -52,8 +52,10 @@ export default function Product() {
             <ul>
               <li suppressHydrationWarning>{t('easily')}</li>
               <li suppressHydrationWarning>{t('maintains')}</li>
-              <li suppressHydrationWarning>{t('Nourishes')}</li>
-              <li suppressHydrationWarning>{t('maintain')}</li>
+              <li suppressHydrationWarning>{t('reduces')}</li>
+              <li suppressHydrationWarning>{t('rich')}</li>
+              <li suppressHydrationWarning>{t('natural')}</li>
+              <li suppressHydrationWarning>{t('maintain skin')}</li>
             </ul>
             <Image width={500} height={500} alt="" src="/image/CollagenPeptide.svg" className={product.peptide_image}/>
             <Image width={500} height={500} alt="" src="/image/ingredients.svg" className={product.bahan_image}/>
@@ -74,21 +76,21 @@ export default function Product() {
         <div className={product.container_featured}>
           <div className={product.featured}>
           <div>
-            < p className={product.title_featured} suppressHydrationWarning><span suppressHydrationWarning>{t('featured')}</span> {t('product')}</p>
+            < p className={product.title_featured} suppressHydrationWarning><span suppressHydrationWarning>{t('featured')}</span> {t('product-ugl')}</p>
             <div className={product.imageFeatured}>
               <Image width={500} height={500} alt="" src="/image/Botol DVN.svg" className={product.imageFeatureds}/>
             </div>
           </div>
             <div className={product.detailFeaturedMobile}>
               <p className={product.title_featuredMobile} suppressHydrationWarning><span suppressHydrationWarning>{t('Featured')}</span> {t('product')}</p>
-              <p className={product.title} suppressHydrationWarning>D.V.N {t('chewable tablet')}</p>
+              <p className={product.title} suppressHydrationWarning>{t('chewable tablet')}</p>
               <div className={product.tombolMobile}>
                 <button className={product.buynowMobile} suppressHydrationWarning>{t('buy now')}</button>
                 <button className={product.consultMobile} suppressHydrationWarning>{t('consult with us')}</button>
               </div>
             </div>
             <div className={product.detailFeatured}>
-              <p className={product.title} suppressHydrationWarning>D.V.N {t('chewable tablet')}</p>
+              <p className={product.title} suppressHydrationWarning>{t('chewable tablet')}</p>
               <p className={product.text} suppressHydrationWarning>{t('discover our')}</p>
               <div className={product.tombol}>
                 <button className={product.buynow} suppressHydrationWarning>{t('buy now')}</button>

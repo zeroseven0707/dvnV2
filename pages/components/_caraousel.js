@@ -72,7 +72,7 @@ const CarouselComponent = () => {
         <div key={item.id} className={Slides.crousel}>
           <picture>
             <source srcSet={`https://prahwa.net/storage/${item.image}`} media="(max-width: 768px)" />
-            <Image width={500} height={500} className={Slides.carausel} src={`https://prahwa.net/storage/${item.image}`} priority alt={`carousel ${index + 1}`} />
+            <Image width={500} height={500} className={Slides.image} src={`https://prahwa.net/storage/${item.image}`} priority alt={`carousel ${index + 1}`} />
           </picture>
          {/* <p className={Slides.text_atas}><Image width={500} height={500} src="/image/D.V.N.svg" alt='' priority /></p>*/}
          {/* <p className={Slides.textLuminos} suppressHydrationWarning>{t('luminos')}</p>*/}
