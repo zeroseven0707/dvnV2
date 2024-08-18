@@ -46,7 +46,7 @@
   .rectangle {
     margin-top: 10%;
     width: 17vw;
-    height: 7vw;
+    height: 8vw;
     gap: 0px;
     border-radius: 1vw;
     border-style: dashed;
@@ -56,11 +56,6 @@
     align-items: center;
     justify-content: center;
     opacity: 1; 
-  }
-  .textValue{
-    /* border: 1px solid black; */
-    width: 14vw;
-    height: 4vw;
   }
   .textValue p{
     font-family: 'Redshift-BookOblique', sans-serif;
@@ -580,8 +575,8 @@
   }
   .rectangle {
     border-radius: 4vw;
-    width: 106px;
-    height: 87.4px;
+    width: 32vw;
+    height:20vw;
   }
   .garis{
     display: none;
