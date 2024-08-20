@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState } from 'react';
 import product from "@/styles/product.module.css";
-const YouTubeEmbed = ({ videoId }) => {
+const YouTubeEmbed = ({ videoId, thumbnailUrl }) => {
   const [isVideoVisible, setIsVideoVisible] = useState(false);
 
   const handleThumbnailClick = () => {
@@ -17,7 +17,7 @@ const YouTubeEmbed = ({ videoId }) => {
                   <Image
                       width={500}
                       height={500}
-                      src="/image/youtube.png"
+                      src={thumbnailUrl}
                       alt="Video Thumbnail"
                       className={product.productionThumb}
                       onClick={handleThumbnailClick}

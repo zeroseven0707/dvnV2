@@ -77,7 +77,7 @@ const CarouselComponent = () => {
           <picture>
             {/* Adjust image source based on the current language */}
             <source
-              srcSet={currentLanguage === 'en' ? `/image/${item.image_en}` : `/image/${item.image_id}`}
+              srcSet={currentLanguage === 'en' ? `/image/${t('banner_mobile_en')}.svg` : `/image/${t('banner_mobile_en')}.svg`}
               media="(max-width: 768px)"
             />
             <Image
