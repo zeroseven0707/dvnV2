@@ -65,7 +65,7 @@ export default function Product() {
       <section>
         <div className={product.containerWorks}>
           <div>
-            <Image width={500} height={500} alt="" src="/image/extract-image.png" className={product.image_works} />
+            <Image width={500} height={500} alt="" src={`/image/${t('extract-en')}.png`} className={product.image_works} />
           </div>
           <div className={product.text}>
               <p className={product.text_works} suppressHydrationWarning>{t('viqua')}</p>

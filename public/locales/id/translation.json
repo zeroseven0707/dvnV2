@@ -73,5 +73,13 @@
   "reduces":"Mengurangi kerutan",
   "rich":"Kaya Asam Amino",
   "natural":"Alami",
-  "maintain skin":"Menjaga elastisitas kulit"
+  "maintain skin":"Menjaga elastisitas kulit",
+  "halal_en":"halal_id",
+  "gmp_en":"gmp_id",
+  "collagen_en":"collagen_id",
+  "ingredients_en":"ingredients_id",
+  "best_collagen_en":"best_collagen_id",
+  "banner_mobile_en":"banner-mobile-id",
+  "bad-factor-en":"bad-factor-id",
+  "extract-en":"extract-id"
 }

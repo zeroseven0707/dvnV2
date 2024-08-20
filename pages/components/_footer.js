@@ -7,6 +7,8 @@ import Image from "next/image";
 const Footer = () => {
     const { t } = useTranslation('translation');
     const [socialMedia, setSocialMedia] = useState([]);
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
 
     useEffect(() => {
         const fetchSocialMedia = async () => {
@@ -30,6 +32,33 @@ const Footer = () => {
         fetchSocialMedia();
     }, []);
 
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch('https://prahwa.net/api/contacts', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'api_key': 'TddGvkPqgaq1kv6LOckmTwXnz8uHE859qlnqW3d8'
+                },
+                body: JSON.stringify({
+                    title: email,
+                    description: message
+                })
+            });
+
+            if (response.ok) {
+                console.log('Message sent successfully!');
+                setEmail(''); // Reset email input
+                setMessage(''); // Reset message textarea
+            } else {
+                console.error('Failed to send message');
+            }
+        } catch (error) {
+            console.error('Error sending message:', error);
+        }
+    };
+
     return (
         <section>
             <div className={styles.footer}>
@@ -51,11 +80,26 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className={styles.containerForm}>
-                        <form className={styles.form}>
+                        <form className={styles.form} onSubmit={handleSubmit}>
                             <p suppressHydrationWarning>{t('get in')}</p>
-                            <input type="text" placeholder={t('email')} className={styles.input} suppressHydrationWarning />
-                            <textarea className={styles.message} placeholder={t('message')} suppressHydrationWarning></textarea>
-                            <button className={styles.button} suppressHydrationWarning>{t('send')}</button>
+                            <input
+                                type="text"
+                                placeholder={t('email')}
+                                className={styles.input}
+                                suppressHydrationWarning
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                            <textarea
+                                className={styles.message}
+                                placeholder={t('message')}
+                                suppressHydrationWarning
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
+                            ></textarea>
+                            <button className={styles.button} suppressHydrationWarning type="submit">
+                                {t('send')}
+                            </button>
                         </form>
                     </div>
                 </div>

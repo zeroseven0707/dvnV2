@@ -6,7 +6,7 @@ import { useTranslation } from 'next-i18next';
 import Image from "next/image";
 
 const CarouselComponent = () => {
-  const { t } = useTranslation('translation');
+  const { t, i18n } = useTranslation('translation');
   const [images, setImages] = useState([]);
 
   useEffect(() => {
@@ -21,7 +21,9 @@ const CarouselComponent = () => {
           const data = await response.json();
           setImages(data.data.map(item => ({
             id: item.id,
-            image: item.image
+            image: item.image,
+            image_en: item.image_en, // Assuming your API provides images for different languages
+            image_id: item.image  // Assuming your API provides images for different languages
           })));
         } else {
           console.error('Failed to fetch images');
@@ -33,6 +35,8 @@ const CarouselComponent = () => {
 
     fetchImages();
   }, []);
+
+  const currentLanguage = i18n.language; // Get current language
 
   return (
     <Carousel
@@ -71,11 +75,21 @@ const CarouselComponent = () => {
       {images.map((item, index) => (
         <div key={item.id} className={Slides.crousel}>
           <picture>
-            <source srcSet={`https://prahwa.net/storage/${item.image}`} media="(max-width: 768px)" />
-            <Image width={500} height={500} className={Slides.image} src={`https://prahwa.net/storage/${item.image}`} priority alt={`carousel ${index + 1}`} />
+            {/* Adjust image source based on the current language */}
+            <source
+              srcSet={currentLanguage === 'en' ? `/image/${item.image_en}` : `/image/${item.image_id}`}
+              media="(max-width: 768px)"
+            />
+            <Image
+              width={500}
+              height={500}
+              className={Slides.image}
+              src={`https://prahwa.net/storage/${currentLanguage === 'en' ? item.image_en : item.image_id}`}
+              priority
+              alt={`carousel ${index + 1}`}
+            />
           </picture>
-         {/* <p className={Slides.text_atas}><Image width={500} height={500} src="/image/D.V.N.svg" alt='' priority /></p>*/}
-         {/* <p className={Slides.textLuminos} suppressHydrationWarning>{t('luminos')}</p>*/}
+          {/* Optional: Add additional content here */}
           <Image width={500} height={500} src="/image/no1.svg" alt="" className={Slides.no1} priority />
         </div>
       ))}

@@ -31,7 +31,7 @@ const Home = () => {
       </section>
       <section>
         <div className={styles.badfactor}>
-          <Image width={500} height={500}  src="/image/image.png"  className={styles.images} alt=''/>
+          <Image width={500} height={500}  src={`/image/${t('bad-factor-en')}.svg`}  className={styles.images} alt=''/>
         </div>
       </section>
       <PicturePudar />
