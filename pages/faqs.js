@@ -7,6 +7,7 @@ import axios from 'axios'; // Import axios library
 import { useTranslation } from 'next-i18next';
 
 export default function Faqs() {
+  const { i18n } = useTranslation('translation');
   const { t } = useTranslation('translation');
   const [faqs, setFaqs] = useState([]);
 
@@ -28,8 +29,8 @@ export default function Faqs() {
 
     // Call the fetchFaqs function when component mounts
     fetchFaqs();
-  }, []); // Empty dependency array to run effect only once
-
+  }, []); 
+  const currentLanguage = i18n.language;
   return (
     <>
       <section>
@@ -57,8 +58,8 @@ export default function Faqs() {
           {/* Render fetched FAQs */}
           {faqs.map((faq) => (
             <details key={faq.id}>
-              <summary>{faq.question}</summary>
-              <p>{faq.answer}</p>
+              <summary>{currentLanguage === 'en' ? faq.question_en : faq.question}</summary>
+              <p>{currentLanguage === 'en' ? faq.answer_en : faq.answer}</p>
             </details>
           ))}
         </section>
