@@ -82,7 +82,7 @@ export default function Product() {
             </div>
           </div>
             <div className={product.detailFeaturedMobile}>
-              <p className={product.title_featuredMobile} suppressHydrationWarning><span suppressHydrationWarning>{t('Featured')}</span> {t('product')}</p>
+              <p className={product.title_featuredMobile} suppressHydrationWarning><span suppressHydrationWarning>{t('featured')}</span> {t('product-ugl')}</p>
               <p className={product.title} suppressHydrationWarning>{t('chewable tablet')}</p>
               <div className={product.tombolMobile}>
                 <button className={product.buynowMobile} suppressHydrationWarning>{t('buy now')}</button>
