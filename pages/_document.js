@@ -8,31 +8,34 @@ class MyDocument extends Document {
         <Head>
           <link rel="icon" href="image/dvn-logo.svg" />
           {/* Menambahkan skrip untuk api_key */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.trackingApiKey = 'TddGvkPqgaq1kv6LOckmTwXnz8uHE859qlnqW3d8';
-            `,
-          }}
-        />
+          <Script
+            id="tracking-api-key"
+            strategy="beforeInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.trackingApiKey = 'TddGvkPqgaq1kv6LOckmTwXnz8uHE859qlnqW3d8';
+              `,
+            }}
+          />
         </Head>
         <body>
           <Main />
           <NextScript />
-        {/* Menambahkan skrip eksternal */}
-        <script
-          src="https://prahwa.net/tracking.js"
-          strategy="afterInteractive" // Atur strategi pemuatan skrip
-          onLoad={() => {
-            console.log('Tracking script loaded successfully.');
-          }}
-          onError={(e) => {
-            console.error('Error loading tracking script:', e);
-          }}
-        />
+          {/* Menambahkan skrip eksternal dengan strategi pemuatan yang benar */}
+          <Script
+            src="https://prahwa.net/tracking.js"
+            strategy="afterInteractive" // Atur strategi pemuatan skrip
+            onLoad={() => {
+              console.log('Tracking script loaded successfully.');
+            }}
+            onError={(e) => {
+              console.error('Error loading tracking script:', e);
+            }}
+          />
           <Script async src="https://www.googletagmanager.com/gtag/js?id=G-VLQGC346BX"></Script>
           <Script
             id="google-analytics"
+            strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `
                 window.dataLayer = window.dataLayer || [];
