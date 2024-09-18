@@ -8,6 +8,7 @@ import PerfectPage from './components/_perfect';
 import YouTubeEmbed from './components/_youtubeEmbed';
 import Burger from './components/_burger';
 import Image from "next/image";
+import Link from 'next/link';
 
 const Home = () => {
   const { t } = useTranslation('translation');
@@ -23,7 +24,7 @@ const Home = () => {
       <PerfectPage />
       <section className={styles.youtube}>
       <div className={styles.containerText}>
-            <span className={styles.span} suppressHydrationWarning>{t('do you')} <span className={styles.know} suppressHydrationWarning>{t('know')}</span> <br className={styles.know_br}/> </span> <span className={styles.descript} suppressHydrationWarning>{t('uneven')}</span>
+            <span className={styles.span} suppressHydrationWarning>{t('do you')}<span className={styles.know} suppressHydrationWarning>{t('know')}</span> <br className={styles.know_br}/> </span> <Link href="https://www.marketeers.com/zap-beauty-index-2023-kulit-kusam-dominasi-persoalan-perempuan-indonesia/"> <span className={styles.descript} suppressHydrationWarning> {t('uneven')}</span></Link>
         </div>
         <div className={styles.video}>
           <YouTubeEmbed videoId={t('video')} thumbnailUrl={`/image/${t('thumb-en')}.svg`} />

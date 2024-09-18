@@ -69,6 +69,7 @@ export default function Product() {
           </div>
           <div className={product.text}>
               <p className={product.text_works} suppressHydrationWarning>{t('viqua')}</p>
+              <p className={product.text_works} suppressHydrationWarning>{t('ref')}</p>
           </div>
         </div>
       </section>

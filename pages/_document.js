@@ -24,7 +24,7 @@ class MyDocument extends Document {
           {/* Menambahkan skrip eksternal dengan strategi pemuatan yang benar */}
           <Script
             src="https://prahwa.net/tracking.js"
-            strategy="afterInteractive" // Atur strategi pemuatan skrip
+            strategy="afterInteractive"
             onLoad={() => {
               console.log('Tracking script loaded successfully.');
             }}
