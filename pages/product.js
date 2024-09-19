@@ -33,8 +33,8 @@ export default function Product() {
       </section>
       <section className={product.benefit}>
         <div className={product.benefit_content_product_mobile}>
-          <h1 suppressHydrationWarning>{t('main')} <span suppressHydrationWarning>{t('ingredients')}</span></h1>
-          <h3 suppressHydrationWarning>{t('collagen peptide')} <Image width={500} height={500} alt="" src="/image/peptide-blue.svg"/></h3>
+          {/* <h1 suppressHydrationWarning>{t('main')} <span suppressHydrationWarning>{t('ingredients')}</span></h1> */}
+          {/* <h3 suppressHydrationWarning>{t('collagen peptide')} <Image width={500} height={500} alt="" src="/image/peptide-blue.svg"/></h3> */}
         </div>
         <Image width={500} height={500} alt="" src="/image/awan3.png" className={product.awan_desktop_3}/>
         <Image width={500} height={500} alt="" src="/image/awan4.png" className={product.awan_desktop_4}/>
@@ -44,11 +44,11 @@ export default function Product() {
           <Image width={500} height={500} alt="" src="/image/Botol DVN.svg" className={product.image_benefit}/>
         </div>
         <div className={product.benefit_content_product}>
-          <h1 suppressHydrationWarning>{t('main')} <span suppressHydrationWarning>{t('ingredients')}</span></h1>
-          <h3 suppressHydrationWarning>{t('collagen peptide')}</h3>
+          {/* <h1 suppressHydrationWarning>{t('main')} <span suppressHydrationWarning>{t('ingredients')}</span></h1> */}
+          {/* <h3 suppressHydrationWarning>{t('collagen peptide')}</h3> */}
           
           <div className={product.benefit_box_product}>
-            <h5 suppressHydrationWarning>{t('benefits')}</h5>
+            {/* <h5 suppressHydrationWarning>{t('benefits')}</h5>
             <ul>
               <li suppressHydrationWarning>{t('easily')}</li>
               <li suppressHydrationWarning>{t('maintains')}</li>
@@ -56,7 +56,7 @@ export default function Product() {
               <li suppressHydrationWarning>{t('rich')}</li>
               <li suppressHydrationWarning>{t('natural')}</li>
               <li suppressHydrationWarning>{t('maintain skin')}</li>
-            </ul>
+            </ul> */}
             <Image width={500} height={500} alt="" src="/image/CollagenPeptide.svg" className={product.peptide_image}/>
             <Image width={500} height={500} alt="" src="/image/ingredients.svg" className={product.bahan_image}/>
           </div>
